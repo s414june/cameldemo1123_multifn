@@ -1,0 +1,12 @@
+2022-11-22 16:07:19 ERROR SQLDatabaseConnection:19 - �????�?�???��??使�?��????��??�?端層 (SSL) ???�?建�????? SQL Server ???�???��????��????�誤: "The server selected protocol version TLS10 is not accepted by client preferences [TLS13, TLS12]"??? ClientConnectionId:b90b593d-d52f-46a2-ad9f-1fe819c6c75b
+2022-11-22 16:12:07 ERROR SQLDatabaseConnection:19 - 無法開啟登入所要求的資料庫 "TK"。登入失敗。 ClientConnectionId:3ecce4f1-6c9a-44c1-830c-564576cbfc37
+2022-11-22 16:14:56 ERROR SQLDatabaseConnection:19 - 無法開啟登入所要求的資料庫 "TK"。登入失敗。 ClientConnectionId:c5eeaab6-cfba-4fc9-b936-0bf208e8caf1
+2022-11-22 16:16:37 ERROR SQLDatabaseConnection:19 - 連接到主機 ./SQLEXPRESS (連接埠 1433) 的 TCP/IP 連接已經失敗。錯誤: "./SQLEXPRESS。確認連接屬性。確認 SQL Server 執行個體是否在主機上執行並接受在通訊埠的 TCP/IP 連接。確認防火牆未封鎖通訊埠的 TCP 連接。"。
+2022-11-22 16:17:24 ERROR SQLDatabaseConnection:19 - 接近關鍵字 'IF' 之處的語法不正確。
+2022-11-22 16:26:09 ERROR SQLDatabaseConnection:19 - 連接到主機 JUNE4693-450G7/SQLEXPRESS (連接埠 1433) 的 TCP/IP 連接已經失敗。錯誤: "JUNE4693-450G7/SQLEXPRESS。確認連接屬性。確認 SQL Server 執行個體是否在主機上執行並接受在通訊埠的 TCP/IP 連接。確認防火牆未封鎖通訊埠的 TCP 連接。"。
+2022-11-22 16:27:54 ERROR SQLDatabaseConnection:19 - 連接到主機 localhost////SQLEXPRESS (連接埠 1433) 的 TCP/IP 連接已經失敗。錯誤: "localhost////SQLEXPRESS。確認連接屬性。確認 SQL Server 執行個體是否在主機上執行並接受在通訊埠的 TCP/IP 連接。確認防火牆未封鎖通訊埠的 TCP 連接。"。
+2022-11-22 16:30:13 ERROR SQLDatabaseConnection:19 - 資料庫 'SampleDB' 不存在。請確定名稱輸入正確。
+2022-11-22 16:36:31 ERROR SQLDatabaseConnection:19 - 無法開啟登入所要求的資料庫 "SampleDB"。登入失敗。 ClientConnectionId:8fcc68d1-ee0a-40b5-93ca-25b94c5496de
+2022-11-22 16:37:05 ERROR SQLDatabaseConnection:19 - 
+2022-11-24 10:13:45 ERROR SQLDatabaseConnection:108 - 警告: 嚴重錯誤 615 發生於 11 24 2022 10:13AM。請記錄錯誤和時間，並連絡您的系統管理員。
+2022-11-24 10:15:26 ERROR SQLDatabaseConnection:108 - 警告: 嚴重錯誤 615 發生於 11 24 2022 10:15AM。請記錄錯誤和時間，並連絡您的系統管理員。

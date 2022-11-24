@@ -1,0 +1,44 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch RunCamelConnectDB",
+            "request": "launch",
+            "mainClass": "test.example.RunCamelConnectDB",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "test.example.App",
+            "projectName": "demo",
+            "noDebug": false,
+            "__progressId": "6b725086-6e72-4784-9ca4-c0c44fd6b330"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "test.example.App",
+            "projectName": "example"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunCamelConnectDB",
+            "request": "launch",
+            "mainClass": "test.example.RunCamelConnectDB",
+            "projectName": "example"
+        }
+    ]
+}

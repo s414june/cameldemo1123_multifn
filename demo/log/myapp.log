@@ -1,0 +1,95 @@
+2022-11-21 17:16:15 INFO  RunCamelConnectDB:39 - Hi2022/11/21 17:16:15
+2022-11-21 17:16:15 ERROR RunCamelConnectDB:129 - Failed to create route route1 at: >>> To[jdbc:myDataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://myDataSource, please check your classpath contains the needed Camel component jar.
+2022-11-21 17:17:26 INFO  RunCamelConnectDB:39 - Hi2022/11/21 17:17:26
+2022-11-21 17:17:27 ERROR RunCamelConnectDB:129 - Failed to create route route1 at: >>> To[jdbc:myDataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://myDataSource, please check your classpath contains the needed Camel component jar.
+2022-11-21 17:18:22 INFO  RunCamelConnectDB:39 - Hi2022/11/21 17:18:22
+2022-11-21 17:18:23 ERROR RunCamelConnectDB:129 - Failed to create route route1 at: >>> To[jdbc:myDataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://myDataSource, please check your classpath contains the needed Camel component jar.
+2022-11-21 17:18:54 INFO  RunCamelConnectDB:39 - Hi2022/11/21 17:18:54
+2022-11-21 17:18:54 ERROR RunCamelConnectDB:129 - Failed to create route route1 at: >>> To[jdbc:myDataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://myDataSource, please check your classpath contains the needed Camel component jar.
+2022-11-21 17:20:09 INFO  RunCamelConnectDB:39 - Hi2022/11/21 17:20:09
+2022-11-21 17:20:10 DEBUG RunCamelConnectDB:107 - [{A=20221121, B=7}]
+2022-11-21 17:20:37 INFO  RunCamelConnectDB:39 - Hi2022/11/21 17:20:37
+2022-11-21 17:20:39 DEBUG RunCamelConnectDB:107 - [{A=20221121, B=7}]
+2022-11-21 17:21:01 INFO  RunCamelConnectDB:39 - Hi2022/11/21 17:21:01
+2022-11-21 17:21:03 DEBUG RunCamelConnectDB:107 - [{A=20221121, B=7}, {A=20221121, B=38}]
+2022-11-21 17:22:34 INFO  RunCamelConnectDB:39 - Hi2022/11/21 17:22:34
+2022-11-21 17:22:35 DEBUG RunCamelConnectDB:107 - [{A=20221121, B=7}, {A=20221121, B=38}]
+2022-11-22 15:57:36 INFO  RunCamelConnectDB:121 - finally!
+2022-11-22 16:40:24 DEBUG RunCamelConnectDB:67 - [{A=20221122, B=7}, {A=20221122, B=38}]
+2022-11-22 16:40:33 INFO  RunCamelConnectDB:92 - finally!
+2022-11-22 16:42:33 DEBUG RunCamelConnectDB:67 - [{A=20221122, B=7}, {A=20221122, B=38}]
+2022-11-22 16:42:41 INFO  RunCamelConnectDB:92 - finally!
+2022-11-22 16:44:43 DEBUG RunCamelConnectDB:68 - [{A=20221122, B=7}, {A=20221122, B=38}]
+2022-11-22 16:44:52 INFO  RunCamelConnectDB:93 - finally!
+2022-11-22 16:45:16 DEBUG RunCamelConnectDB:68 - [{A=20221122, B=7}, {A=20221122, B=38}]
+2022-11-22 16:45:25 INFO  RunCamelConnectDB:93 - finally!
+2022-11-22 16:50:16 DEBUG RunCamelConnectDB:67 - [{A=20221122, B=7}, {A=20221122, B=38}]
+2022-11-22 16:50:25 INFO  RunCamelConnectDB:91 - finally!
+2022-11-22 16:50:43 DEBUG RunCamelConnectDB:67 - [{A=20221122, B=7}, {A=20221122, B=38}]123
+2022-11-22 16:50:51 INFO  RunCamelConnectDB:91 - finally!
+2022-11-22 16:55:05 INFO  RunCamelConnectDB:91 - finally!
+2022-11-22 17:02:31 ERROR RunCamelConnectDB:100 - Failed to start route route1 because of null
+2022-11-22 17:02:31 INFO  RunCamelConnectDB:103 - finally!
+2022-11-22 17:04:12 ERROR RunCamelConnectDB:100 - Failed to start route route1 because of null
+2022-11-22 17:04:12 INFO  RunCamelConnectDB:103 - finally!
+2022-11-22 17:04:52 ERROR RunCamelConnectDB:101 - Failed to start route route1 because of null
+2022-11-22 17:04:52 INFO  RunCamelConnectDB:104 - finally!
+2022-11-22 17:13:57 ERROR RunCamelConnectDB:101 - Failed to start route route1 because of null
+2022-11-22 17:13:57 INFO  RunCamelConnectDB:104 - finally!
+2022-11-22 17:14:14 ERROR RunCamelConnectDB:100 - Failed to start route route1 because of null
+2022-11-22 17:14:14 INFO  RunCamelConnectDB:103 - finally!
+2022-11-22 17:15:37 INFO  RunCamelConnectDB:103 - finally!
+2022-11-22 17:17:37 ERROR RunCamelConnectDB:100 - Failed to start route route1 because of null
+2022-11-22 17:17:37 INFO  RunCamelConnectDB:103 - finally!
+2022-11-23 08:56:45 ERROR RunCamelConnectDB:101 - Failed to create route route1 at: >>> To[] <<< in route: Route(route1)[From[file:/Users/june.wu/Desktop/cameltest] ->... because of uri must be specified and not empty
+2022-11-23 08:56:45 INFO  RunCamelConnectDB:104 - finally!
+2022-11-23 10:14:58 ERROR RunCamelConnectDB:100 - Failed to start route route1 because of null
+2022-11-23 10:14:58 INFO  RunCamelConnectDB:103 - finally!
+2022-11-23 10:17:57 ERROR RunCamelConnectDB:100 - Failed to start route route1 because of null
+2022-11-23 10:17:57 INFO  RunCamelConnectDB:103 - finally!
+2022-11-23 10:19:18 INFO  RunCamelConnectDB:103 - finally!
+2022-11-23 10:24:42 INFO  RunCamelConnectDB:103 - finally!
+2022-11-23 10:25:31 INFO  RunCamelConnectDB:103 - finally!
+2022-11-23 13:51:58 DEBUG RunCamelConnectDB:82 - [{A=20221123, B=7}, {A=20221123, B=38}]
+2022-11-23 13:52:07 INFO  RunCamelConnectDB:109 - finally!
+2022-11-23 13:54:45 DEBUG RunCamelConnectDB:82 - [{A=20221123, B=7}, {A=20221123, B=38}]
+2022-11-23 13:54:54 INFO  RunCamelConnectDB:109 - finally!
+2022-11-23 13:55:31 DEBUG RunCamelConnectDB:83 - {A=20221123, B=7}
+2022-11-23 13:55:31 DEBUG RunCamelConnectDB:83 - {A=20221123, B=38}
+2022-11-23 13:55:40 INFO  RunCamelConnectDB:110 - finally!
+2022-11-23 15:49:39 DEBUG RunCamelConnectDB:86 - {Name=Nikita, Location=United States}
+2022-11-23 15:49:39 DEBUG RunCamelConnectDB:86 - {Name=Tom, Location=Germany}
+2022-11-23 15:49:39 DEBUG RunCamelConnectDB:86 - {Name=Jake, Location=United States}
+2022-11-23 15:49:39 DEBUG RunCamelConnectDB:86 - {Name=June, Location=Taiwan}
+2022-11-23 15:49:48 INFO  RunCamelConnectDB:112 - finally!
+2022-11-23 15:50:48 DEBUG RunCamelConnectDB:86 - {Name=Nikita, Location=United States}
+2022-11-23 15:50:48 DEBUG RunCamelConnectDB:86 - {Name=Tom, Location=Germany}
+2022-11-23 15:50:48 DEBUG RunCamelConnectDB:86 - {Name=Jake, Location=United States}
+2022-11-23 15:50:48 DEBUG RunCamelConnectDB:86 - {Name=June, Location=Taiwan}
+2022-11-23 15:50:56 INFO  RunCamelConnectDB:112 - finally!
+2022-11-23 15:52:56 DEBUG RunCamelConnectDB:86 - {Name=Nikita, Location=United States}
+2022-11-23 15:52:56 DEBUG RunCamelConnectDB:86 - {Name=Tom, Location=Germany}
+2022-11-23 15:52:56 DEBUG RunCamelConnectDB:86 - {Name=Jake, Location=United States}
+2022-11-23 15:52:56 DEBUG RunCamelConnectDB:86 - {Name=June, Location=Taiwan}
+2022-11-23 15:53:05 INFO  RunCamelConnectDB:112 - finally!
+2022-11-23 15:58:29 DEBUG RunCamelConnectDB:89 - [{Name=Nikita, Location=United States}, {Name=Tom, Location=Germany}, {Name=Jake, Location=United States}, {Name=June, Location=Taiwan}]
+2022-11-23 15:58:37 INFO  RunCamelConnectDB:115 - finally!
+2022-11-23 15:59:01 DEBUG RunCamelConnectDB:89 - {Name=Nikita, Location=United States}
+2022-11-23 15:59:01 DEBUG RunCamelConnectDB:89 - {Name=Tom, Location=Germany}
+2022-11-23 15:59:01 DEBUG RunCamelConnectDB:89 - {Name=Jake, Location=United States}
+2022-11-23 15:59:01 DEBUG RunCamelConnectDB:89 - {Name=June, Location=Taiwan}
+2022-11-23 15:59:09 INFO  RunCamelConnectDB:115 - finally!
+2022-11-24 10:30:51 INFO  RunCamelConnectDB:91 - finally!
+2022-11-24 10:33:15 INFO  RunCamelConnectDB:92 - finally!
+2022-11-24 10:33:53 DEBUG RunCamelConnectDB:75 - {Name=Nikita, Location=United States}
+2022-11-24 10:33:53 DEBUG RunCamelConnectDB:75 - {Name=Tom, Location=Germany}
+2022-11-24 10:33:53 DEBUG RunCamelConnectDB:75 - {Name=Jake, Location=United States}
+2022-11-24 10:34:02 INFO  RunCamelConnectDB:92 - finally!
+2022-11-24 10:41:39 DEBUG SampleDBtoTable_Json:79 - {Name=Nikita, Location=United States}
+2022-11-24 10:41:39 DEBUG SampleDBtoTable_Json:79 - {Name=Tom, Location=Germany}
+2022-11-24 10:41:39 DEBUG SampleDBtoTable_Json:79 - {Name=Jake, Location=United States}
+2022-11-24 10:41:47 INFO  SampleDBtoTable_Json:96 - finally!
+2022-11-24 10:47:32 DEBUG SampleDBtoTable_Json:80 - {Name=Nikita, Location=United States}
+2022-11-24 10:47:32 DEBUG SampleDBtoTable_Json:80 - {Name=Tom, Location=Germany}
+2022-11-24 10:47:32 DEBUG SampleDBtoTable_Json:80 - {Name=Jake, Location=United States}
+2022-11-24 10:47:41 INFO  SampleDBtoTable_Json:97 - finally!
