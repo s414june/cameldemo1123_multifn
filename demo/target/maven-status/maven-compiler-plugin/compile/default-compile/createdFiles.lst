@@ -1,5 +1,11 @@
+test\example\SampleDBtoTable_Json$1.class
+test\example\SampleDBsplitColumn$1$1.class
+test\example\FetchApi.class
+test\example\HttpConstants.class
+test\example\SampleDBsplitColumn.class
+test\example\SampleDBtoTable_Json$1$1.class
+test\example\SampleDBsplitColumn$1.class
 test\example\App.class
-test\example\RunCamelConnectDB$1.class
+test\example\SampleDBtoTable_Json.class
 test\example\SQLDatabaseConnection.class
-test\example\RunCamelConnectDB$1$1.class
-test\example\RunCamelConnectDB.class
+test\example\FetchApi$1.class

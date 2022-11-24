@@ -6,10 +6,19 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FetchApi",
+            "request": "launch",
+            "mainClass": "test.example.FetchApi",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
             "name": "Launch RunCamelConnectDB",
             "request": "launch",
             "mainClass": "test.example.RunCamelConnectDB",
-            "projectName": "demo"
+            "projectName": "demo",
+            "noDebug": false,
+            "__progressId": "6b59ebab-40c1-435f-ad24-1b8525b324c2"
         },
         {
             "type": "java",

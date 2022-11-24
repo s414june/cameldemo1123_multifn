@@ -93,3 +93,161 @@
 2022-11-24 10:47:32 DEBUG SampleDBtoTable_Json:80 - {Name=Tom, Location=Germany}
 2022-11-24 10:47:32 DEBUG SampleDBtoTable_Json:80 - {Name=Jake, Location=United States}
 2022-11-24 10:47:41 INFO  SampleDBtoTable_Json:97 - finally!
+2022-11-24 11:00:45 ERROR SampleDBtoTable_Json:79 - Failed to create route route1 at: >>> To[https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:00:45 INFO  SampleDBtoTable_Json:82 - finally!
+2022-11-24 11:01:14 ERROR SampleDBtoTable_Json:79 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:01:14 INFO  SampleDBtoTable_Json:82 - finally!
+2022-11-24 11:06:37 ERROR SampleDBtoTable_Json:79 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:06:37 INFO  SampleDBtoTable_Json:82 - finally!
+2022-11-24 11:08:58 ERROR SampleDBtoTable_Json:80 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:08:58 INFO  SampleDBtoTable_Json:83 - finally!
+2022-11-24 11:11:25 ERROR SampleDBtoTable_Json:80 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:11:25 INFO  SampleDBtoTable_Json:83 - finally!
+2022-11-24 11:14:44 ERROR SampleDBtoTable_Json:81 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:14:44 INFO  SampleDBtoTable_Json:84 - finally!
+2022-11-24 11:15:20 ERROR SampleDBtoTable_Json:81 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:15:20 INFO  SampleDBtoTable_Json:84 - finally!
+2022-11-24 11:16:18 ERROR SampleDBtoTable_Json:82 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:16:18 INFO  SampleDBtoTable_Json:85 - finally!
+2022-11-24 11:18:46 ERROR SampleDBtoTable_Json:84 - Failed to create route route1 at: >>> To[https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:18:46 INFO  SampleDBtoTable_Json:87 - finally!
+2022-11-24 11:18:59 ERROR SampleDBtoTable_Json:84 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:18:59 INFO  SampleDBtoTable_Json:87 - finally!
+2022-11-24 11:21:07 ERROR SampleDBtoTable_Json:86 - Exception occurred during execution on the exchange: Exchange[]
+2022-11-24 11:21:07 INFO  SampleDBtoTable_Json:89 - finally!
+2022-11-24 11:22:38 ERROR SampleDBtoTable_Json:86 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:22:38 INFO  SampleDBtoTable_Json:89 - finally!
+2022-11-24 11:36:02 ERROR SampleDBtoTable_Json:86 - Failed to create route route1 at: >>> To[http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:36:02 INFO  SampleDBtoTable_Json:89 - finally!
+2022-11-24 11:36:56 ERROR SampleDBtoTable_Json:86 - Failed to create route route1 at: >>> To[http4://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http4://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AEE024E9-A102-4069-8272-A96024102012, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:36:56 INFO  SampleDBtoTable_Json:89 - finally!
+2022-11-24 11:43:47 ERROR SampleDBtoTable_Json:79 - Failed to create route route1 at: >>> To[http://www.google.com] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetHeader[... because of No endpoint could be found for: http://www.google.com, please check your classpath contains the needed Camel component jar.
+2022-11-24 11:43:47 INFO  SampleDBtoTable_Json:82 - finally!
+2022-11-24 11:46:59 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2022-11-24 11:46:59 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2022-11-24 11:46:59 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {}->http://www.google.com:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 11:46:59 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {}->http://www.google.com:80][total available: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+2022-11-24 11:46:59 DEBUG MainClientExec:234 - Opening connection {}->http://www.google.com:80
+2022-11-24 11:46:59 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to www.google.com/142.250.157.99:80
+2022-11-24 11:46:59 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 172.31.79.104:57622<->142.250.157.99:80
+2022-11-24 11:46:59 DEBUG MainClientExec:255 - Executing request POST / HTTP/1.1
+2022-11-24 11:46:59 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2022-11-24 11:46:59 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2022-11-24 11:46:59 DEBUG headers:133 - http-outgoing-0 >> POST / HTTP/1.1
+2022-11-24 11:46:59 DEBUG headers:136 - http-outgoing-0 >> firedTime: Thu Nov 24 11:46:59 CST 2022
+2022-11-24 11:46:59 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 0
+2022-11-24 11:46:59 DEBUG headers:136 - http-outgoing-0 >> Host: www.google.com
+2022-11-24 11:46:59 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2022-11-24 11:46:59 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2022-11-24 11:46:59 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 >> "POST / HTTP/1.1[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 >> "firedTime: Thu Nov 24 11:46:59 CST 2022[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 >> "Host: www.google.com[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 405 Method Not Allowed[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "Allow: GET, HEAD[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 24 Nov 2022 03:46:59 GMT[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "Server: gws[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 1589[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "<!DOCTYPE html>[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "<html lang=en>[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "  <meta charset=utf-8>[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "  <title>Error 405 (Method Not Allowed)!!1</title>[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "  <style>[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "  </style>[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "  <p><b>405.</b> <ins>That[0xe2][0x80][0x99]s an error.</ins>[\n]"
+2022-11-24 11:46:59 DEBUG wire:73 - http-outgoing-0 << "  <p>The request method <code>POST</code> is inappropriate for the URL <code>/</code>.  <ins>That[0xe2][0x80][0x99]s all we know.</ins>[\n]"
+2022-11-24 11:46:59 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 405 Method Not Allowed
+2022-11-24 11:46:59 DEBUG headers:125 - http-outgoing-0 << Allow: GET, HEAD
+2022-11-24 11:46:59 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 24 Nov 2022 03:46:59 GMT
+2022-11-24 11:46:59 DEBUG headers:125 - http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2022-11-24 11:46:59 DEBUG headers:125 - http-outgoing-0 << Server: gws
+2022-11-24 11:46:59 DEBUG headers:125 - http-outgoing-0 << Content-Length: 1589
+2022-11-24 11:46:59 DEBUG headers:125 - http-outgoing-0 << X-XSS-Protection: 0
+2022-11-24 11:46:59 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+2022-11-24 11:46:59 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2022-11-24 11:46:59 DEBUG PoolingHttpClientConnectionManager:344 - Connection [id: 0][route: {}->http://www.google.com:80] can be kept alive indefinitely
+2022-11-24 11:46:59 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2022-11-24 11:46:59 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {}->http://www.google.com:80][total available: 1; route allocated: 1 of 20; total allocated: 1 of 200]
+2022-11-24 11:47:08 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2022-11-24 11:47:08 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2022-11-24 11:47:08 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2022-11-24 11:47:08 INFO  SampleDBtoTable_Json:86 - finally!
+2022-11-24 11:49:47 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2022-11-24 11:49:47 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2022-11-24 11:49:47 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 11:49:47 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+2022-11-24 11:49:47 DEBUG MainClientExec:234 - Opening connection {}->http://opendata.cwb.gov.tw:80
+2022-11-24 11:49:50 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to opendata.cwb.gov.tw/61.56.14.16:80
+2022-11-24 11:50:03 DEBUG DefaultManagedHttpClientConnection:96 - http-outgoing-0: Shutdown connection
+2022-11-24 11:50:03 DEBUG MainClientExec:129 - Connection discarded
+2022-11-24 11:50:03 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 11:50:04 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2022-11-24 11:50:04 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2022-11-24 11:50:04 INFO  SampleDBtoTable_Json:82 - finally!
+2022-11-24 11:53:58 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2022-11-24 11:53:58 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2022-11-24 11:53:58 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 11:53:58 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+2022-11-24 11:53:58 DEBUG MainClientExec:234 - Opening connection {}->http://opendata.cwb.gov.tw:80
+2022-11-24 11:53:58 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to opendata.cwb.gov.tw/61.56.14.16:80
+2022-11-24 11:54:14 DEBUG DefaultManagedHttpClientConnection:96 - http-outgoing-0: Shutdown connection
+2022-11-24 11:54:14 DEBUG MainClientExec:129 - Connection discarded
+2022-11-24 11:54:14 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 11:54:14 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2022-11-24 11:54:14 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2022-11-24 11:54:14 INFO  SampleDBtoTable_Json:83 - finally!
+2022-11-24 11:55:25 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2022-11-24 11:55:25 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2022-11-24 11:55:25 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 11:55:25 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+2022-11-24 11:55:25 DEBUG MainClientExec:234 - Opening connection {}->http://opendata.cwb.gov.tw:80
+2022-11-24 11:55:25 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to opendata.cwb.gov.tw/61.56.14.16:80
+2022-11-24 11:55:39 DEBUG DefaultManagedHttpClientConnection:96 - http-outgoing-0: Shutdown connection
+2022-11-24 11:55:39 DEBUG MainClientExec:129 - Connection discarded
+2022-11-24 11:55:39 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 11:55:40 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2022-11-24 11:55:40 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2022-11-24 11:55:40 INFO  SampleDBtoTable_Json:82 - finally!
+2022-11-24 12:00:45 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2022-11-24 12:00:45 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2022-11-24 12:00:45 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 12:00:45 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+2022-11-24 12:00:45 DEBUG MainClientExec:234 - Opening connection {}->http://opendata.cwb.gov.tw:80
+2022-11-24 12:00:50 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to opendata.cwb.gov.tw/61.56.14.16:80
+2022-11-24 12:01:03 DEBUG DefaultManagedHttpClientConnection:96 - http-outgoing-0: Shutdown connection
+2022-11-24 12:01:03 DEBUG MainClientExec:129 - Connection discarded
+2022-11-24 12:01:03 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 12:01:04 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2022-11-24 12:01:04 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2022-11-24 12:01:04 INFO  SampleDBtoTable_Json:81 - finally!
+2022-11-24 12:01:25 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2022-11-24 12:01:25 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2022-11-24 12:01:25 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 12:01:25 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+2022-11-24 12:01:25 DEBUG MainClientExec:234 - Opening connection {}->http://opendata.cwb.gov.tw:80
+2022-11-24 12:01:25 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to opendata.cwb.gov.tw/61.56.14.16:80
+2022-11-24 12:01:39 DEBUG DefaultManagedHttpClientConnection:96 - http-outgoing-0: Shutdown connection
+2022-11-24 12:01:39 DEBUG MainClientExec:129 - Connection discarded
+2022-11-24 12:01:39 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {}->http://opendata.cwb.gov.tw:80][total available: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+2022-11-24 12:01:39 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2022-11-24 12:01:39 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2022-11-24 12:01:39 INFO  SampleDBtoTable_Json:81 - finally!
+2022-11-24 12:03:18 INFO  SampleDBtoTable_Json:83 - finally!
+2022-11-24 13:11:41 INFO  SampleDBtoTable_Json:83 - finally!
+2022-11-24 13:12:32 INFO  SampleDBtoTable_Json:83 - finally!
+2022-11-24 15:38:57 DEBUG SampleDBtoTable_Json:80 - {Name=Nikita, Location=United States}
+2022-11-24 15:38:57 DEBUG SampleDBtoTable_Json:80 - {Name=Tom, Location=Germany}
+2022-11-24 15:38:57 DEBUG SampleDBtoTable_Json:80 - {Name=Jake, Location=United States}
+2022-11-24 15:39:05 INFO  SampleDBtoTable_Json:97 - finally!

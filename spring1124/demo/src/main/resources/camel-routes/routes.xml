@@ -1,0 +1,8 @@
+<routes xmlns="http//camel.apache.org/schema/spring">
+    <route id="file-mover">
+        <from uri="file:///Users/june.wu/Desktop/cameltest/fileMove" />
+        <log message="Headers: ${headers}" />
+        <log message="Body: ${body}" />
+        <to uri="file:///Users/june.wu/Desktop/cameltest/fileMove/fileMovePlace" />
+    </route>
+</routes>
