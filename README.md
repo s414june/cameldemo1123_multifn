@@ -5,7 +5,7 @@
 
 一個功能一個Java檔
 
-檔案若需重建
+檔案初始化
 
 請使用指令 `mvn clean install`
 
@@ -22,3 +22,7 @@
 `mvn exec:java`
 
 請在pom.xml設定初始專案(exec-maven-plugin中，mainClass的值)
+
+或是使用
+
+`mvn exec:java -Dexec.mainClass="test.example.RunCamelConnectDB"` (test.example.RunCamelConnectDB改成你要執行的專案)
