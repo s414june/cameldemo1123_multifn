@@ -10,7 +10,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 		// 執行所有的Component
 		Camel a = new Camel();
-		a.run1();
+		a.run2();
 	}
 
 }

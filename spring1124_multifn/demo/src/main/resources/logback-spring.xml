@@ -1,5 +1,5 @@
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
-    <contextName>logback-test</contextName>
+    <contextName>logback</contextName>
     
     <property name="logback.logdir" value="./log" />
     <property name="logback.appname" value="mylog" />
@@ -22,7 +22,6 @@
     <charset>UTF-8</charset>
     <pattern>%d [%thread] %-5level %logger{36} %line - %msg%n</pattern>
     </encoder>
-    
     </appender>
     <appender
     name="fileErrorLog"
