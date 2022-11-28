@@ -7,14 +7,14 @@ import org.springframework.stereotype.Component;
 // import org.slf4j.Logger;
 // import org.slf4j.LoggerFactory;
 
-// @Component
+@Component
 public class MssqlConnect extends RouteBuilder {
     // private static final Logger log = LoggerFactory.getLogger(MssqlConnect.class);
 
     @Override
     public void configure() throws Exception {
         String sql = "SELECT [Name],[Location] FROM [Employees];";
-        String insertSqlStr = "USE testdb;insert into [Table_Json] (jsondata) values('${body}'); ";
+        String insertSqlStr = "insert into [Table_Json] (json_str) values('${body}'); ";
         from("timer://foo?repeatCount=1")
                 .setBody(constant(sql))
                 .to("jdbc:dataSource")

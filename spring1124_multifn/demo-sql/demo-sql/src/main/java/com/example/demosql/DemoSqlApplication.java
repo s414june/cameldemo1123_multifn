@@ -9,7 +9,7 @@ public class DemoSqlApplication {
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(DemoSqlApplication.class, args);
 		Camel a = new Camel();
-		a.run2();
+		// a.run2();
 		System.exit(0);
 	}
 
