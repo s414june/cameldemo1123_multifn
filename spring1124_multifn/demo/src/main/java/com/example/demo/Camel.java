@@ -8,6 +8,8 @@ import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.apache.camel.support.DefaultRegistry;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.datasource.AbstractDataSource;
 // import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.slf4j.Logger;
@@ -51,27 +53,26 @@ public class Camel {
         }
     }
     public void run2() {
-        SQLServerDataSource ds = new SQLServerDataSource();
-		ds.setUser("june");
-		ds.setPassword("0000");
-		ds.setServerName("localhost\\\\\\\\SQLEXPRESS;");
-		ds.setPortNumber(1433);
-		// ds.setDatabaseName("SampleDB");
-		ds.setTrustServerCertificate(true);
-
-		DataSource dataSource = ds;
-        DefaultRegistry reg = new DefaultRegistry();
-        reg.bind("dbSource", dataSource);
-        CamelContext context = new DefaultCamelContext(reg);
+        CamelContext context = new DefaultCamelContext();
         try {
 			context.addRoutes(new RouteBuilder() {
+                // @Autowired
+                // DataSource dataSource;
+
+                // public DataSource getDataSource() {
+                //     return dataSource;
+                // }
+
+                // public void setDataSource(AbstractDataSource dataSource) {
+                //     this.dataSource = dataSource;
+                //     }
 
 				public void configure() throws Exception {
-					String sql = "USE SampleDB;GO SELECT [Name],[Location] FROM [Employees];";
-					String insertSqlStr = "USE testdb;GO insert into [Table_Json] (jsondata) values('${body}'); ";
+					String sql = "SELECT [Name],[Location] FROM [Employees];";
+					// String insertSqlStr = "USE testdb;GO insert into [Table_Json] (jsondata) values('${body}'); ";
 					from("timer://foo?repeatCount=1")
 							.setBody(constant(sql))
-							.to("jdbc:dbSource")
+							.to("jdbc:dataSource")
 							// 用split切開，將一次只存一筆(員工+國家)的資料；沒切將會把所有資料包成一筆
 							// .split(body())
 							.process(
@@ -82,8 +83,8 @@ public class Camel {
 										}
 
 									})
-							.setBody(simple(insertSqlStr))
-							.to("jdbc:dbSource");
+							// .setBody(simple(insertSqlStr))
+							.to("jdbc:dataSource");
 				}
 			});
             context.start();

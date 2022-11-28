@@ -1,0 +1,58 @@
+2022-11-28 13:52:11,175 [main] ERROR o.s.boot.SpringApplication 821 - Application run failed
+org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:241)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:75)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:891)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:765)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:3000)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2671)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2690)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:262)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:119)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.demosql.DemoSqlApplication.main(DemoSqlApplication.java:10)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:1009)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:891)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:127)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:45)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:37)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:847)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:588)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:237)
+	... 26 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No default DataSource found in the registry
+	at org.apache.camel.component.jdbc.JdbcComponent.createEndpoint(JdbcComponent.java:67)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:975)
+	... 33 common frames omitted
+2022-11-28 14:18:16,007 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

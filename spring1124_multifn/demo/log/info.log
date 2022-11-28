@@ -14,3 +14,230 @@
 2022-11-25 15:17:32,520 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 4.89 seconds (JVM running for 5.591)
 2022-11-25 15:17:34,530 [main] ERROR Apps 93 - Failed to create route route1 at: >>> To[jdbc:dbSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://dbSource, please check your classpath contains the needed Camel component jar.
 2022-11-25 15:17:34,531 [main] INFO  Apps 96 - finally!
+2022-11-25 15:23:17,369 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 13116 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 15:23:17,372 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 15:23:18,959 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 15:23:18,972 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 15:23:18,973 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 15:23:18,973 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 15:23:19,131 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 15:23:19,131 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 1702 ms
+2022-11-25 15:23:20,105 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 15:23:20,133 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 15:23:20,199 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 15:23:20,206 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 15:23:20,206 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 71ms (build:13ms init:52ms start:6ms)
+2022-11-25 15:23:20,213 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 3.302 seconds (JVM running for 4.04)
+2022-11-25 15:23:29,012 [main] ERROR Apps 92 - Failed to create route route1 at: >>> To[jdbc:dbSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://dbSource, please check your classpath contains the needed Camel component jar.
+2022-11-25 15:23:29,013 [main] INFO  Apps 95 - finally!
+2022-11-25 15:24:37,412 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 2184 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 15:24:37,415 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 15:24:38,916 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 15:24:38,927 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 15:24:38,928 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 15:24:38,928 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 15:24:39,096 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 15:24:39,097 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 1627 ms
+2022-11-25 15:24:40,076 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 15:24:40,103 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 15:24:40,168 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 15:24:40,175 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 15:24:40,176 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 74ms (build:17ms init:51ms start:6ms)
+2022-11-25 15:24:40,182 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 3.229 seconds (JVM running for 3.794)
+2022-11-25 15:24:44,706 [main] ERROR Apps 92 - Failed to create route route1 at: >>> To[jdbc:dbSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://dbSource, please check your classpath contains the needed Camel component jar.
+2022-11-25 15:24:44,707 [main] INFO  Apps 95 - finally!
+2022-11-25 15:50:47,281 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 27200 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 15:50:47,288 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 15:50:48,351 [main] ERROR o.s.boot.SpringApplication 835 - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.apache.camel.spring.boot.vault.AzureVaultAutoConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:423)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.apache.camel.spring.boot.vault.AwsVaultAutoConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1684)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:119)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/apache/camel/vault/AwsVaultConfiguration
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.base/java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.camel.vault.AwsVaultConfiguration
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	... 37 common frames omitted
+2022-11-25 15:50:48,355 [main] WARN  o.s.boot.SpringApplication 807 - Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.apache.camel.spring.boot.vault.AwsVaultAutoConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1684)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:878)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:866)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:853)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:793)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.lang.NoClassDefFoundError: org/apache/camel/vault/AwsVaultConfiguration
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.base/java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.camel.vault.AwsVaultConfiguration
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	... 25 common frames omitted
+2022-11-25 15:58:56,501 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 6040 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 15:58:56,506 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 15:58:58,709 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 15:58:58,724 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 15:58:58,725 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 15:58:58,725 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 15:58:59,091 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 15:58:59,091 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 2522 ms
+2022-11-25 15:59:00,561 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 15:59:00,663 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 15:59:00,759 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 15:59:00,769 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 15:59:00,769 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 103ms (build:21ms init:74ms start:8ms)
+2022-11-25 15:59:00,778 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 4.985 seconds (JVM running for 6.034)
+2022-11-25 16:00:26,153 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 31144 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 16:00:26,157 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 16:00:28,105 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 16:00:28,118 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:00:28,119 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 16:00:28,120 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 16:00:28,370 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 16:00:28,371 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 2149 ms
+2022-11-25 16:00:29,702 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:00:29,746 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 16:00:29,850 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 16:00:29,859 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 16:00:29,859 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 104ms (build:19ms init:78ms start:7ms)
+2022-11-25 16:00:29,871 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 4.373 seconds (JVM running for 5.633)
+2022-11-25 16:00:36,161 [main] ERROR Apps 94 - Failed to create route route1 at: >>> To[jdbc:dbSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dbSource due to: No bean could be found in the registry for: dbSource of type: javax.sql.DataSource
+2022-11-25 16:00:36,162 [main] INFO  Apps 97 - finally!
+2022-11-25 16:01:49,501 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 30980 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 16:01:49,506 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 16:01:51,033 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 16:01:51,046 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:01:51,046 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 16:01:51,046 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 16:01:51,201 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 16:01:51,202 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 1630 ms
+2022-11-25 16:01:52,150 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:01:52,177 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 16:01:52,245 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 16:01:52,252 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 16:01:52,252 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 72ms (build:14ms init:52ms start:6ms)
+2022-11-25 16:01:52,259 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 3.322 seconds (JVM running for 3.894)
+2022-11-25 16:01:58,779 [main] ERROR Apps 94 - Failed to create route route1 at: >>> To[jdbc:datasource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://datasource due to: No default DataSource found in the registry
+2022-11-25 16:01:58,780 [main] INFO  Apps 97 - finally!
+2022-11-25 16:08:05,294 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 31848 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 16:08:05,298 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 16:08:06,814 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 16:08:06,826 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:08:06,826 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 16:08:06,826 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 16:08:06,992 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 16:08:06,992 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 1643 ms
+2022-11-25 16:08:08,020 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:08:08,047 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 16:08:08,117 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 16:08:08,124 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 16:08:08,124 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 79ms (build:17ms init:56ms start:6ms)
+2022-11-25 16:08:08,131 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 3.282 seconds (JVM running for 3.849)
+2022-11-25 16:09:24,150 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 10760 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 16:09:24,156 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 16:09:25,928 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 16:09:25,942 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:09:25,942 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 16:09:25,943 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 16:09:26,150 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 16:09:26,151 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 1931 ms
+2022-11-25 16:09:27,395 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:09:27,437 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 16:09:27,520 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 16:09:27,528 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 16:09:27,528 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 90ms (build:19ms init:65ms start:6ms)
+2022-11-25 16:09:27,536 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 3.933 seconds (JVM running for 4.753)
+2022-11-25 16:09:30,434 [main] ERROR Apps 94 - Failed to create route route1 at: >>> To[jdbc:sqlserver] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://sqlserver due to: No bean could be found in the registry for: sqlserver of type: javax.sql.DataSource
+2022-11-25 16:09:30,435 [main] INFO  Apps 97 - finally!
+2022-11-25 16:25:25,477 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 9908 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 16:25:25,482 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 16:25:26,948 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 16:25:26,959 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:25:26,960 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 16:25:26,960 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 16:25:27,123 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 16:25:27,123 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 1588 ms
+2022-11-25 16:25:28,056 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:25:28,087 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 16:25:28,148 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 16:25:28,156 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 16:25:28,156 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 70ms (build:15ms init:49ms start:6ms)
+2022-11-25 16:25:28,163 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 3.133 seconds (JVM running for 3.689)
+2022-11-25 16:25:32,413 [main] ERROR Apps 94 - Failed to create route route1 at: >>> To[jdbc:datasource:sqlserver] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://datasource:sqlserver due to: No bean could be found in the registry for: datasource:sqlserver of type: javax.sql.DataSource
+2022-11-25 16:25:32,413 [main] INFO  Apps 97 - finally!
+2022-11-25 16:31:18,409 [main] INFO  com.example.demo.DemoApplication 55 - Starting DemoApplication using Java 17.0.4.1 on June4693-450G7 with PID 8056 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\demo)
+2022-11-25 16:31:18,414 [main] INFO  com.example.demo.DemoApplication 645 - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 16:31:19,903 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-25 16:31:19,916 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:31:19,917 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-25 16:31:19,917 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-25 16:31:20,099 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-25 16:31:20,099 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 290 - Root WebApplicationContext: initialization completed in 1632 ms
+2022-11-25 16:31:21,126 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-25 16:31:21,154 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 16:31:21,226 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3004 - Apache Camel 3.17.0 (camel-2) is starting
+2022-11-25 16:31:21,232 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3165 - Routes startup (total:0 started:0)
+2022-11-25 16:31:21,232 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3194 - Apache Camel 3.17.0 (camel-2) started in 76ms (build:17ms init:54ms start:5ms)
+2022-11-25 16:31:21,240 [main] INFO  com.example.demo.DemoApplication 61 - Started DemoApplication in 3.263 seconds (JVM running for 3.821)
+2022-11-25 16:31:27,139 [main] ERROR Apps 94 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-25 16:31:27,140 [main] INFO  Apps 97 - finally!

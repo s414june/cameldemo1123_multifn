@@ -1,0 +1,765 @@
+2022-11-28 11:50:25,818 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 28448 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 11:50:25,822 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 11:50:26,752 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 11:50:26,768 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2022-11-28 11:50:27,505 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 11:50:27,526 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:50:27,527 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 11:50:27,527 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 11:50:27,673 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 11:50:27,673 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1794 ms
+2022-11-28 11:50:28,691 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 11:50:29,056 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 11:50:29,109 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 11:50:29,254 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:50:29,283 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 11:50:29,381 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 11:50:29,388 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 11:50:29,388 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 102ms (build:22ms init:74ms start:6ms)
+2022-11-28 11:50:29,396 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 4.066 seconds (JVM running for 4.638)
+2022-11-28 11:50:40,256 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://dataSource, please check your classpath contains the needed Camel component jar.
+2022-11-28 11:50:40,257 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 11:50:40,259 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 11:50:40,260 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 11:50:40,263 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 3ms (uptime:10s)
+2022-11-28 11:50:40,290 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 11:50:40,299 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 11:51:46,938 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 28164 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 11:51:46,944 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 11:51:47,877 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 11:51:47,891 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2022-11-28 11:51:48,612 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 11:51:48,629 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:51:48,630 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 11:51:48,631 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 11:51:48,808 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 11:51:48,808 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1809 ms
+2022-11-28 11:51:49,774 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 11:51:50,120 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 11:51:50,170 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 11:51:50,299 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:51:50,357 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 11:51:50,457 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 11:51:50,466 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 11:51:50,466 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 95ms (build:15ms init:72ms start:8ms)
+2022-11-28 11:51:50,476 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.977 seconds (JVM running for 4.521)
+2022-11-28 11:51:55,458 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[spring-jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: spring-jdbc://dataSource, please check your classpath contains the needed Camel component jar.
+2022-11-28 11:51:55,470 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 11:51:55,472 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 11:51:55,473 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 11:51:55,475 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:5s)
+2022-11-28 11:51:55,500 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 11:51:55,506 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 11:52:23,532 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 16336 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 11:52:23,537 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 11:52:24,429 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 11:52:24,444 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2022-11-28 11:52:25,117 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 11:52:25,128 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:52:25,129 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 11:52:25,129 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 11:52:25,303 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 11:52:25,303 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1708 ms
+2022-11-28 11:52:26,268 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 11:52:26,630 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 11:52:26,705 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 11:52:26,847 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:52:26,874 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 11:52:26,954 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 11:52:26,960 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 11:52:26,961 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 80ms (build:14ms init:61ms start:5ms)
+2022-11-28 11:52:26,968 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.884 seconds (JVM running for 4.457)
+2022-11-28 11:52:34,528 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:sqlserver] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: jdbc://sqlserver, please check your classpath contains the needed Camel component jar.
+2022-11-28 11:52:34,528 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 11:52:34,531 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 11:52:34,531 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 11:52:34,533 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:7s)
+2022-11-28 11:52:34,558 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 11:52:34,565 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 11:56:39,352 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 25972 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 11:56:39,356 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 11:56:40,299 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 11:56:40,319 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2022-11-28 11:56:40,977 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 11:56:40,988 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:56:40,989 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 11:56:40,989 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 11:56:41,155 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 11:56:41,155 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1737 ms
+2022-11-28 11:56:42,193 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 11:56:42,543 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 11:56:42,594 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 11:56:42,742 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:56:42,768 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 11:56:42,847 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 11:56:42,852 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 11:56:42,852 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 82ms (build:15ms init:63ms start:4ms)
+2022-11-28 11:56:42,861 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 4.006 seconds (JVM running for 4.633)
+2022-11-28 11:56:47,848 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:sqlserver] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://sqlserver due to: No bean could be found in the registry for: sqlserver of type: javax.sql.DataSource
+2022-11-28 11:56:47,849 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 11:56:47,851 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 11:56:47,852 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 11:56:47,855 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 3ms (uptime:5s)
+2022-11-28 11:56:47,886 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 11:56:47,894 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 11:57:07,024 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 24156 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 11:57:07,028 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 11:57:08,855 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 11:57:08,869 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:57:08,870 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 11:57:08,870 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 11:57:09,093 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 11:57:09,093 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 2001 ms
+2022-11-28 11:57:10,105 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/r2dbc/ConnectionFactoryConfigurations$GenericConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.r2dbc.spi.ConnectionFactory]: Factory method 'connectionFactory' threw exception; nested exception is org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryOptionsInitializer$ConnectionFactoryBeanCreationException: Failed to determine a suitable R2DBC Connection URL
+2022-11-28 11:57:10,111 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-28 11:57:10,230 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-28 11:57:10,254 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a ConnectionFactory: 'url' attribute is not specified and no embedded database could be configured.
+
+Reason: Failed to determine a suitable R2DBC Connection URL
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-11-28 11:57:44,744 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 27016 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 11:57:44,747 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 11:57:45,882 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 11:57:45,905 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2022-11-28 11:57:47,054 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 11:57:47,069 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:57:47,070 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 11:57:47,070 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 11:57:47,288 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 11:57:47,289 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 2485 ms
+2022-11-28 11:57:48,550 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 11:57:49,032 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 11:57:49,215 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 11:57:49,562 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:57:49,601 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 11:57:49,744 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 11:57:49,753 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 11:57:49,753 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 143ms (build:25ms init:110ms start:8ms)
+2022-11-28 11:57:49,764 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 5.477 seconds (JVM running for 6.039)
+2022-11-28 11:57:54,536 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:sqlserver] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://sqlserver due to: No bean could be found in the registry for: sqlserver of type: javax.sql.DataSource
+2022-11-28 11:57:54,537 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 11:57:54,539 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 11:57:54,540 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 11:57:54,542 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:4s)
+2022-11-28 11:57:54,563 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 11:57:54,569 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 11:58:56,707 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 11908 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 11:58:56,712 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 11:58:57,618 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 11:58:57,635 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2022-11-28 11:58:58,312 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 11:58:58,326 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:58:58,327 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 11:58:58,327 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 11:58:58,518 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 11:58:58,518 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1750 ms
+2022-11-28 11:58:59,455 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 11:58:59,795 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 11:58:59,849 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 11:59:00,009 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 11:59:00,041 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 11:59:00,126 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 11:59:00,133 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 11:59:00,133 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 83ms (build:13ms init:64ms start:6ms)
+2022-11-28 11:59:00,142 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.874 seconds (JVM running for 4.43)
+2022-11-28 11:59:01,619 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:sqlserver] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://sqlserver due to: No bean could be found in the registry for: sqlserver of type: javax.sql.DataSource
+2022-11-28 11:59:01,620 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 11:59:01,623 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 11:59:01,624 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 11:59:01,627 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 3ms (uptime:1s)
+2022-11-28 11:59:01,654 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 11:59:01,663 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 12:00:08,048 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 23692 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 12:00:08,052 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 12:00:08,943 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 12:00:08,958 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2022-11-28 12:00:09,607 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 12:00:09,617 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 12:00:09,618 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 12:00:09,618 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 12:00:09,766 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 12:00:09,766 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1656 ms
+2022-11-28 12:00:10,745 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 12:00:11,066 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 12:00:11,113 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 12:00:11,251 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 12:00:11,277 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 12:00:11,360 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 12:00:11,367 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 12:00:11,367 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 83ms (build:14ms init:63ms start:6ms)
+2022-11-28 12:00:11,376 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.802 seconds (JVM running for 4.384)
+2022-11-28 12:00:13,982 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-28 12:00:13,983 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 12:00:13,985 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 12:00:13,985 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 12:00:13,987 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:2s)
+2022-11-28 12:00:14,013 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 12:00:14,022 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 13:02:46,883 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 33296 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:02:46,887 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:02:47,941 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 13:02:47,956 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2022-11-28 13:02:48,763 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:02:48,778 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:02:48,778 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:02:48,778 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:02:48,961 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:02:48,961 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 2012 ms
+2022-11-28 13:02:50,012 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 13:02:50,419 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 13:02:50,488 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 13:02:50,686 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:02:50,718 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:02:50,804 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:02:50,811 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 13:02:50,811 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 87ms (build:16ms init:65ms start:6ms)
+2022-11-28 13:02:50,821 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 4.506 seconds (JVM running for 5.215)
+2022-11-28 13:02:55,363 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-28 13:02:55,364 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 13:02:55,366 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:02:55,367 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 13:02:55,369 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:4s)
+2022-11-28 13:02:55,392 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 13:02:55,398 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 13:12:10,680 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 1512 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:12:10,684 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:12:11,559 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 13:12:11,574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2022-11-28 13:12:12,229 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:12:12,240 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:12:12,241 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:12:12,241 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:12:12,390 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:12:12,390 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1652 ms
+2022-11-28 13:12:13,378 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 13:12:13,684 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 13:12:13,734 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 13:12:13,872 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:12:13,904 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:12:14,216 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:12:14,234 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-11-28 13:12:14,235 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-11-28 13:12:14,235 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 262ms (build:15ms init:228ms start:19ms)
+2022-11-28 13:12:14,242 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 4.048 seconds (JVM running for 4.69)
+2022-11-28 13:12:15,298 [Camel (camel-2) thread #1 - timer://foo] ERROR o.a.c.p.e.DefaultErrorHandler 205 - Failed delivery for (MessageId: 375F558282149E4-0000000000000000 on ExchangeId: 375F558282149E4-0000000000000000). Exhausted after delivery attempt: 1 caught: com.microsoft.sqlserver.jdbc.SQLServerException: 接近 'GO' 之處的語法不正確。
+
+Message History (source location and message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+Source                                   ID                             Processor                                          Elapsed (ms)
+                                         route1/route1                  from[timer://foo?repeatCount=1]                       355470916
+	...
+                                         route1/to2                     jdbc:dataSource                                               0
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.microsoft.sqlserver.jdbc.SQLServerException: 接近 'GO' 之處的語法不正確。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:265)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1676)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:907)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:802)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7730)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3786)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:268)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:242)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:775)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.apache.camel.component.jdbc.JdbcProducer.doCreateAndExecuteSqlStatement(JdbcProducer.java:235)
+	at org.apache.camel.component.jdbc.JdbcProducer.createAndExecuteSqlStatement(JdbcProducer.java:129)
+	at org.apache.camel.component.jdbc.JdbcProducer.processingSqlBySettingAutoCommit(JdbcProducer.java:90)
+	at org.apache.camel.component.jdbc.JdbcProducer.process(JdbcProducer.java:71)
+	at org.apache.camel.support.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:66)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:172)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:477)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:181)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:59)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:175)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:392)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:210)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.base/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base/java.util.TimerThread.run(Unknown Source)
+2022-11-28 13:12:15,302 [Camel (camel-2) thread #1 - timer://foo] WARN  o.a.c.component.timer.TimerConsumer 214 - Error processing exchange. Exchange[375F558282149E4-0000000000000000]. Caused by: [com.microsoft.sqlserver.jdbc.SQLServerException - 接近 'GO' 之處的語法不正確。]
+com.microsoft.sqlserver.jdbc.SQLServerException: 接近 'GO' 之處的語法不正確。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:265)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1676)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:907)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:802)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7730)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3786)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:268)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:242)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:775)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.apache.camel.component.jdbc.JdbcProducer.doCreateAndExecuteSqlStatement(JdbcProducer.java:235)
+	at org.apache.camel.component.jdbc.JdbcProducer.createAndExecuteSqlStatement(JdbcProducer.java:129)
+	at org.apache.camel.component.jdbc.JdbcProducer.processingSqlBySettingAutoCommit(JdbcProducer.java:90)
+	at org.apache.camel.component.jdbc.JdbcProducer.process(JdbcProducer.java:71)
+	at org.apache.camel.support.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:66)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:172)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:477)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:181)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:59)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:175)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:392)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:210)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.base/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base/java.util.TimerThread.run(Unknown Source)
+2022-11-28 13:12:19,045 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route2 at: >>> To[jdbc:dataSource] <<< in route: Route(route2)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-28 13:12:19,047 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 13:12:19,050 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:12:19,056 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-11-28 13:12:19,057 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-11-28 13:12:19,059 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 9ms (uptime:4s)
+2022-11-28 13:12:19,094 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 13:12:19,102 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 13:12:55,997 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 24176 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:12:56,001 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:12:56,890 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 13:12:56,903 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2022-11-28 13:12:57,549 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:12:57,560 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:12:57,560 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:12:57,560 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:12:57,701 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:12:57,701 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1646 ms
+2022-11-28 13:12:58,613 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 13:12:58,948 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 13:12:58,999 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 13:12:59,128 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:12:59,155 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:13:17,651 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:13:17,670 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-11-28 13:13:17,670 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-11-28 13:13:17,670 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 312ms (build:13ms init:280ms start:19ms)
+2022-11-28 13:13:17,679 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 22.126 seconds (JVM running for 22.705)
+2022-11-28 13:13:17,693 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:13:17,701 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-11-28 13:13:17,701 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-11-28 13:13:17,706 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 12ms (uptime:0s)
+2022-11-28 13:13:17,825 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 13:13:17,832 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 13:18:58,747 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 9404 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:18:58,751 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:18:59,647 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 13:18:59,663 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2022-11-28 13:19:00,314 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:19:00,324 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:19:00,325 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:19:00,325 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:19:00,473 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:19:00,474 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1671 ms
+2022-11-28 13:19:01,412 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 13:19:01,759 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 13:19:01,813 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 13:19:01,958 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:19:01,991 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:19:04,208 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:19:04,224 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-11-28 13:19:04,224 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-11-28 13:19:04,224 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 288ms (build:12ms init:261ms start:15ms)
+2022-11-28 13:19:04,229 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 5.973 seconds (JVM running for 6.648)
+2022-11-28 13:19:04,243 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:19:04,251 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-11-28 13:19:04,251 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-11-28 13:19:04,255 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 12ms (uptime:0s)
+2022-11-28 13:19:04,283 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 13:19:04,295 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 13:20:40,273 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 27584 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:20:40,277 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:20:41,224 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 13:20:41,237 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2022-11-28 13:20:41,872 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:20:41,883 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:20:41,883 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:20:41,884 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:20:42,051 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:20:42,052 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1721 ms
+2022-11-28 13:20:43,095 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 13:20:43,383 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 13:20:43,430 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 13:20:43,568 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:20:43,591 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:20:43,674 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:20:43,679 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 13:20:43,679 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 88ms (build:21ms init:63ms start:4ms)
+2022-11-28 13:20:43,687 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.865 seconds (JVM running for 4.419)
+2022-11-28 13:20:49,651 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-28 13:20:49,651 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 13:20:49,653 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:20:49,654 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 13:20:49,657 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 3ms (uptime:5s)
+2022-11-28 13:20:49,685 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 13:20:49,691 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 13:21:41,870 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 16424 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:21:41,873 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:21:42,811 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 13:21:42,826 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2022-11-28 13:21:43,453 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:21:43,464 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:21:43,465 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:21:43,465 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:21:43,626 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:21:43,627 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1699 ms
+2022-11-28 13:21:44,556 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 13:21:44,845 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 13:21:44,892 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 13:21:45,021 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:21:45,048 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:21:45,123 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:21:45,129 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 13:21:45,130 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 82ms (build:17ms init:59ms start:6ms)
+2022-11-28 13:21:45,137 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.713 seconds (JVM running for 4.259)
+2022-11-28 13:21:49,127 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[spring-jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of No endpoint could be found for: spring-jdbc://dataSource, please check your classpath contains the needed Camel component jar.
+2022-11-28 13:21:49,128 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 13:21:49,130 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:21:49,131 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 13:21:49,133 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:4s)
+2022-11-28 13:21:49,156 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 13:21:49,162 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 13:25:06,518 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 33372 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:25:06,523 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:25:07,512 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-28 13:25:07,529 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 201 - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2022-11-28 13:25:08,193 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:25:08,214 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:25:08,214 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:25:08,215 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:25:08,362 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:25:08,362 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1787 ms
+2022-11-28 13:25:09,401 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-11-28 13:25:09,690 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-11-28 13:25:09,739 [main] WARN  o.s.data.convert.CustomConversions 266 - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-11-28 13:25:09,868 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:25:09,901 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:25:09,982 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:25:09,989 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 13:25:09,989 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 87ms (build:19ms init:62ms start:6ms)
+2022-11-28 13:25:09,997 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.92 seconds (JVM running for 4.524)
+2022-11-28 13:25:15,761 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-28 13:25:15,762 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 13:25:15,764 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:25:15,765 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 13:25:15,767 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:5s)
+2022-11-28 13:25:15,791 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-11-28 13:25:15,796 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-11-28 13:27:22,045 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 9176 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:27:22,049 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:27:23,707 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:27:23,716 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:27:23,716 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:27:23,717 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:27:23,879 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:27:23,879 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1774 ms
+2022-11-28 13:27:24,907 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:27:24,938 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:27:25,015 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:27:25,021 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 13:27:25,021 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 86ms (build:20ms init:61ms start:5ms)
+2022-11-28 13:27:25,029 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.492 seconds (JVM running for 4.181)
+2022-11-28 13:27:27,669 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-28 13:27:27,669 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 13:27:27,672 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:27:27,673 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 13:27:27,675 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 3ms (uptime:2s)
+2022-11-28 13:29:34,230 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 31728 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:29:34,235 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:29:35,730 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:29:35,741 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:29:35,742 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:29:35,742 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:29:35,890 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:29:35,890 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1597 ms
+2022-11-28 13:29:36,819 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:29:36,844 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:29:36,906 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:29:36,913 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 13:29:36,913 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 68ms (build:16ms init:47ms start:5ms)
+2022-11-28 13:29:36,920 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.131 seconds (JVM running for 3.725)
+2022-11-28 13:29:39,029 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-28 13:29:39,029 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 13:29:39,032 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:29:39,033 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 13:29:39,035 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:2s)
+2022-11-28 13:30:04,226 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 11864 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:30:04,231 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:30:05,770 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:30:05,782 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:30:05,782 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:30:05,783 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:30:05,947 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:30:05,947 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1652 ms
+2022-11-28 13:30:06,867 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:30:06,892 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:30:06,955 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:30:06,962 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 13:30:06,962 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 72ms (build:15ms init:51ms start:6ms)
+2022-11-28 13:30:06,969 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.185 seconds (JVM running for 3.831)
+2022-11-28 13:30:09,521 [main] ERROR com.example.demosql.Camel 75 - Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+2022-11-28 13:30:09,522 [main] INFO  com.example.demosql.Camel 78 - finally!
+2022-11-28 13:30:09,524 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:30:09,525 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 13:30:09,527 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:2s)
+2022-11-28 13:36:55,059 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 31272 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:36:55,064 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:36:56,744 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:36:56,758 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:36:56,758 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:36:56,758 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:36:56,917 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:36:56,918 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1792 ms
+2022-11-28 13:36:58,098 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:36:58,127 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:37:02,938 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:37:02,956 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-11-28 13:37:02,956 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-11-28 13:37:02,956 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 272ms (build:16ms init:239ms start:17ms)
+2022-11-28 13:37:02,962 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 8.371 seconds (JVM running for 8.976)
+2022-11-28 13:37:02,973 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:37:02,981 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-11-28 13:37:02,981 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-11-28 13:37:02,984 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 10ms (uptime:0s)
+2022-11-28 13:38:43,139 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 31588 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:38:43,143 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:38:44,600 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:38:44,608 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:38:44,609 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:38:44,609 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:38:44,756 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:38:44,757 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1556 ms
+2022-11-28 13:38:45,778 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:38:45,805 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:38:46,048 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 13:38:46,063 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-11-28 13:38:46,063 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-11-28 13:38:46,063 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 216ms (build:11ms init:192ms start:13ms)
+2022-11-28 13:38:46,068 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.364 seconds (JVM running for 3.965)
+2022-11-28 13:38:46,077 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 13:38:46,083 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-11-28 13:38:46,083 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-11-28 13:38:46,086 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 9ms (uptime:0s)
+2022-11-28 13:49:36,482 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 32476 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:49:36,488 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:49:37,840 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:49:37,850 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:49:37,850 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:49:37,851 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:49:37,995 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:49:37,995 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1449 ms
+2022-11-28 13:49:38,837 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:49:38,866 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:49:39,110 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:49:39,111 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-28 13:49:39,197 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:49:39,199 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:49:39,202 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-28 13:49:39,225 [main] ERROR o.s.boot.SpringApplication 821 - Application run failed
+org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:241)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:75)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:891)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:765)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:3000)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2671)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2690)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:262)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:119)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.demosql.DemoSqlApplication.main(DemoSqlApplication.java:10)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:1009)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:891)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:127)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:45)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:37)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:847)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:588)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:237)
+	... 26 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No default DataSource found in the registry
+	at org.apache.camel.component.jdbc.JdbcComponent.createEndpoint(JdbcComponent.java:67)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:975)
+	... 33 common frames omitted
+2022-11-28 13:52:08,299 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 19640 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 13:52:08,304 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 13:52:09,719 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 13:52:09,730 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:52:09,731 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 13:52:09,731 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 13:52:09,873 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 13:52:09,873 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1513 ms
+2022-11-28 13:52:10,761 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:52:10,790 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 13:52:11,051 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:52:11,051 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-28 13:52:11,146 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:52:11,149 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-28 13:52:11,152 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-28 13:52:11,175 [main] ERROR o.s.boot.SpringApplication 821 - Application run failed
+org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:241)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:75)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:891)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:765)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:3000)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2671)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2690)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:262)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:119)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.demosql.DemoSqlApplication.main(DemoSqlApplication.java:10)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:1009)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:891)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:127)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:45)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:37)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:847)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:588)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:237)
+	... 26 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No default DataSource found in the registry
+	at org.apache.camel.component.jdbc.JdbcComponent.createEndpoint(JdbcComponent.java:67)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:975)
+	... 33 common frames omitted
+2022-11-28 14:10:24,565 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 32048 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 14:10:24,571 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 14:10:25,984 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 14:10:25,994 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:10:25,994 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 14:10:25,995 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 14:10:26,141 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 14:10:26,141 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1513 ms
+2022-11-28 14:10:26,907 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:10:26,934 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 14:10:27,001 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 14:10:27,007 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 14:10:27,007 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 67ms (build:9ms init:53ms start:5ms)
+2022-11-28 14:10:27,015 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 2.914 seconds (JVM running for 3.493)
+2022-11-28 14:15:26,007 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 9916 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 14:15:26,012 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 14:15:27,562 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 14:15:27,572 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:15:27,572 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 14:15:27,573 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 14:15:27,716 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 14:15:27,717 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1643 ms
+2022-11-28 14:15:28,514 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:15:28,539 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 14:15:28,601 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 14:15:28,608 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 14:15:28,608 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 63ms (build:9ms init:49ms start:5ms)
+2022-11-28 14:15:28,615 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.04 seconds (JVM running for 3.587)
+2022-11-28 14:18:13,520 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 16936 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 14:18:13,524 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 14:18:14,905 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 14:18:14,916 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:18:14,917 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 14:18:14,917 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 14:18:15,060 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 14:18:15,060 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1477 ms
+2022-11-28 14:18:15,924 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:18:15,932 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-28 14:18:15,936 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:18:15,936 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-28 14:18:15,974 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:18:15,975 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:18:15,986 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-28 14:18:16,007 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-28 14:18:41,296 [main] INFO  c.example.demosql.DemoSqlApplication 55 - Starting DemoSqlApplication using Java 17.0.4.1 on June4693-450G7 with PID 6076 (C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\demo-sql\demo-sql)
+2022-11-28 14:18:41,299 [main] INFO  c.example.demosql.DemoSqlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-28 14:18:42,706 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-28 14:18:42,719 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:18:42,720 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-28 14:18:42,720 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-28 14:18:42,895 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-28 14:18:42,896 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1540 ms
+2022-11-28 14:18:43,770 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-28 14:18:43,796 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-28 14:18:43,860 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-28 14:18:43,865 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-28 14:18:43,865 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 64ms (build:11ms init:49ms start:4ms)
+2022-11-28 14:18:43,872 [main] INFO  c.example.demosql.DemoSqlApplication 61 - Started DemoSqlApplication in 3.013 seconds (JVM running for 3.567)
+2022-11-28 14:18:44,027 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-4) is starting
+2022-11-28 14:18:44,039 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-11-28 14:18:44,039 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-11-28 14:18:44,039 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-4) started in 116ms (build:3ms init:102ms start:11ms)
+2022-11-28 14:18:49,046 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-4) is shutting down (timeout:45s)
+2022-11-28 14:18:49,051 [main] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-11-28 14:18:49,051 [main] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-11-28 14:18:49,053 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-4) shutdown in 7ms (uptime:5s)
+2022-11-28 14:18:49,056 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-28 14:18:49,056 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-28 14:18:49,057 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:5s)
