@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="/system/styles/bootstrap.min.css" />
+    <script type="text/javascript" src="/system/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/system/scripts/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/package/font-awesome/css/all.min.css">
+    </link>
+</head>
+
+<body>
+    <div class="row p-3">
+        <div class="col-6">
+            <h2>輸入資料</h2>
+            <div>
+                <form id="SearchdbForm">
+                    <p>資料來源：</p>
+                    <select name="" id="" class="form-select w-25">
+                        <option value="">MSSQL</option>
+                        <option value="">MYSQL</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary my-3">連線資料庫</button>
+                </form>
+                <div>
+                    <div id="dbresult"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h2>輸出資料</h2>
+        </div>
+    </div>
+</body>
+<script>
+    $("#SearchdbForm").submit(function (event) {
+        event.preventDefault();
+        let search = "12456";
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "/api/searchdb",
+            data: JSON.stringify(search),
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+                $("#dbresult").text(data);
+            },
+            error: function (e) {
+                console.error(e);
+            }
+        });
+    });
+</script>
+
+</html>

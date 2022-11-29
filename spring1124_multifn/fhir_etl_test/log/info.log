@@ -1,0 +1,205 @@
+2022-11-29 16:14:45,319 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 9232 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:14:45,322 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:14:46,888 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:14:46,898 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:14:46,899 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:14:46,910 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:14:47,058 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:14:47,058 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1686 ms
+2022-11-29 16:14:47,753 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:14:47,773 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:14:47,821 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:14:47,825 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:14:47,825 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 50ms (build:11ms init:36ms start:3ms)
+2022-11-29 16:14:47,830 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 3.028 seconds (JVM running for 3.347)
+2022-11-29 16:14:51,802 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:14:51,802 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:14:51,802 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 0 ms
+2022-11-29 16:17:10,925 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:17:10,926 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:17:10,928 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:2m23s)
+2022-11-29 16:17:22,338 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 19224 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:17:22,341 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:17:23,230 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:17:23,238 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:17:23,238 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:17:23,238 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:17:23,343 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:17:23,343 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 959 ms
+2022-11-29 16:17:23,887 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:17:23,903 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:17:23,943 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:17:23,947 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:17:23,947 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 40ms (build:6ms init:31ms start:3ms)
+2022-11-29 16:17:23,951 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 1.95 seconds (JVM running for 2.257)
+2022-11-29 16:17:24,009 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:17:24,009 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:17:24,010 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:20:29,567 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:20:29,568 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:20:29,570 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:3m5s)
+2022-11-29 16:20:43,175 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 19008 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:20:43,177 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:20:44,082 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:20:44,090 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:20:44,090 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:20:44,091 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:20:44,198 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:20:44,199 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 977 ms
+2022-11-29 16:20:44,775 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:20:44,792 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:20:44,833 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:20:44,837 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:20:44,838 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 41ms (build:6ms init:32ms start:3ms)
+2022-11-29 16:20:44,841 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 2.013 seconds (JVM running for 2.349)
+2022-11-29 16:20:45,071 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:20:45,071 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:20:45,072 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:25:43,372 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:25:43,372 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:25:43,374 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:4m58s)
+2022-11-29 16:25:49,208 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 23560 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:25:49,210 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:25:50,110 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:25:50,117 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:25:50,117 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:25:50,118 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:25:50,229 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:25:50,229 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 975 ms
+2022-11-29 16:25:50,793 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:25:50,810 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:25:50,856 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:25:50,861 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:25:50,861 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 46ms (build:6ms init:36ms start:4ms)
+2022-11-29 16:25:50,866 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 1.99 seconds (JVM running for 2.298)
+2022-11-29 16:25:50,885 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:25:50,885 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:25:50,886 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:26:08,784 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:26:08,785 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:26:08,786 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:17s)
+2022-11-29 16:26:24,111 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 15080 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:26:24,114 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:26:24,988 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:26:24,997 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:26:24,997 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:26:24,997 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:26:25,117 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:26:25,118 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 959 ms
+2022-11-29 16:26:25,667 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:26:25,683 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:26:25,727 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:26:25,730 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:26:25,731 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:26:25,731 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 0 ms
+2022-11-29 16:26:25,732 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:26:25,732 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 42ms (build:6ms init:33ms start:3ms)
+2022-11-29 16:26:25,737 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 1.968 seconds (JVM running for 2.284)
+2022-11-29 16:27:26,196 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:27:26,197 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:27:26,200 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 3ms (uptime:1m0s)
+2022-11-29 16:27:46,298 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 5604 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:27:46,301 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:27:47,192 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:27:47,199 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:27:47,199 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:27:47,200 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:27:47,316 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:27:47,317 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 968 ms
+2022-11-29 16:27:47,572 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 16:27:47,867 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:27:47,884 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:27:47,929 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:27:47,935 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:27:47,935 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 44ms (build:5ms init:35ms start:4ms)
+2022-11-29 16:27:47,939 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 2.001 seconds (JVM running for 2.362)
+2022-11-29 16:27:47,977 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:27:47,977 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:27:47,978 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:28:31,274 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:28:31,274 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:28:31,275 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:43s)
+2022-11-29 16:32:04,599 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 16340 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:32:04,602 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:32:05,496 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:32:05,503 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:32:05,503 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:32:05,505 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:32:05,613 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:32:05,613 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 966 ms
+2022-11-29 16:32:05,870 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 16:32:06,156 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:32:06,172 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:32:06,213 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:32:06,217 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:32:06,217 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 39ms (build:6ms init:31ms start:2ms)
+2022-11-29 16:32:06,221 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 1.978 seconds (JVM running for 2.296)
+2022-11-29 16:32:13,560 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:32:13,561 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:32:13,562 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:53:38,826 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:53:38,827 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:53:38,828 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:21m32s)
+2022-11-29 16:53:48,900 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 10336 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:53:48,903 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:53:49,757 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:53:49,765 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:53:49,765 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:53:49,766 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:53:49,883 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:53:49,883 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 938 ms
+2022-11-29 16:53:50,133 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 16:53:50,406 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:53:50,422 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:53:50,464 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:53:50,467 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:53:50,467 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 38ms (build:5ms init:31ms start:2ms)
+2022-11-29 16:53:50,471 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 1.915 seconds (JVM running for 2.214)
+2022-11-29 16:53:53,050 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:53:53,051 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:53:53,051 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 0 ms
+2022-11-29 16:56:45,666 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:56:45,667 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:56:45,668 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:2m55s)
+2022-11-29 16:57:03,208 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 25388 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:57:03,210 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:57:04,307 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:57:04,317 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:57:04,317 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:57:04,317 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:57:04,432 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:57:04,433 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1171 ms
+2022-11-29 16:57:04,721 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 16:57:05,042 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:57:05,061 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:57:05,115 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:57:05,119 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:57:05,119 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 52ms (build:6ms init:43ms start:3ms)
+2022-11-29 16:57:05,125 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 2.319 seconds (JVM running for 2.721)
+2022-11-29 16:57:06,139 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:57:06,140 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:57:06,141 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 0 ms
+2022-11-29 16:57:16,728 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:57:16,729 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:57:16,730 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:11s)
+2022-11-29 16:59:10,370 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 20564 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl_test)
+2022-11-29 16:59:10,373 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:59:11,305 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:59:11,313 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:59:11,313 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:59:11,313 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:59:11,429 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:59:11,429 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1011 ms
+2022-11-29 16:59:11,687 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 16:59:12,032 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:59:12,049 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:59:12,091 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:59:12,095 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:59:12,095 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 43ms (build:9ms init:32ms start:2ms)
+2022-11-29 16:59:12,099 [main] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 2.098 seconds (JVM running for 2.486)
+2022-11-29 16:59:12,146 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:59:12,146 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:59:12,147 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:59:25,675 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:59:25,676 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:59:25,677 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:13s)

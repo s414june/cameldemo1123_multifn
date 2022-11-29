@@ -1,0 +1,1188 @@
+2022-11-29 09:44:48,749 [main] INFO  c.e.fhir_etl.FhirEtlApplicationTests 55 - Starting FhirEtlApplicationTests using Java 19.0.1 on June4693-450G7 with PID 33964 (started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl\fhir_etl)
+2022-11-29 09:44:48,751 [main] INFO  c.e.fhir_etl.FhirEtlApplicationTests 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 09:44:51,852 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 09:44:51,875 [main] ERROR o.s.boot.SpringApplication 821 - Application run failed
+org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:241)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:75)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:891)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:765)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:3000)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2671)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2690)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:262)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:119)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:1009)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:891)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:127)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:45)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:37)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:847)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:588)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:237)
+	... 92 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No default DataSource found in the registry
+	at org.apache.camel.component.jdbc.JdbcComponent.createEndpoint(JdbcComponent.java:67)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:975)
+	... 99 common frames omitted
+2022-11-29 09:44:51,895 [main] ERROR o.s.test.context.TestContextManager 252 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@6bffbc6d] to prepare test instance [com.example.fhir_etl.FhirEtlApplicationTests@43755e2f]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:241)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:75)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:891)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:765)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:3000)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2671)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2690)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:262)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:119)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 67 common frames omitted
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:1009)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:891)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:127)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:45)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:37)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:847)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:588)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:237)
+	... 92 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No default DataSource found in the registry
+	at org.apache.camel.component.jdbc.JdbcComponent.createEndpoint(JdbcComponent.java:67)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:975)
+	... 99 common frames omitted
+2022-11-29 09:46:04,034 [main] INFO  c.e.fhir_etl.FhirEtlApplicationTests 55 - Starting FhirEtlApplicationTests using Java 19.0.1 on June4693-450G7 with PID 9860 (started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl\fhir_etl)
+2022-11-29 09:46:04,036 [main] INFO  c.e.fhir_etl.FhirEtlApplicationTests 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 09:46:07,073 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 09:46:07,095 [main] ERROR o.s.boot.SpringApplication 821 - Application run failed
+org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:241)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:75)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:891)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:765)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:3000)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2671)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2690)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:262)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:119)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:1009)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:891)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:127)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:45)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:37)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:847)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:588)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:237)
+	... 92 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No default DataSource found in the registry
+	at org.apache.camel.component.jdbc.JdbcComponent.createEndpoint(JdbcComponent.java:67)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:975)
+	... 99 common frames omitted
+2022-11-29 09:46:07,103 [main] ERROR o.s.test.context.TestContextManager 252 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@6bffbc6d] to prepare test instance [com.example.fhir_etl.FhirEtlApplicationTests@778c2e7c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:241)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:75)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:891)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:765)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:3000)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2671)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2690)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:262)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:119)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 67 common frames omitted
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:1009)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:891)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:127)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:45)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:37)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:847)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:588)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:237)
+	... 92 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No default DataSource found in the registry
+	at org.apache.camel.component.jdbc.JdbcComponent.createEndpoint(JdbcComponent.java:67)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:975)
+	... 99 common frames omitted
+2022-11-29 09:48:03,599 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 20408 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl\fhir_etl)
+2022-11-29 09:48:03,602 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 09:48:05,052 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 09:48:05,064 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:48:05,064 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 09:48:05,065 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 09:48:05,245 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 09:48:05,245 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1587 ms
+2022-11-29 09:48:06,098 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:48:06,130 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 09:48:06,409 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:48:06,409 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 09:48:06,453 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:48:06,455 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:48:06,459 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 09:48:06,482 [main] ERROR o.s.boot.SpringApplication 821 - Application run failed
+org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[jdbc:dataSource] <<< in route: Route(route1)[From[timer://foo?repeatCount=1] -> [SetBody[co... because of Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:241)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:75)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:891)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:765)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:3000)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2671)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2690)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:262)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:119)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.fhir_etl.FhirEtlApplication.main(FhirEtlApplication.java:10)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jdbc://dataSource due to: No default DataSource found in the registry
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:1009)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:891)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:127)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:45)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:37)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:847)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:588)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:237)
+	... 26 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No default DataSource found in the registry
+	at org.apache.camel.component.jdbc.JdbcComponent.createEndpoint(JdbcComponent.java:67)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:975)
+	... 33 common frames omitted
+2022-11-29 09:48:48,112 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 25752 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl\fhir_etl)
+2022-11-29 09:48:48,116 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 09:48:49,527 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 09:48:49,539 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:48:49,540 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 09:48:49,540 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 09:48:49,698 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 09:48:49,698 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1530 ms
+2022-11-29 09:48:50,546 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:48:50,585 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 09:48:50,651 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 09:48:50,657 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 09:48:50,657 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 76ms (build:20ms init:52ms start:4ms)
+2022-11-29 09:48:50,663 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.988 seconds (JVM running for 3.561)
+2022-11-29 09:48:50,813 [main] INFO  o.a.c.component.file.FileEndpoint 126 - Endpoint is configured with noop=true so forcing endpoint to be idempotent as well
+2022-11-29 09:48:50,813 [main] INFO  o.a.c.component.file.FileEndpoint 132 - Using default memory based idempotent repository with cache max size: 1000
+2022-11-29 09:48:50,815 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-3) is starting
+2022-11-29 09:48:50,829 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-11-29 09:48:50,829 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (file:///Users/june.wu/Desktop/cameltest/fileMove)
+2022-11-29 09:48:50,830 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-3) started in 127ms (build:3ms init:110ms start:14ms)
+2022-11-29 09:48:51,849 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\a.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@77510aab, CamelFileLastModified=1669271199421, CamelFileLength=11, CamelFileName=a.txt, CamelFileNameConsumed=a.txt, CamelFileNameOnly=a.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\a.txt, CamelFileRelativePath=a.txt, CamelMessageTimestamp=1669271199421}
+2022-11-29 09:48:51,853 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - 哈囉~~~~~
+2022-11-29 09:48:51,857 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\abc1.txt - 複製.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@7e7ab91b, CamelFileLastModified=1669010181844, CamelFileLength=13, CamelFileName=abc1.txt - 複製.txt, CamelFileNameConsumed=abc1.txt - 複製.txt, CamelFileNameOnly=abc1.txt - 複製.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\abc1.txt - 複製.txt, CamelFileRelativePath=abc1.txt - 複製.txt, CamelMessageTimestamp=1669010181844}
+2022-11-29 09:48:51,861 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - hello 123 456
+2022-11-29 09:48:51,863 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\abc1.txt.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@6994753b, CamelFileLastModified=1669010181844, CamelFileLength=13, CamelFileName=abc1.txt.txt, CamelFileNameConsumed=abc1.txt.txt, CamelFileNameOnly=abc1.txt.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\abc1.txt.txt, CamelFileRelativePath=abc1.txt.txt, CamelMessageTimestamp=1669010181844}
+2022-11-29 09:48:51,864 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - hello 123 456
+2022-11-29 09:48:51,867 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\b.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@355b66af, CamelFileLastModified=1669271199421, CamelFileLength=11, CamelFileName=b.txt, CamelFileNameConsumed=b.txt, CamelFileNameOnly=b.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\b.txt, CamelFileRelativePath=b.txt, CamelMessageTimestamp=1669271199421}
+2022-11-29 09:48:51,868 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - 哈囉~~~~~
+2022-11-29 09:48:51,870 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\hi.txt.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@7face092, CamelFileLastModified=1669017289161, CamelFileLength=17, CamelFileName=hi.txt.txt, CamelFileNameConsumed=hi.txt.txt, CamelFileNameOnly=hi.txt.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\hi.txt.txt, CamelFileRelativePath=hi.txt.txt, CamelMessageTimestamp=1669017289161}
+2022-11-29 09:48:51,874 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - hello 123 456 789
+2022-11-29 09:48:51,877 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\testapi1123-2.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@4ab8792b, CamelFileLastModified=1669262580064, CamelFileLength=732, CamelFileName=testapi1123-2.txt, CamelFileNameConsumed=testapi1123-2.txt, CamelFileNameOnly=testapi1123-2.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\testapi1123-2.txt, CamelFileRelativePath=testapi1123-2.txt, CamelMessageTimestamp=1669262580064}
+2022-11-29 09:48:51,883 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+2022-11-29 09:48:51,884 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\testapi1123.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@4141cc3f, CamelFileLastModified=1669262580064, CamelFileLength=732, CamelFileName=testapi1123.txt, CamelFileNameConsumed=testapi1123.txt, CamelFileNameOnly=testapi1123.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\testapi1123.txt, CamelFileRelativePath=testapi1123.txt, CamelMessageTimestamp=1669262580064}
+2022-11-29 09:48:51,886 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+2022-11-29 09:49:00,842 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-3) is shutting down (timeout:45s)
+2022-11-29 09:49:00,846 [main] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-11-29 09:49:00,847 [main] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (file:///Users/june.wu/Desktop/cameltest/fileMove)
+2022-11-29 09:49:00,848 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-3) shutdown in 6ms (uptime:10s)
+2022-11-29 09:49:00,850 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 09:49:00,851 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 09:49:00,851 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 0ms (uptime:10s)
+2022-11-29 09:50:22,085 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 13808 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl\fhir_etl)
+2022-11-29 09:50:22,090 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 09:50:23,547 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 09:50:23,559 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:50:23,560 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 09:50:23,560 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 09:50:23,721 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 09:50:23,722 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1573 ms
+2022-11-29 09:50:24,673 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 09:50:24,701 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 09:50:24,784 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 09:50:24,793 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 09:50:24,793 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 86ms (build:10ms init:69ms start:7ms)
+2022-11-29 09:50:24,800 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 3.176 seconds (JVM running for 3.711)
+2022-11-29 09:50:24,941 [main] INFO  o.a.c.component.file.FileEndpoint 126 - Endpoint is configured with noop=true so forcing endpoint to be idempotent as well
+2022-11-29 09:50:24,941 [main] INFO  o.a.c.component.file.FileEndpoint 132 - Using default memory based idempotent repository with cache max size: 1000
+2022-11-29 09:50:24,943 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-3) is starting
+2022-11-29 09:50:24,960 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-11-29 09:50:24,960 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (file:///Users/june.wu/Desktop/cameltest/fileMove)
+2022-11-29 09:50:24,960 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-3) started in 118ms (build:3ms init:99ms start:16ms)
+2022-11-29 09:50:25,983 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\a.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@30c4d445, CamelFileLastModified=1669271199421, CamelFileLength=11, CamelFileName=a.txt, CamelFileNameConsumed=a.txt, CamelFileNameOnly=a.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\a.txt, CamelFileRelativePath=a.txt, CamelMessageTimestamp=1669271199421}
+2022-11-29 09:50:25,984 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - 哈囉~~~~~
+2022-11-29 09:50:25,988 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\abc1.txt - 複製.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@1ee4e692, CamelFileLastModified=1669010181844, CamelFileLength=13, CamelFileName=abc1.txt - 複製.txt, CamelFileNameConsumed=abc1.txt - 複製.txt, CamelFileNameOnly=abc1.txt - 複製.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\abc1.txt - 複製.txt, CamelFileRelativePath=abc1.txt - 複製.txt, CamelMessageTimestamp=1669010181844}
+2022-11-29 09:50:25,989 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - hello 123 456
+2022-11-29 09:50:25,992 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\abc1.txt.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@1fdb8443, CamelFileLastModified=1669010181844, CamelFileLength=13, CamelFileName=abc1.txt.txt, CamelFileNameConsumed=abc1.txt.txt, CamelFileNameOnly=abc1.txt.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\abc1.txt.txt, CamelFileRelativePath=abc1.txt.txt, CamelMessageTimestamp=1669010181844}
+2022-11-29 09:50:25,992 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - hello 123 456
+2022-11-29 09:50:25,995 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\b.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@30de7c63, CamelFileLastModified=1669271199421, CamelFileLength=11, CamelFileName=b.txt, CamelFileNameConsumed=b.txt, CamelFileNameOnly=b.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\b.txt, CamelFileRelativePath=b.txt, CamelMessageTimestamp=1669271199421}
+2022-11-29 09:50:25,995 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - 哈囉~~~~~
+2022-11-29 09:50:26,007 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\hi.txt.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@73640fa7, CamelFileLastModified=1669017289161, CamelFileLength=17, CamelFileName=hi.txt.txt, CamelFileNameConsumed=hi.txt.txt, CamelFileNameOnly=hi.txt.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\hi.txt.txt, CamelFileRelativePath=hi.txt.txt, CamelMessageTimestamp=1669017289161}
+2022-11-29 09:50:26,008 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - hello 123 456 789
+2022-11-29 09:50:26,010 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\testapi1123-2.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@589c03de, CamelFileLastModified=1669262580064, CamelFileLength=732, CamelFileName=testapi1123-2.txt, CamelFileNameConsumed=testapi1123-2.txt, CamelFileNameOnly=testapi1123-2.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\testapi1123-2.txt, CamelFileRelativePath=testapi1123-2.txt, CamelMessageTimestamp=1669262580064}
+2022-11-29 09:50:26,010 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+2022-11-29 09:50:26,012 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - {CamelFileAbsolute=true, CamelFileAbsolutePath=C:\Users\june.wu\Desktop\cameltest\fileMove\testapi1123.txt, CamelFileInitialOffset=org.apache.camel.support.resume.Resumables$AnonymousResumable@6f41312f, CamelFileLastModified=1669262580064, CamelFileLength=732, CamelFileName=testapi1123.txt, CamelFileNameConsumed=testapi1123.txt, CamelFileNameOnly=testapi1123.txt, CamelFileParent=C:\Users\june.wu\Desktop\cameltest\fileMove, CamelFilePath=C:\Users\june.wu\Desktop\cameltest\fileMove\testapi1123.txt, CamelFileRelativePath=testapi1123.txt, CamelMessageTimestamp=1669262580064}
+2022-11-29 09:50:26,012 [Camel (camel-3) thread #1 - file:///Users/june.wu/Desktop/cameltest/fileMove] INFO  route1 166 - 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+2022-11-29 09:50:34,974 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-3) is shutting down (timeout:45s)
+2022-11-29 09:50:34,979 [main] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-11-29 09:50:34,979 [main] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (file:///Users/june.wu/Desktop/cameltest/fileMove)
+2022-11-29 09:50:34,981 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-3) shutdown in 6ms (uptime:10s)
+2022-11-29 09:50:34,983 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 09:50:34,984 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 09:50:34,984 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 0ms (uptime:10s)
+2022-11-29 11:05:33,616 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 19.0.1 on June4693-450G7 with PID 14096 (C:\xampp\tomcat\webapps\ROOT\fhir_etl\target\classes started by June.Wu in C:\xampp\tomcat\webapps\ROOT\fhir_etl)
+2022-11-29 11:05:33,619 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 11:05:34,475 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 11:05:34,482 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:34,482 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 11:05:34,482 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 11:05:34,596 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 11:05:34,597 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 939 ms
+2022-11-29 11:05:35,174 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:35,179 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-29 11:05:35,184 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:35,184 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 11:05:35,212 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:35,213 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:35,219 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 11:05:35,233 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-29 11:05:46,076 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 19.0.1 on June4693-450G7 with PID 32676 (C:\xampp\tomcat\webapps\ROOT\fhir_etl\target\classes started by June.Wu in C:\xampp\tomcat\webapps\ROOT\fhir_etl)
+2022-11-29 11:05:46,079 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 11:05:46,993 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 11:05:47,001 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:47,001 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 11:05:47,002 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 11:05:47,113 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 11:05:47,113 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 995 ms
+2022-11-29 11:05:47,697 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:47,702 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-29 11:05:47,705 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:47,706 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 11:05:47,733 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:47,733 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:05:47,740 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 11:05:47,753 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-29 11:06:00,696 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 19.0.1 on June4693-450G7 with PID 33748 (C:\xampp\tomcat\webapps\ROOT\fhir_etl\target\classes started by June.Wu in C:\xampp\tomcat\webapps\ROOT\fhir_etl)
+2022-11-29 11:06:00,698 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 11:06:01,553 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 11:06:01,559 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:06:01,560 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 11:06:01,560 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 11:06:01,673 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 11:06:01,674 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 935 ms
+2022-11-29 11:06:02,205 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:06:02,210 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-29 11:06:02,213 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:06:02,213 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 11:06:02,240 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:06:02,240 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:06:02,247 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 11:06:02,259 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-29 11:07:38,510 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 19.0.1 on June4693-450G7 with PID 9188 (C:\xampp\tomcat\webapps\ROOT\fhir_etl\target\classes started by June.Wu in C:\xampp\tomcat\webapps\ROOT\fhir_etl)
+2022-11-29 11:07:38,512 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 11:07:39,374 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 11:07:39,380 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:07:39,381 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 11:07:39,381 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 11:07:39,481 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 11:07:39,481 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 926 ms
+2022-11-29 11:07:40,009 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:07:40,014 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-29 11:07:40,017 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:07:40,017 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 11:07:40,043 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:07:40,044 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:07:40,050 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 11:07:40,061 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-29 11:08:15,278 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 19.0.1 on June4693-450G7 with PID 29272 (C:\xampp\tomcat\webapps\ROOT\fhir_etl\target\classes started by June.Wu in C:\xampp\tomcat\webapps\ROOT\fhir_etl)
+2022-11-29 11:08:15,281 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 11:08:16,121 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 11:08:16,128 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:16,128 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 11:08:16,128 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 11:08:16,227 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 11:08:16,227 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 906 ms
+2022-11-29 11:08:16,758 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:16,763 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-29 11:08:16,766 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:16,766 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 11:08:16,793 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:16,794 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:16,801 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 11:08:16,812 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-29 11:08:42,499 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 34728 (C:\xampp\tomcat\webapps\ROOT\fhir_etl\target\classes started by June.Wu in C:\xampp\tomcat\webapps\ROOT\fhir_etl)
+2022-11-29 11:08:42,503 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 11:08:43,966 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 11:08:43,978 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:43,978 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 11:08:43,978 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 11:08:44,133 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 11:08:44,133 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1574 ms
+2022-11-29 11:08:44,961 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:44,968 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-29 11:08:44,972 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:44,972 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 11:08:45,013 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:45,014 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:08:45,025 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 11:08:45,046 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-29 11:11:41,766 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 19.0.1 on June4693-450G7 with PID 13952 (C:\xampp\tomcat\webapps\ROOT\fhir_etl\target\classes started by June.Wu in C:\xampp\tomcat\webapps\ROOT\fhir_etl)
+2022-11-29 11:11:41,770 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 11:11:42,847 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 11:11:42,856 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:11:42,857 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 11:11:42,857 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 11:11:42,990 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 11:11:42,990 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1157 ms
+2022-11-29 11:11:43,858 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 11:11:43,883 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 11:11:43,928 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 11:11:43,933 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 11:11:43,933 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 60ms (build:23ms init:34ms start:3ms)
+2022-11-29 11:11:43,937 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.692 seconds (JVM running for 3.111)
+2022-11-29 11:12:11,215 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 11:12:11,216 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 11:12:11,217 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 11:12:26,540 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 11:12:26,541 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 11:12:26,542 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:42s)
+2022-11-29 14:19:59,197 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 5860 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 14:19:59,200 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 14:20:00,334 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 14:20:00,343 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 14:20:00,344 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 14:20:00,344 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 14:20:00,465 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 14:20:00,465 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1215 ms
+2022-11-29 14:20:00,763 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 14:20:01,079 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 14:20:01,101 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 14:20:01,158 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 14:20:01,164 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 14:20:01,164 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 56ms (build:7ms init:45ms start:4ms)
+2022-11-29 14:20:01,170 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.408 seconds (JVM running for 2.867)
+2022-11-29 14:20:32,817 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 14:20:32,817 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 14:20:32,819 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 2 ms
+2022-11-29 14:41:47,520 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 12232 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 14:41:47,523 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 14:41:48,377 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 14:41:48,384 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 14:41:48,384 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 14:41:48,384 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 14:41:48,489 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 14:41:48,489 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 922 ms
+2022-11-29 14:41:48,741 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 14:41:49,018 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 14:41:49,035 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 14:41:49,077 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 14:41:49,082 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 14:41:49,082 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 41ms (build:5ms init:33ms start:3ms)
+2022-11-29 14:41:49,086 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 1.902 seconds (JVM running for 2.207)
+2022-11-29 14:41:59,475 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 14:41:59,475 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 14:41:59,476 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 14:58:21,200 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 14:58:21,201 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 14:58:21,203 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:16m32s)
+2022-11-29 15:25:36,820 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 23548 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 15:25:36,823 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 15:25:37,691 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 15:25:37,698 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:25:37,698 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 15:25:37,698 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 15:25:37,801 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 15:25:37,801 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 936 ms
+2022-11-29 15:25:38,353 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:25:38,370 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 15:25:38,410 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 15:25:38,413 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 15:25:38,413 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 39ms (build:6ms init:31ms start:2ms)
+2022-11-29 15:25:38,418 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 1.937 seconds (JVM running for 2.275)
+2022-11-29 15:25:51,766 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 15:25:51,766 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 15:25:51,767 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 15:28:03,671 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 15:28:03,672 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 15:28:03,673 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:2m25s)
+2022-11-29 15:28:10,229 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 18096 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 15:28:10,232 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 15:28:11,109 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 15:28:11,117 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:28:11,117 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 15:28:11,117 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 15:28:11,223 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 15:28:11,223 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 947 ms
+2022-11-29 15:28:11,511 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'appController' method 
+com.example.fhir_etl.AppController#viewHomePage()
+to {GET [/]}: There is already 'fhirEtlApplication' bean method
+com.example.fhir_etl.FhirEtlApplication#viewHomePage() mapped.
+2022-11-29 15:28:11,513 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 15:28:11,545 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 15:28:11,558 [main] ERROR o.s.boot.SpringApplication 821 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'appController' method 
+com.example.fhir_etl.AppController#viewHomePage()
+to {GET [/]}: There is already 'fhirEtlApplication' bean method
+com.example.fhir_etl.FhirEtlApplication#viewHomePage() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.fhir_etl.FhirEtlApplication.main(FhirEtlApplication.java:15)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'appController' method 
+com.example.fhir_etl.AppController#viewHomePage()
+to {GET [/]}: There is already 'fhirEtlApplication' bean method
+com.example.fhir_etl.FhirEtlApplication#viewHomePage() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2022-11-29 15:28:51,436 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 3320 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 15:28:51,438 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 15:28:52,295 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 15:28:52,302 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:28:52,303 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 15:28:52,303 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 15:28:52,411 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 15:28:52,411 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 934 ms
+2022-11-29 15:28:52,691 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'appController' method 
+com.example.fhir_etl.AppController#viewHomePage()
+to {GET [/]}: There is already 'fhirEtlApplication' bean method
+com.example.fhir_etl.FhirEtlApplication#viewHomePage() mapped.
+2022-11-29 15:28:52,693 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-11-29 15:28:52,723 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 15:28:52,737 [main] ERROR o.s.boot.SpringApplication 821 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'appController' method 
+com.example.fhir_etl.AppController#viewHomePage()
+to {GET [/]}: There is already 'fhirEtlApplication' bean method
+com.example.fhir_etl.FhirEtlApplication#viewHomePage() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.fhir_etl.FhirEtlApplication.main(FhirEtlApplication.java:16)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'appController' method 
+com.example.fhir_etl.AppController#viewHomePage()
+to {GET [/]}: There is already 'fhirEtlApplication' bean method
+com.example.fhir_etl.FhirEtlApplication#viewHomePage() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2022-11-29 15:29:45,239 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 12192 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 15:29:45,242 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 15:29:46,089 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 15:29:46,097 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:29:46,098 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 15:29:46,098 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 15:29:46,210 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 15:29:46,210 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 928 ms
+2022-11-29 15:29:46,755 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:29:46,773 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 15:29:46,813 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 15:29:46,818 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 15:29:46,818 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 40ms (build:6ms init:31ms start:3ms)
+2022-11-29 15:29:46,822 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 1.914 seconds (JVM running for 2.238)
+2022-11-29 15:29:47,835 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 15:29:47,835 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 15:29:47,836 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 15:30:30,826 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 15:30:30,827 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 15:30:30,828 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:44s)
+2022-11-29 15:38:25,243 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 24392 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 15:38:25,246 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 15:38:26,119 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 15:38:26,126 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:38:26,126 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 15:38:26,127 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 15:38:26,257 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 15:38:26,257 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 967 ms
+2022-11-29 15:38:26,517 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 15:38:26,791 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:38:26,807 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 15:38:26,846 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 15:38:26,850 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 15:38:26,850 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 39ms (build:6ms init:31ms start:2ms)
+2022-11-29 15:38:26,854 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.025 seconds (JVM running for 2.349)
+2022-11-29 15:38:28,280 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 15:38:28,280 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 15:38:28,281 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 15:38:54,781 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 15:38:54,782 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 15:38:54,783 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:27s)
+2022-11-29 15:39:26,718 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 5408 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 15:39:26,720 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 15:39:27,624 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 15:39:27,633 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:39:27,633 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 15:39:27,633 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 15:39:27,752 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 15:39:27,753 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 992 ms
+2022-11-29 15:39:28,030 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 15:39:28,320 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:39:28,336 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 15:39:28,380 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 15:39:28,383 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 15:39:28,383 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 42ms (build:6ms init:34ms start:2ms)
+2022-11-29 15:39:28,387 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.017 seconds (JVM running for 2.333)
+2022-11-29 15:39:28,483 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 15:39:28,483 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 15:39:28,484 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 15:44:09,313 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 15:44:09,314 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 15:44:09,316 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:4m40s)
+2022-11-29 15:44:56,058 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 24328 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 15:44:56,062 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 15:44:57,022 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 15:44:57,030 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:44:57,031 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 15:44:57,031 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 15:44:57,151 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 15:44:57,151 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1040 ms
+2022-11-29 15:44:57,435 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 15:44:57,782 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:44:57,809 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 15:44:57,866 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 15:44:57,871 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 15:44:57,872 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 56ms (build:8ms init:44ms start:4ms)
+2022-11-29 15:44:57,878 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.207 seconds (JVM running for 2.562)
+2022-11-29 15:45:00,048 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 15:45:00,048 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 15:45:00,049 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 15:57:24,706 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 15:57:24,707 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 15:57:24,709 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:12m26s)
+2022-11-29 15:57:32,669 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 22868 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 15:57:32,671 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 15:57:33,553 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 15:57:33,561 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:57:33,562 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 15:57:33,562 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 15:57:33,669 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 15:57:33,669 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 954 ms
+2022-11-29 15:57:33,926 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 15:57:34,245 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 15:57:34,265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 15:57:34,316 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 15:57:34,320 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 15:57:34,320 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 49ms (build:6ms init:41ms start:2ms)
+2022-11-29 15:57:34,324 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.014 seconds (JVM running for 2.351)
+2022-11-29 15:57:34,475 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 15:57:34,475 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 15:57:34,476 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:03:14,631 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:03:14,632 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:03:14,633 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:5m40s)
+2022-11-29 16:03:20,714 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 11216 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 16:03:20,716 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:03:21,610 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:03:21,617 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:03:21,618 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:03:21,618 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:03:21,725 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:03:21,725 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 962 ms
+2022-11-29 16:03:22,014 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 16:03:22,291 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:03:22,307 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:03:22,350 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:03:22,354 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:03:22,354 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 41ms (build:5ms init:33ms start:3ms)
+2022-11-29 16:03:22,358 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.013 seconds (JVM running for 2.341)
+2022-11-29 16:03:30,404 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:03:30,405 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:03:30,405 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 0 ms
+2022-11-29 16:03:49,510 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:03:49,510 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:03:49,511 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 1ms (uptime:27s)
+2022-11-29 16:04:07,597 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 4868 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 16:04:07,602 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:04:09,060 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:04:09,071 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:04:09,072 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:04:09,072 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:04:09,230 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:04:09,231 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1573 ms
+2022-11-29 16:04:09,645 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-11-29 16:04:10,122 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:04:10,155 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:04:10,230 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:04:10,237 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:04:10,238 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 71ms (build:9ms init:58ms start:4ms)
+2022-11-29 16:04:10,248 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 3.089 seconds (JVM running for 3.885)
+2022-11-29 16:04:15,593 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:04:15,593 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:04:15,594 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:06:07,450 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:06:07,451 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:06:07,453 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:1m57s)
+2022-11-29 16:06:21,756 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 22644 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 16:06:21,761 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:06:23,273 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:06:23,286 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:06:23,286 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:06:23,286 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:06:23,461 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:06:23,462 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1645 ms
+2022-11-29 16:06:24,411 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:06:24,446 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:06:24,524 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:06:24,528 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:06:24,528 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:06:24,529 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:06:24,531 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:06:24,531 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 77ms (build:11ms init:61ms start:5ms)
+2022-11-29 16:06:24,541 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 3.251 seconds (JVM running for 3.858)
+2022-11-29 16:07:35,154 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:07:35,155 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:07:35,158 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 3ms (uptime:1m10s)
+2022-11-29 16:07:47,201 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 19440 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 16:07:47,204 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:07:48,216 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:07:48,224 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:07:48,224 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:07:48,224 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:07:48,347 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:07:48,347 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1100 ms
+2022-11-29 16:07:49,126 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:07:49,145 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:07:49,195 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:07:49,199 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:07:49,200 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 52ms (build:12ms init:37ms start:3ms)
+2022-11-29 16:07:49,204 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.517 seconds (JVM running for 2.954)
+2022-11-29 16:07:57,252 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:07:57,252 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:07:57,253 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-11-29 16:09:02,665 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:09:02,666 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:09:02,667 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:1m13s)
+2022-11-29 16:09:10,111 [main] INFO  c.e.fhir_etl.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 15440 (C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl\target\classes started by June.Wu in C:\Users\june.wu\Desktop\cameltest\fhir_etl_ui\fhir_etl)
+2022-11-29 16:09:10,115 [main] INFO  c.e.fhir_etl.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-11-29 16:09:11,236 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-11-29 16:09:11,245 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:09:11,245 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-11-29 16:09:11,246 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-29 16:09:11,375 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-11-29 16:09:11,376 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1189 ms
+2022-11-29 16:09:11,986 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 16:09:12,006 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-29 16:09:12,060 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-11-29 16:09:12,064 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-11-29 16:09:12,064 [main] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 49ms (build:6ms init:40ms start:3ms)
+2022-11-29 16:09:12,069 [main] INFO  c.e.fhir_etl.FhirEtlApplication 61 - Started FhirEtlApplication in 2.492 seconds (JVM running for 2.986)
+2022-11-29 16:09:12,522 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 16:09:12,522 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-11-29 16:09:12,524 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 2 ms
+2022-11-29 16:11:17,230 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-11-29 16:11:17,230 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-11-29 16:11:17,231 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 2ms (uptime:2m5s)
