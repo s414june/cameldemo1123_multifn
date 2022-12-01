@@ -65,34 +65,34 @@ public class Camel {
         SQLServerDataSource ds = new SQLServerDataSource();
         ds.setUser("june");
         ds.setPassword("0000");
-        ds.setServerName("localhost\\\\\\\\SQLEXPRESS;");
+        ds.setServerName("localhost\\\\SQLEXPRESS;");
         ds.setPortNumber(1433);
         ds.setDatabaseName(databaseName);
         ds.setTrustServerCertificate(true);
 
         return ds;
     }
-}
-
-class MyRouteBuilder extends RouteBuilder {
-    public void configure() throws Exception {
-        String sql = "SELECT [Name],[Location] FROM [Employees]";
-        String insertSqlStr = "insert into [Table_Json] (jsondata) values('${body}'); ";
-        from("timer://foo?repeatCount=1")
-                .setBody(constant(sql))
-                .to("jdbc:SampleDBSource")
-                // 用split切開，將一次只存一筆(員工+國家)的資料；沒切將會把所有資料包成一筆
-                // .split(body())
-                .process(
-                        new Processor() {
-                            public void process(Exchange exchange) throws Exception {
-                                String body = exchange.getIn().getBody(String.class);// 官方固定用法
-                                System.out.println(body);
-                                log.debug(body);
-                            }
-
-                        })
-                .setBody(simple(insertSqlStr))
-                .to("jdbc:testdbSource");
+    
+    class MyRouteBuilder extends RouteBuilder {
+        public void configure() throws Exception {
+            String sql = "SELECT [Name],[Location] FROM [Employees]";
+            String insertSqlStr = "insert into [Table_Json] (jsondata) values('${body}'); ";
+            from("timer://foo?repeatCount=1")
+                    .setBody(constant(sql))
+                    .to("jdbc:SampleDBSource")
+                    // 用split切開，將一次只存一筆(員工+國家)的資料；沒切將會把所有資料包成一筆
+                    // .split(body())
+                    .process(
+                            new Processor() {
+                                public void process(Exchange exchange) throws Exception {
+                                    String body = exchange.getIn().getBody(String.class);// 官方固定用法
+                                    System.out.println(body);
+                                    log.debug(body);
+                                }
+    
+                            })
+                    .setBody(simple(insertSqlStr))
+                    .to("jdbc:testdbSource");
+        }
     }
 }

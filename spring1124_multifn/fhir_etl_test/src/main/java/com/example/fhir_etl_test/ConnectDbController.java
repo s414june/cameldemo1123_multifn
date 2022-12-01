@@ -28,28 +28,27 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 
 @RestController
-public class SearchDbController extends HttpServlet {
+public class ConnectDbController extends HttpServlet {
     HttpSession session = null;
-    String useDB = "";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         session = request.getSession();
     }
 
-    @PostMapping("/api/searchdb")
+    @PostMapping("/api/connectdb")
     public ResponseEntity<?> getSearchResultViaAjax(HttpServletRequest request, HttpServletResponse response,
-            @Validated @RequestBody String dbdatas, Errors errors)
+            @Validated @RequestBody String connectdatas, Errors errors)
             throws Exception {
         doGet(request, response);
-        JsonNode data = new ObjectMapper().readTree("{}");
         ObjectMapper mapper = new ObjectMapper();
-        JsonNode dbObj = mapper.readTree(dbdatas);
+        JsonNode dataObj = mapper.readTree(connectdatas);
+        // String database = "";
 
-        SetupDataSource setupDataSource = new SetupDataSource();
-        JsonNode dataObj = setupDataSource.getSession_JsonNode(session);
+        JsonNode data = new ObjectMapper().readTree("{}");
+
         if (dataObj.findValue("driver").asText().equals("sqlserver")) {
-            useDB = dbObj.findValue("selectdata").asText();
+            SetupDataSource setupDataSource = new SetupDataSource();
             SQLServerDataSource dbSource = setupDataSource.setSQL(dataObj);
             DefaultRegistry reg = new DefaultRegistry();
             reg.bind("dbSource", dbSource);
@@ -61,9 +60,17 @@ public class SearchDbController extends HttpServlet {
             context.stop();
             context.close();
             data = build.getDatabases();
+            // data = new ObjectMapper().readTree(database);
+            if (build.hasErrors()) {
+                return ResponseEntity.badRequest().body("連線錯誤");
+            }
+            // 若連線成功，將連線資訊存進session
+            setupDataSource.setSession(dataObj, session);
         }
 
+        // If error, just return a 400 bad request, along with the error message
         if (errors.hasErrors()) {
+
             return ResponseEntity.badRequest().body(
                     errors.getAllErrors().stream().map(x -> x.getDefaultMessage())
                             .collect(Collectors.joining(",")));
@@ -80,7 +87,7 @@ public class SearchDbController extends HttpServlet {
         public void configure() throws Exception {
             from("timer://foo?repeatCount=1")
                     .setBody(constant(
-                            "use " + useDB + ";SELECT DISTINCT  TABLE_NAME AS 'name' FROM INFORMATION_SCHEMA.COLUMNS"))
+                            "SELECT name, database_id, create_date FROM sys.databases where database_id>4;"))
                     .doTry()
                     .to("jdbc:dbSource")
                     // .split(body())
