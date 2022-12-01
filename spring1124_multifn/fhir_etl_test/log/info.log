@@ -7375,3 +7375,629 @@ java.lang.IllegalStateException: Illegal access: this web application instance h
 2022-12-01 16:46:03,219 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
 2022-12-01 16:46:03,219 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route19 (timer://foo)
 2022-12-01 16:46:03,219 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-37) shutdown in 1ms (uptime:5s)
+2022-12-01 17:07:22,721 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 10568 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
+2022-12-01 17:07:22,722 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-12-01 17:07:22,765 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2022-12-01 17:07:22,765 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-01 17:07:22,765 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-01 17:07:23,818 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 17:07:23,829 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:07:23,829 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-12-01 17:07:23,829 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-01 17:07:23,940 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-12-01 17:07:23,941 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1175 ms
+2022-12-01 17:07:24,448 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-12-01 17:07:24,780 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
+2022-12-01 17:07:24,815 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:07:24,834 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-01 17:07:24,877 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-12-01 17:07:24,881 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-12-01 17:07:24,881 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 45ms (build:10ms init:32ms start:3ms)
+2022-12-01 17:07:24,884 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 2.582 seconds (JVM running for 3.015)
+2022-12-01 17:07:26,986 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-01 17:07:26,986 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-12-01 17:07:26,988 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 2 ms
+2022-12-01 17:08:52,781 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 8952 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
+2022-12-01 17:08:52,783 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-12-01 17:08:52,839 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2022-12-01 17:08:52,839 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-01 17:08:52,839 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-01 17:08:53,964 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 17:08:53,972 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:08:53,973 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-12-01 17:08:53,973 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-01 17:08:54,070 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-12-01 17:08:54,071 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1231 ms
+2022-12-01 17:08:54,378 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 53 - Adding welcome page: class path resource [static/index.html]
+2022-12-01 17:08:54,694 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
+2022-12-01 17:08:54,732 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:08:54,750 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-01 17:08:54,813 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-01 17:08:54,813 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-12-01 17:08:54,813 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-12-01 17:08:54,815 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-12-01 17:08:54,818 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-12-01 17:08:54,819 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 57ms (build:9ms init:44ms start:4ms)
+2022-12-01 17:08:54,824 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 2.432 seconds (JVM running for 2.872)
+2022-12-01 17:09:33,362 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-12-01 17:09:33,363 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-12-01 17:09:33,366 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 3ms (uptime:38s)
+2022-12-01 17:10:24,329 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 18984 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
+2022-12-01 17:10:24,332 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-12-01 17:10:24,401 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2022-12-01 17:10:24,402 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-01 17:10:24,402 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-01 17:10:26,642 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 17:10:26,661 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:10:26,662 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-12-01 17:10:26,662 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-01 17:10:26,847 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-12-01 17:10:26,847 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 2444 ms
+2022-12-01 17:10:27,291 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 57 - Adding welcome page template: index
+2022-12-01 17:10:27,759 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
+2022-12-01 17:10:27,817 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:10:27,843 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-01 17:10:27,903 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-12-01 17:10:27,909 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-12-01 17:10:27,909 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 61ms (build:12ms init:45ms start:4ms)
+2022-12-01 17:10:27,916 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 4.176 seconds (JVM running for 4.871)
+2022-12-01 17:10:28,531 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-01 17:10:28,531 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-12-01 17:10:28,533 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 2 ms
+2022-12-01 17:10:35,451 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-3) is starting
+2022-12-01 17:10:35,460 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:10:35,461 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-12-01 17:10:35,461 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-3) started in 96ms (build:3ms init:84ms start:9ms)
+2022-12-01 17:10:40,474 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-3) is shutting down (timeout:45s)
+2022-12-01 17:10:40,479 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:10:40,479 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-12-01 17:10:40,481 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-3) shutdown in 6ms (uptime:5s)
+2022-12-01 17:10:51,360 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] 175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.findValue(String)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.findValue(String)" is null
+	at com.example.fhir_etl_test.SearchDbController.getSearchResultViaAjax(SearchDbController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-12-01 17:11:08,331 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-12-01 17:11:08,332 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-12-01 17:11:08,332 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 0ms (uptime:40s)
+2022-12-01 17:11:29,233 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 32196 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
+2022-12-01 17:11:29,237 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-12-01 17:11:29,346 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2022-12-01 17:11:29,347 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-01 17:11:29,352 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-01 17:11:31,387 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 17:11:31,400 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:11:31,401 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-12-01 17:11:31,401 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-01 17:11:31,546 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-12-01 17:11:31,546 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 2193 ms
+2022-12-01 17:11:32,027 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 57 - Adding welcome page template: index
+2022-12-01 17:11:32,619 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
+2022-12-01 17:11:32,701 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:11:32,757 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-01 17:11:32,858 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-12-01 17:11:32,870 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-12-01 17:11:32,870 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 100ms (build:15ms init:77ms start:8ms)
+2022-12-01 17:11:32,881 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 4.273 seconds (JVM running for 5.415)
+2022-12-01 17:11:34,065 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-01 17:11:34,065 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-12-01 17:11:34,066 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-12-01 17:11:40,459 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-3) is starting
+2022-12-01 17:11:40,473 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:11:40,474 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-12-01 17:11:40,474 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-3) started in 130ms (build:5ms init:111ms start:14ms)
+2022-12-01 17:11:45,480 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-3) is shutting down (timeout:45s)
+2022-12-01 17:11:45,486 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:11:45,487 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-12-01 17:11:45,489 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-3) shutdown in 8ms (uptime:5s)
+2022-12-01 17:13:36,975 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener 213 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2022-12-01 17:13:36,978 [Thread-5] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-2) is shutting down (timeout:45s)
+2022-12-01 17:13:36,978 [Thread-5] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-12-01 17:13:36,979 [Thread-5] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-2) shutdown in 0ms (uptime:2m4s)
+2022-12-01 17:13:36,999 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:13:36,999 [Thread-5] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-12-01 17:13:37,001 [Thread-5] INFO  o.a.catalina.core.StandardWrapper 173 - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2022-12-01 17:13:38,114 [Thread-5] INFO  o.a.catalina.core.StandardWrapper 173 - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2022-12-01 17:13:39,224 [Thread-5] INFO  o.a.catalina.core.StandardWrapper 173 - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2022-12-01 17:13:39,332 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-01 17:13:39,348 [Thread-5] WARN  o.a.c.loader.WebappClassLoaderBase 173 - The web application [ROOT] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation. Stack trace of request processing thread:[
+ com.example.fhir_etl_test.SearchDbController.getSearchResultViaAjax(SearchDbController.java:56)
+ java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ java.base@17.0.4.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.base@17.0.4.1/java.lang.reflect.Method.invoke(Unknown Source)
+ app//org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+ app//org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+ app//org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+ app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+ app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+ app//org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+ app//org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+ app//org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+ app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+ app//org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+ app//javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+ app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+ app//javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+ app//org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+ app//org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+ app//org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+ app//org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+ app//org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+ app//org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+ app//org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+ app//org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+ app//org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+ app//org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+ app//org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+ app//org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+ app//org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+ app//org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+ app//org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+ app//org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+ app//org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+ app//org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+ app//org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+ java.base@17.0.4.1/java.lang.Thread.run(Unknown Source)]
+2022-12-01 17:13:39,349 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:13:40,597 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] 175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.findValue(String)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.findValue(String)" is null
+	at com.example.fhir_etl_test.SearchDbController.getSearchResultViaAjax(SearchDbController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-12-01 17:13:40,604 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:13:40,741 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 32196 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
+2022-12-01 17:13:40,741 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-12-01 17:13:41,280 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 17:13:41,281 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:13:41,281 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-12-01 17:13:41,282 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-01 17:13:41,325 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-12-01 17:13:41,325 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 579 ms
+2022-12-01 17:13:41,423 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 57 - Adding welcome page template: index
+2022-12-01 17:13:41,629 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
+2022-12-01 17:13:41,658 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:13:41,662 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-01 17:13:41,678 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-5) is starting
+2022-12-01 17:13:41,680 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-12-01 17:13:41,680 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-5) started in 17ms (build:7ms init:9ms start:1ms)
+2022-12-01 17:13:41,681 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 1.01 seconds (JVM running for 134.214)
+2022-12-01 17:13:41,683 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener 63 - Condition evaluation unchanged
+2022-12-01 17:13:41,690 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-01 17:13:41,690 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-12-01 17:13:41,691 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-12-01 17:13:43,942 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] 175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.findValue(String)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.findValue(String)" is null
+	at com.example.fhir_etl_test.SearchDbController.getSearchResultViaAjax(SearchDbController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-12-01 17:14:15,063 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener 213 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2022-12-01 17:14:15,064 [Thread-8] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-5) is shutting down (timeout:45s)
+2022-12-01 17:14:15,065 [Thread-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:0)
+2022-12-01 17:14:15,065 [Thread-8] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-5) shutdown in 0ms (uptime:33s)
+2022-12-01 17:14:15,084 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Pausing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:14:15,084 [Thread-8] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2022-12-01 17:14:15,084 [Thread-8] INFO  o.a.catalina.core.StandardWrapper 173 - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2022-12-01 17:14:15,750 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] 175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.findValue(String)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.findValue(String)" is null
+	at com.example.fhir_etl_test.SearchDbController.getSearchResultViaAjax(SearchDbController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-12-01 17:14:15,843 [Thread-8] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-01 17:14:15,847 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Stopping ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:14:15,849 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Destroying ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:14:15,961 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 32196 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
+2022-12-01 17:14:15,962 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-12-01 17:14:16,489 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 17:14:16,490 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:14:16,491 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-12-01 17:14:16,491 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-01 17:14:16,540 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-12-01 17:14:16,540 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 573 ms
+2022-12-01 17:14:16,618 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 57 - Adding welcome page template: index
+2022-12-01 17:14:16,817 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
+2022-12-01 17:14:16,833 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:14:16,837 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-01 17:14:16,853 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-7) is starting
+2022-12-01 17:14:16,856 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-12-01 17:14:16,856 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-7) started in 18ms (build:6ms init:11ms start:1ms)
+2022-12-01 17:14:16,857 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 0.949 seconds (JVM running for 169.39)
+2022-12-01 17:14:16,859 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener 63 - Condition evaluation unchanged
+2022-12-01 17:14:17,820 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-01 17:14:17,821 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-12-01 17:14:17,821 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 0 ms
+2022-12-01 17:14:28,484 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-8) is starting
+2022-12-01 17:14:28,488 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:14:28,489 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route2 (timer://foo)
+2022-12-01 17:14:28,489 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-8) started in 172ms (build:45ms init:123ms start:4ms)
+2022-12-01 17:14:33,493 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-8) is shutting down (timeout:45s)
+2022-12-01 17:14:33,497 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:14:33,498 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route2 (timer://foo)
+2022-12-01 17:14:33,499 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-8) shutdown in 5ms (uptime:5s)
+2022-12-01 17:21:57,422 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 22240 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
+2022-12-01 17:21:57,424 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-12-01 17:21:57,496 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2022-12-01 17:21:57,497 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-01 17:21:57,497 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-01 17:21:59,287 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 17:21:59,299 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:21:59,299 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-12-01 17:21:59,299 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-01 17:21:59,441 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-12-01 17:21:59,441 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1942 ms
+2022-12-01 17:21:59,913 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 57 - Adding welcome page template: index
+2022-12-01 17:22:00,455 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
+2022-12-01 17:22:00,505 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-01 17:22:00,552 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-01 17:22:00,645 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-12-01 17:22:00,659 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-12-01 17:22:00,660 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 96ms (build:14ms init:70ms start:12ms)
+2022-12-01 17:22:00,668 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 3.781 seconds (JVM running for 4.582)
+2022-12-01 17:22:01,606 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-01 17:22:01,606 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-12-01 17:22:01,607 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
+2022-12-01 17:28:53,748 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-3) is starting
+2022-12-01 17:28:53,762 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:28:53,763 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-12-01 17:28:53,763 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-3) started in 149ms (build:5ms init:129ms start:15ms)
+2022-12-01 17:28:58,771 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-3) is shutting down (timeout:45s)
+2022-12-01 17:28:58,777 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:28:58,777 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-12-01 17:28:58,778 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-3) shutdown in 6ms (uptime:5s)
+2022-12-01 17:30:12,782 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-4) is starting
+2022-12-01 17:30:12,783 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:30:12,783 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route2 (timer://foo)
+2022-12-01 17:30:12,783 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-4) started in 13ms (build:3ms init:9ms start:1ms)
+2022-12-01 17:30:17,794 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-4) is shutting down (timeout:45s)
+2022-12-01 17:30:17,795 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:30:17,796 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route2 (timer://foo)
+2022-12-01 17:30:17,796 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-4) shutdown in 1ms (uptime:5s)
+2022-12-01 17:30:58,643 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-5) is starting
+2022-12-01 17:30:58,644 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:30:58,645 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route3 (timer://foo)
+2022-12-01 17:30:58,645 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-5) started in 18ms (build:3ms init:14ms start:1ms)
+2022-12-01 17:31:03,646 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-5) is shutting down (timeout:45s)
+2022-12-01 17:31:03,647 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:31:03,647 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route3 (timer://foo)
+2022-12-01 17:31:03,647 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-5) shutdown in 1ms (uptime:5s)
+2022-12-01 17:32:26,010 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-6) is starting
+2022-12-01 17:32:26,011 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:32:26,011 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route4 (timer://foo)
+2022-12-01 17:32:26,011 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-6) started in 11ms (build:3ms init:8ms start:0ms)
+2022-12-01 17:32:31,012 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-6) is shutting down (timeout:45s)
+2022-12-01 17:32:31,013 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:32:31,014 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route4 (timer://foo)
+2022-12-01 17:32:31,014 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-6) shutdown in 2ms (uptime:5s)
+2022-12-01 17:32:34,344 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-7) is starting
+2022-12-01 17:32:34,345 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:32:34,346 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route5 (timer://foo)
+2022-12-01 17:32:34,346 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-7) started in 14ms (build:3ms init:10ms start:1ms)
+2022-12-01 17:32:39,348 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-7) is shutting down (timeout:45s)
+2022-12-01 17:32:39,349 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:32:39,349 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route5 (timer://foo)
+2022-12-01 17:32:39,350 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-7) shutdown in 2ms (uptime:5s)
+2022-12-01 17:33:57,939 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-8) is starting
+2022-12-01 17:33:57,940 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:33:57,940 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route6 (timer://foo)
+2022-12-01 17:33:57,940 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-8) started in 13ms (build:2ms init:10ms start:1ms)
+2022-12-01 17:34:02,942 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-8) is shutting down (timeout:45s)
+2022-12-01 17:34:02,943 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:34:02,943 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route6 (timer://foo)
+2022-12-01 17:34:02,943 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-8) shutdown in 2ms (uptime:5s)
+2022-12-01 17:34:58,819 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-9) is starting
+2022-12-01 17:34:58,820 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:34:58,820 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route7 (timer://foo)
+2022-12-01 17:34:58,821 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-9) started in 13ms (build:2ms init:10ms start:1ms)
+2022-12-01 17:35:03,835 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-9) is shutting down (timeout:45s)
+2022-12-01 17:35:03,837 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:35:03,837 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route7 (timer://foo)
+2022-12-01 17:35:03,838 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-9) shutdown in 2ms (uptime:5s)
+2022-12-01 17:35:07,384 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-10) is starting
+2022-12-01 17:35:07,385 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:35:07,385 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route8 (timer://foo)
+2022-12-01 17:35:07,386 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-10) started in 12ms (build:2ms init:9ms start:1ms)
+2022-12-01 17:35:12,396 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-10) is shutting down (timeout:45s)
+2022-12-01 17:35:12,397 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:35:12,398 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route8 (timer://foo)
+2022-12-01 17:35:12,398 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-10) shutdown in 2ms (uptime:5s)
+2022-12-01 17:36:22,144 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-11) is starting
+2022-12-01 17:36:22,145 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:36:22,145 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route9 (timer://foo)
+2022-12-01 17:36:22,146 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-11) started in 14ms (build:2ms init:11ms start:1ms)
+2022-12-01 17:36:27,160 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-11) is shutting down (timeout:45s)
+2022-12-01 17:36:27,161 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:36:27,163 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route9 (timer://foo)
+2022-12-01 17:36:27,163 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-11) shutdown in 3ms (uptime:5s)
+2022-12-01 17:38:29,706 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-12) is starting
+2022-12-01 17:38:29,708 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:38:29,708 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route10 (timer://foo)
+2022-12-01 17:38:29,708 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-12) started in 13ms (build:2ms init:10ms start:1ms)
+2022-12-01 17:38:34,709 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-12) is shutting down (timeout:45s)
+2022-12-01 17:38:34,710 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:38:34,710 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route10 (timer://foo)
+2022-12-01 17:38:34,711 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-12) shutdown in 1ms (uptime:5s)
+2022-12-01 17:41:07,266 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-13) is starting
+2022-12-01 17:41:07,267 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:41:07,267 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route11 (timer://foo)
+2022-12-01 17:41:07,267 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-13) started in 13ms (build:3ms init:10ms start:0ms)
+2022-12-01 17:41:12,278 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-13) is shutting down (timeout:45s)
+2022-12-01 17:41:12,279 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:41:12,280 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route11 (timer://foo)
+2022-12-01 17:41:12,280 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-13) shutdown in 2ms (uptime:5s)
+2022-12-01 17:42:00,082 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-14) is starting
+2022-12-01 17:42:00,083 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:42:00,083 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route12 (timer://foo)
+2022-12-01 17:42:00,084 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-14) started in 16ms (build:3ms init:12ms start:1ms)
+2022-12-01 17:42:05,089 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-14) is shutting down (timeout:45s)
+2022-12-01 17:42:05,090 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:42:05,090 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route12 (timer://foo)
+2022-12-01 17:42:05,091 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-14) shutdown in 1ms (uptime:5s)
+2022-12-01 17:43:05,922 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-15) is starting
+2022-12-01 17:43:05,923 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:43:05,923 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route13 (timer://foo)
+2022-12-01 17:43:05,923 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-15) started in 11ms (build:2ms init:9ms start:0ms)
+2022-12-01 17:43:10,938 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-15) is shutting down (timeout:45s)
+2022-12-01 17:43:10,939 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:43:10,940 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route13 (timer://foo)
+2022-12-01 17:43:10,940 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-15) shutdown in 2ms (uptime:5s)
+2022-12-01 17:43:13,009 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-16) is starting
+2022-12-01 17:43:13,010 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:43:13,010 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route14 (timer://foo)
+2022-12-01 17:43:13,010 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-16) started in 11ms (build:4ms init:7ms start:0ms)
+2022-12-01 17:43:18,011 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-16) is shutting down (timeout:45s)
+2022-12-01 17:43:18,012 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:43:18,013 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route14 (timer://foo)
+2022-12-01 17:43:18,013 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-16) shutdown in 2ms (uptime:5s)
+2022-12-01 17:46:07,813 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-17) is starting
+2022-12-01 17:46:07,814 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:46:07,815 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route15 (timer://foo)
+2022-12-01 17:46:07,815 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-17) started in 10ms (build:2ms init:7ms start:1ms)
+2022-12-01 17:46:12,824 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-17) is shutting down (timeout:45s)
+2022-12-01 17:46:12,825 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:46:12,825 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route15 (timer://foo)
+2022-12-01 17:46:12,825 [http-nio-8080-exec-9] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-17) shutdown in 1ms (uptime:5s)
+2022-12-01 17:47:24,962 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-18) is starting
+2022-12-01 17:47:24,963 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:47:24,963 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route16 (timer://foo)
+2022-12-01 17:47:24,963 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-18) started in 12ms (build:3ms init:9ms start:0ms)
+2022-12-01 17:47:29,965 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-18) is shutting down (timeout:45s)
+2022-12-01 17:47:29,966 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:47:29,966 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route16 (timer://foo)
+2022-12-01 17:47:29,966 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-18) shutdown in 1ms (uptime:5s)
+2022-12-01 17:47:33,726 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-19) is starting
+2022-12-01 17:47:33,726 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:47:33,727 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route17 (timer://foo)
+2022-12-01 17:47:33,727 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-19) started in 8ms (build:2ms init:6ms start:0ms)
+2022-12-01 17:47:38,729 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-19) is shutting down (timeout:45s)
+2022-12-01 17:47:38,729 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:47:38,730 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route17 (timer://foo)
+2022-12-01 17:47:38,730 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-19) shutdown in 2ms (uptime:5s)
+2022-12-01 17:49:07,593 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-20) is starting
+2022-12-01 17:49:07,594 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:49:07,595 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route18 (timer://foo)
+2022-12-01 17:49:07,595 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-20) started in 8ms (build:2ms init:6ms start:0ms)
+2022-12-01 17:49:12,597 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-20) is shutting down (timeout:45s)
+2022-12-01 17:49:12,598 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:49:12,598 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route18 (timer://foo)
+2022-12-01 17:49:12,599 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-20) shutdown in 1ms (uptime:5s)
+2022-12-01 17:49:17,057 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-21) is starting
+2022-12-01 17:49:17,058 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:49:17,058 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route19 (timer://foo)
+2022-12-01 17:49:17,058 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-21) started in 11ms (build:2ms init:9ms start:0ms)
+2022-12-01 17:49:22,059 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-21) is shutting down (timeout:45s)
+2022-12-01 17:49:22,060 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:49:22,060 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route19 (timer://foo)
+2022-12-01 17:49:22,060 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-21) shutdown in 1ms (uptime:5s)
+2022-12-01 17:52:49,889 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-22) is starting
+2022-12-01 17:52:49,890 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-01 17:52:49,890 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route20 (timer://foo)
+2022-12-01 17:52:49,890 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-22) started in 8ms (build:2ms init:6ms start:0ms)
+2022-12-01 17:52:54,904 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-22) is shutting down (timeout:45s)
+2022-12-01 17:52:54,905 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-01 17:52:54,905 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route20 (timer://foo)
+2022-12-01 17:52:54,906 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-22) shutdown in 2ms (uptime:5s)

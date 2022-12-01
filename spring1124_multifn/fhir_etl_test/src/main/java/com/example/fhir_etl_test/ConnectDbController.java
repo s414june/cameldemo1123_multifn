@@ -37,7 +37,7 @@ public class ConnectDbController extends HttpServlet {
     }
 
     @PostMapping("/api/connectdb")
-    public ResponseEntity<?> getSearchResultViaAjax(HttpServletRequest request, HttpServletResponse response,
+    public ResponseEntity<?> getConnectResultViaAjax(HttpServletRequest request, HttpServletResponse response,
             @Validated @RequestBody String connectdatas, Errors errors)
             throws Exception {
         doGet(request, response);

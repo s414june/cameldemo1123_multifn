@@ -20,65 +20,84 @@
         <div class="col-6">
             <h3>輸入資料</h3>
             <div>
-                <p class="m-0 text-primary">【資料庫連線】</p>
-                <form id="ConnectdbForm" class="d-flex flex-wrap">
-                    <div class="connect-group my-2">
-                        <div class="d-flex align-items-center input-group">
-                            <p class="m-0"><span class="required">*</span>資料來源：</p>
-                            <select name="driver" id="" class="form-select" required>
-                                <option value="" selected disabled>請選擇</option>
-                                <option value="sqlserver">SQL Server</option>
-                                <option value="mysql">MySQL</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="connect-group my-2">
-                        <div class="d-flex align-items-center input-group">
-                            <p class="m-0"><span class="required">*</span>伺服器名稱：</p>
-                            <input type="text" class="form-control" name="servername" value="SQLEXPRESS" required>
-                        </div>
-                        <small>範例：<span class="text-primary">SQLEXPRESS</span></small>
-                    </div>
-                    <div class="connect-group my-2">
-                        <div class="d-flex align-items-center input-group">
-                            <p class="m-0"><span class="required">*</span>使用者名稱：</p>
-                            <input type="text" class="form-control" name="username" required>
-                        </div>
-                    </div>
-                    <div class="connect-group my-2">
-                        <div class="d-flex align-items-center input-group">
-                            <p class="m-0"><span class="required">*</span>密碼：</p>
-                            <input type="password" class="form-control" autocomplete="false" name="password" required>
-                        </div>
-                    </div>
-                    <div class="connect-group my-2">
-                        <div class="d-flex align-items-center input-group">
-                            <p class="m-0"><span class="required">*</span>連接埠：</p>
-                            <input type="text" class="form-control" name="portnumber" value="1433" required>
-                        </div>
-                        <small>範例：<span class="text-primary">1433</span></small>
-                    </div>
-                    <div class="connect-group my-2">
-                        <div class="d-flex align-items-center input-group">
-                            <p class="m-0">資料庫名稱：</p>
-                            <input type="text" class="form-control" name="databasename">
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary my-2 mx-3">連線</button>
-                </form>
-                <hr>
-                <p class="m-0 text-primary"></p>
-                <form id="SearchdbForm" class="d-flex flex-wrap"></form>
                 <div>
-                    <div id="dbresult"></div>
+                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_ConnectdbForm" aria-expanded="true"
+                        aria-controls="collapse_ConnectdbForm" id="btn_ConnectdbForm">資料庫連線</button>
+                    <span class="mx-2 text-primary"></span>
                 </div>
-                <hr>
-                <p class="m-0 text-primary"></p>
-                <form id="SearchtableForm" class="d-flex flex-wrap"></form>
+                <div class="collapse show" id="collapse_ConnectdbForm">
+                    <div class="card card-body">
+                        <form id="ConnectdbForm" class="d-flex flex-wrap">
+                            <div class="connect-group my-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>資料來源：</p>
+                                    <select name="driver" id="" class="form-select" required>
+                                        <option value="" selected disabled>請選擇</option>
+                                        <option value="sqlserver">SQL Server</option>
+                                        <option value="mysql">MySQL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="connect-group my-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>伺服器名稱：</p>
+                                    <input type="text" class="form-control" name="servername" value="SQLEXPRESS"
+                                        required>
+                                </div>
+                                <small>範例：<span class="text-success">SQLEXPRESS</span></small>
+                            </div>
+                            <div class="connect-group my-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>使用者名稱：</p>
+                                    <input type="text" class="form-control" name="username" required>
+                                </div>
+                            </div>
+                            <div class="connect-group my-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>密碼：</p>
+                                    <input type="password" class="form-control" autocomplete="false" name="password"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="connect-group my-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>連接埠：</p>
+                                    <input type="text" class="form-control" name="portnumber" value="1433" required>
+                                </div>
+                                <small>範例：<span class="text-success">1433</span></small>
+                            </div>
+                            <div class="connect-group my-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0">資料庫名稱：</p>
+                                    <input type="text" class="form-control" name="databasename">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success my-2 mx-3">連線</button>
+                        </form>
+                    </div>
+                </div>
                 <div>
-                    <div id="dbresult"></div>
+                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_SearchdbForm" aria-expanded="true"
+                        aria-controls="collapse_SearchdbForm" id="btn_SearchdbForm"></button>
+                    <span class="mx-2 text-primary"></span>
                 </div>
-                <hr>
+                <div class="collapse" id="collapse_SearchdbForm">
+                    <div class="card card-body">
+                        <form id="SearchdbForm" class="d-flex flex-wrap"></form>
+                    </div>
+                </div>
+                <div>
+                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_SearchtableForm" aria-expanded="true"
+                        aria-controls="collapse_SearchtableForm" id="btn_SearchtableForm"></button>
+                </div>
+                <div class="collapse" id="collapse_SearchtableForm">
+                    <div class="card card-body">
+                        <form id="SearchtableForm" class="d-flex flex-wrap"></form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-6">
@@ -90,9 +109,11 @@
     </div>
 </body>
 <script>
-    $(function(){
+    $(function () {
         $(".loading-place").hide();
         $("hr").hide();
+        $("#btn_SearchdbForm").hide();
+        $("#btn_SearchtableForm").hide();
     })
     $("#ConnectdbForm").submit(function (event) {
         event.preventDefault();
@@ -105,20 +126,24 @@
             cache: false,
             timeout: 600000,
             success: function (d) {
-                addSelector(d,"資料庫選擇","資料庫清單","#SearchdbForm");
+                addSelector(d, "資料庫選擇", "資料庫清單", "#SearchdbForm");
+                $("#btn_SearchdbForm").show();
+                $("#collapse_SearchdbForm").addClass("show");
+                $("#btn_ConnectdbForm").next().text("已連線");
+                $("#collapse_ConnectdbForm").removeClass("show");
             },
             error: function (e) {
                 $(".loading-place").hide();
                 console.error(e);
-                if(e.responseText)
+                if (e.responseText)
                     alert(e.responseText);
                 else
                     alert("錯誤");
             }
         });
     });
-    function addSelector(d,title,listname,cssselector){
-        try{
+    function addSelector(d, title, listname, cssselector) {
+        try {
             let data = JSON.parse(d);
             console.log(data)
             let appendHtml = "";
@@ -126,23 +151,23 @@
                                 <div class="d-flex align-items-center input-group">
                                     <p class="m-0">${listname}：</p>
                                     <select name="selectdata" id="" class="form-select" required>`;
-            $(data).each((i,v)=>{
+            $(data).each((i, v) => {
                 appendHtml += `<option value="${v["name"]}">${v["name"]}</option>`
             })
-            appendHtml +=`</select>
+            appendHtml += `</select>
                         </div>
                     </div>`;
-            appendHtml += `<button type="submit" class="btn btn-primary my-2 mx-3">選擇</button>`;
+            appendHtml += `<button type="submit" class="btn btn-success my-2 mx-3">選擇</button>`;
             $(cssselector).html(appendHtml);
-            $(cssselector).prev().text(`【${title}】`);
-            $(cssselector).prev().prev().show();
+            $(cssselector).parent().parent().prev().children().first().text(`${title}`);
             $(".loading-place").hide();
         }
-        catch(e){
+        catch (e) {
             console.error(e);
             $(".loading-place").hide();
         }
     }
+    
 
     $("#SearchdbForm").submit(function (event) {
         event.preventDefault();
@@ -155,12 +180,16 @@
             cache: false,
             timeout: 600000,
             success: function (d) {
-                addSelector(d,"資料表選擇","資料表清單","#SearchtableForm");
+                addSelector(d, "資料表選擇", "資料表清單", "#SearchtableForm");
+                $("#btn_SearchtableForm").show();
+                $("#collapse_SearchtableForm").addClass("show");
+                $("#btn_SearchdbForm").next().text($(event.target).serializeObject()["selectdata"]);
+                $("#collapse_SearchdbForm").removeClass("show");
             },
             error: function (e) {
                 $(".loading-place").hide();
                 console.error(e);
-                if(e.responseText)
+                if (e.responseText)
                     alert(e.responseText);
                 else
                     alert("錯誤");
@@ -169,9 +198,10 @@
     });
 </script>
 <style>
-    :root{
+    :root {
         font-size: 14px;
     }
+
     .input-group {
         width: fit-content;
     }
@@ -184,20 +214,21 @@
     .input-group .form-select {
         width: 250px;
     }
-    span.required{
+
+    span.required {
         color: red;
     }
 
-    .connect-group small{
+    .connect-group small {
         margin-left: 100px;
     }
 
-    .loading-place{
+    .loading-place {
         display: flex;
         position: fixed;
         left: 25%;
         top: 50%;
-        transform: translate(-25%,-50%);
+        transform: translate(-25%, -50%);
     }
 </style>
 

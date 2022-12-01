@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 
 @RestController
@@ -48,8 +49,11 @@ public class SearchDbController extends HttpServlet {
 
         SetupDataSource setupDataSource = new SetupDataSource();
         JsonNode dataObj = setupDataSource.getSession_JsonNode(session);
+        useDB = dbObj.findValue("selectdata").asText();
+        ObjectNode objectNode = (ObjectNode)dataObj;
+        objectNode.put("databasename", useDB);
+        dataObj = objectNode;
         if (dataObj.findValue("driver").asText().equals("sqlserver")) {
-            useDB = dbObj.findValue("selectdata").asText();
             SQLServerDataSource dbSource = setupDataSource.setSQL(dataObj);
             DefaultRegistry reg = new DefaultRegistry();
             reg.bind("dbSource", dbSource);
