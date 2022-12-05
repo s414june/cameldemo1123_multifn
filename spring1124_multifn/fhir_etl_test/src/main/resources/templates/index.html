@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FHIR ETL TOOL</title>
 
     <link rel="stylesheet" type="text/css" th:href="@{/system/styles/bootstrap.min.css}" />
     <script type="text/javascript" th:src="@{/system/scripts/bootstrap.min.js}"></script>
@@ -29,7 +29,7 @@
                 <div class="collapse show" id="collapse_ConnectdbForm">
                     <div class="card card-body">
                         <form id="ConnectdbForm" class="d-flex flex-wrap">
-                            <div class="connect-group my-2">
+                            <div class="connect-group my-2 me-2">
                                 <div class="d-flex align-items-center input-group">
                                     <p class="m-0"><span class="required">*</span>資料來源：</p>
                                     <select name="driver" id="" class="form-select" required>
@@ -39,7 +39,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="connect-group my-2">
+                            <div class="connect-group my-2 me-2">
                                 <div class="d-flex align-items-center input-group">
                                     <p class="m-0"><span class="required">*</span>伺服器名稱：</p>
                                     <input type="text" class="form-control" name="servername" value="SQLEXPRESS"
@@ -47,27 +47,27 @@
                                 </div>
                                 <small>範例：<span class="text-success">SQLEXPRESS</span></small>
                             </div>
-                            <div class="connect-group my-2">
+                            <div class="connect-group my-2 me-2">
                                 <div class="d-flex align-items-center input-group">
                                     <p class="m-0"><span class="required">*</span>使用者名稱：</p>
                                     <input type="text" class="form-control" name="username" required>
                                 </div>
                             </div>
-                            <div class="connect-group my-2">
+                            <div class="connect-group my-2 me-2">
                                 <div class="d-flex align-items-center input-group">
                                     <p class="m-0"><span class="required">*</span>密碼：</p>
                                     <input type="password" class="form-control" autocomplete="false" name="password"
                                         required>
                                 </div>
                             </div>
-                            <div class="connect-group my-2">
+                            <div class="connect-group my-2 me-2">
                                 <div class="d-flex align-items-center input-group">
                                     <p class="m-0"><span class="required">*</span>連接埠：</p>
                                     <input type="text" class="form-control" name="portnumber" value="1433" required>
                                 </div>
                                 <small>範例：<span class="text-success">1433</span></small>
                             </div>
-                            <div class="connect-group my-2">
+                            <div class="connect-group my-2 me-2">
                                 <div class="d-flex align-items-center input-group">
                                     <p class="m-0">資料庫名稱：</p>
                                     <input type="text" class="form-control" name="databasename">
@@ -92,32 +92,166 @@
                     <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                         data-bs-target="#collapse_SearchtableForm" aria-expanded="true"
                         aria-controls="collapse_SearchtableForm" id="btn_SearchtableForm"></button>
+                    <span class="mx-2 text-primary"></span>
                 </div>
                 <div class="collapse" id="collapse_SearchtableForm">
                     <div class="card card-body">
                         <form id="SearchtableForm" class="d-flex flex-wrap"></form>
                     </div>
                 </div>
+                <div>
+                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_SearchedTable" aria-expanded="true"
+                        aria-controls="collapse_SearchedTable" id="btn_SearchedTable"></button>
+                </div>
+                <div class="collapse" id="collapse_SearchedTable">
+                    <div class="card card-body">
+                        <form id="ChooseColumnForm" class="d-flex flex-wrap">
+                            <table id="SearchedTable">
+                                <thead>
+                                    <tr>
+                                        <th>資料行名稱</th>
+                                        <th>資料類型</th>
+                                        <th>允許NULL</th>
+                                        <th class="text-primary">轉換</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-6">
             <h3>輸出資料</h3>
+            <div>
+                <div>
+                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_ConnectdbForm_OUT" aria-expanded="true"
+                        aria-controls="collapse_ConnectdbForm_OUT" id="btn_ConnectdbForm_OUT">資料庫連線</button>
+                    <span class="mx-2 text-primary"></span>
+                </div>
+                <div class="collapse show" id="collapse_ConnectdbForm_OUT">
+                    <div class="card card-body">
+                        <form id="ConnectdbForm_OUT" class="d-flex flex-wrap">
+                            <div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>資料來源：</p>
+                                    <select name="driver" id="" class="form-select" required>
+                                        <option value="" selected disabled>請選擇</option>
+                                        <option value="sqlserver">SQL Server</option>
+                                        <option value="mysql">MySQL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>伺服器名稱：</p>
+                                    <input type="text" class="form-control" name="servername" value="SQLEXPRESS"
+                                        required>
+                                </div>
+                                <small>範例：<span class="text-success">SQLEXPRESS</span></small>
+                            </div>
+                            <div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>使用者名稱：</p>
+                                    <input type="text" class="form-control" name="username" required>
+                                </div>
+                            </div>
+                            <div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>密碼：</p>
+                                    <input type="password" class="form-control" autocomplete="false" name="password"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0"><span class="required">*</span>連接埠：</p>
+                                    <input type="text" class="form-control" name="portnumber" value="1433" required>
+                                </div>
+                                <small>範例：<span class="text-success">1433</span></small>
+                            </div>
+                            <div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0">資料庫名稱：</p>
+                                    <input type="text" class="form-control" name="databasename">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success my-2 mx-3">連線</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_SearchdbForm_OUT" aria-expanded="true"
+                        aria-controls="collapse_SearchdbForm_OUT" id="btn_SearchdbForm_OUT"></button>
+                    <span class="mx-2 text-primary"></span>
+                </div>
+                <div class="collapse" id="collapse_SearchdbForm_OUT">
+                    <div class="card card-body">
+                        <form id="SearchdbForm_OUT" class="d-flex flex-wrap"></form>
+                    </div>
+                </div>
+                <div>
+                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_SearchtableForm_OUT" aria-expanded="true"
+                        aria-controls="collapse_SearchtableForm_OUT" id="btn_SearchtableForm_OUT"></button>
+                    <span class="mx-2 text-primary"></span>
+                </div>
+                <div class="collapse" id="collapse_SearchtableForm_OUT">
+                    <div class="card card-body">
+                        <form id="SearchtableForm_OUT" class="d-flex flex-wrap"></form>
+                    </div>
+                </div>
+                <div>
+                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_SearchedTable_OUT" aria-expanded="true"
+                        aria-controls="collapse_SearchedTable_OUT" id="btn_SearchedTable_OUT"></button>
+                </div>
+                <div class="collapse" id="collapse_SearchedTable_OUT">
+                    <div class="card card-body">
+                        <form id="ChooseColumnForm_OUT" class="d-flex flex-wrap">
+                            <table id="SearchedTable_OUT">
+                                <thead>
+                                    <tr>
+                                        <th>資料行名稱</th>
+                                        <th>資料類型</th>
+                                        <th>允許NULL</th>
+                                        <th class="text-primary">轉換</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="loading-place flex-column align-items-center">
+    <div class="loading-place flex-column align-items-center loading-left">
+        <img th:src="@{/images/loading.svg}" alt="loading">
+    </div>
+    <div class="loading-place flex-column align-items-center loading-right">
         <img th:src="@{/images/loading.svg}" alt="loading">
     </div>
 </body>
 <script>
     $(function () {
         $(".loading-place").hide();
-        $("hr").hide();
+        // $("hr").hide();
         $("#btn_SearchdbForm").hide();
         $("#btn_SearchtableForm").hide();
+        $("#btn_SearchedTable").hide();
+        $("#btn_SearchdbForm_OUT").hide();
+        $("#btn_SearchtableForm_OUT").hide();
+        $("#btn_SearchedTable_OUT").hide();
     })
+
     $("#ConnectdbForm").submit(function (event) {
         event.preventDefault();
-        $(".loading-place").fadeIn();
+        $(".loading-left").fadeIn();
         $.ajax({
             type: "POST",
             contentType: "application/json",
@@ -133,7 +267,7 @@
                 $("#collapse_ConnectdbForm").removeClass("show");
             },
             error: function (e) {
-                $(".loading-place").hide();
+                $(".loading-left").hide();
                 console.error(e);
                 if (e.responseText)
                     alert(e.responseText);
@@ -142,12 +276,156 @@
             }
         });
     });
+
+    $("#SearchdbForm").submit(function (event) {
+        event.preventDefault();
+        $(".loading-left").fadeIn();
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "api/searchdb",
+            data: JSON.stringify($(event.target).serializeObject()),
+            cache: false,
+            timeout: 600000,
+            success: function (d) {
+                addSelector(d, "資料表選擇", "資料表清單", "#SearchtableForm");
+                $("#btn_SearchtableForm").show();
+                $("#collapse_SearchtableForm").addClass("show");
+                $("#btn_SearchdbForm").next().text($(event.target).serializeObject()["selectdata"]);
+                $("#collapse_SearchdbForm").removeClass("show");
+            },
+            error: function (e) {
+                $(".loading-left").hide();
+                console.error(e);
+                if (e.responseText)
+                    alert(e.responseText);
+                else
+                    alert("錯誤");
+            }
+        });
+    });
+
+
+    $("#SearchtableForm").submit(function (event) {
+        event.preventDefault();
+        $(".loading-left").fadeIn();
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "api/searchtable",
+            data: JSON.stringify($(event.target).serializeObject()),
+            cache: false,
+            timeout: 600000,
+            success: function (d) {
+                addTable(d, "資料表清單", "#SearchedTable");
+                $("#btn_SearchedTable").show();
+                $("#collapse_SearchedTable").addClass("show");
+                $("#btn_SearchtableForm").next().text($(event.target).serializeObject()["selectdata"]);
+                $("#collapse_SearchtableForm").removeClass("show");
+                $(".loading-left").hide();
+            },
+            error: function (e) {
+                $(".loading-left").hide();
+                console.error(e);
+                if (e.responseText)
+                    alert(e.responseText);
+                else
+                    alert("錯誤");
+            }
+        });
+    });
+
+    $("#ConnectdbForm_OUT").submit(function (event) {
+        event.preventDefault();
+        $(".loading-right").fadeIn();
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "api/connectdb",
+            data: JSON.stringify($(event.target).serializeObject()),
+            cache: false,
+            timeout: 600000,
+            success: function (d) {
+                addSelector(d, "資料庫選擇", "資料庫清單", "#SearchdbForm_OUT");
+                $("#btn_SearchdbForm_OUT").show();
+                $("#collapse_SearchdbForm_OUT").addClass("show");
+                $("#btn_ConnectdbForm_OUT").next().text("已連線");
+                $("#collapse_ConnectdbForm_OUT").removeClass("show");
+            },
+            error: function (e) {
+                $(".loading-right").hide();
+                console.error(e);
+                if (e.responseText)
+                    alert(e.responseText);
+                else
+                    alert("錯誤");
+            }
+        });
+    });
+
+    $("#SearchdbForm_OUT").submit(function (event) {
+        event.preventDefault();
+        $(".loading-right").fadeIn();
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "api/searchdb",
+            data: JSON.stringify($(event.target).serializeObject()),
+            cache: false,
+            timeout: 600000,
+            success: function (d) {
+                addSelector(d, "資料表選擇", "資料表清單", "#SearchtableForm_OUT");
+                $("#btn_SearchtableForm_OUT").show();
+                $("#collapse_SearchtableForm_OUT").addClass("show");
+                $("#btn_SearchdbForm_OUT").next().text($(event.target).serializeObject()["selectdata"]);
+                $("#collapse_SearchdbForm_OUT").removeClass("show");
+            },
+            error: function (e) {
+                $(".loading-right").hide();
+                console.error(e);
+                if (e.responseText)
+                    alert(e.responseText);
+                else
+                    alert("錯誤");
+            }
+        });
+    });
+
+
+    $("#SearchtableForm_OUT").submit(function (event) {
+        event.preventDefault();
+        $(".loading-right").fadeIn();
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "api/searchtable",
+            data: JSON.stringify($(event.target).serializeObject()),
+            cache: false,
+            timeout: 600000,
+            success: function (d) {
+                addTable(d, "資料表清單", "#SearchedTable_OUT");
+                $("#btn_SearchedTable_OUT").show();
+                $("#collapse_SearchedTable_OUT").addClass("show");
+                $("#btn_SearchtableForm_OUT").next().text($(event.target).serializeObject()["selectdata"]);
+                $("#collapse_SearchtableForm_OUT").removeClass("show");
+                $(".loading-right").hide();
+            },
+            error: function (e) {
+                $(".loading-right").hide();
+                console.error(e);
+                if (e.responseText)
+                    alert(e.responseText);
+                else
+                    alert("錯誤");
+            }
+        });
+    });
+
     function addSelector(d, title, listname, cssselector) {
         try {
             let data = JSON.parse(d);
-            console.log(data)
             let appendHtml = "";
-            appendHtml += `<div class="connect-group my-2">
+            appendHtml += `<div class="connect-group my-2 me-2">
                                 <div class="d-flex align-items-center input-group">
                                     <p class="m-0">${listname}：</p>
                                     <select name="selectdata" id="" class="form-select" required>`;
@@ -167,39 +445,54 @@
             $(".loading-place").hide();
         }
     }
-    
 
-    $("#SearchdbForm").submit(function (event) {
-        event.preventDefault();
-        $(".loading-place").fadeIn();
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: "api/searchdb",
-            data: JSON.stringify($(event.target).serializeObject()),
-            cache: false,
-            timeout: 600000,
-            success: function (d) {
-                addSelector(d, "資料表選擇", "資料表清單", "#SearchtableForm");
-                $("#btn_SearchtableForm").show();
-                $("#collapse_SearchtableForm").addClass("show");
-                $("#btn_SearchdbForm").next().text($(event.target).serializeObject()["selectdata"]);
-                $("#collapse_SearchdbForm").removeClass("show");
-            },
-            error: function (e) {
-                $(".loading-place").hide();
-                console.error(e);
-                if (e.responseText)
-                    alert(e.responseText);
-                else
-                    alert("錯誤");
-            }
-        });
-    });
+    function addTable(d, title, cssselector) {
+        try {
+            let data = JSON.parse(d);
+            let appendHtml = "";
+            $(data).each((i, v) => {
+                appendHtml += `<tr>
+                    <td>${v["COLUMN_NAME"]}</td>
+                    <td>${v["DATA_TYPE"]}`;
+                if (v["NUMERIC_PRECISION"] != null) {
+                    if (v["NUMERIC_SCALE"] == null || v["NUMERIC_SCALE"] == 0) {
+                        appendHtml += "(" + v["NUMERIC_PRECISION"] + ")";
+                    }
+                    else {
+                        appendHtml += "(" + v["NUMERIC_PRECISION"] + "," + v["NUMERIC_SCALE"] + ")";
+                    }
+                }
+                appendHtml += `</td>
+                    <td>${v["IS_NULLABLE"]}</td>
+                    <td>
+                        <input type="text" class="form-control"></input>
+                    </td>
+                </tr>
+                `
+            })
+            $(cssselector).find("tbody").html(appendHtml);
+            $(cssselector).parent().parent().parent().prev().children().first().text(`${title}`);
+            $(cssselector).prev().text(`${title}`);
+            $(".loading-place").hide();
+
+        } catch (e) {
+            $(".loading-place").hide();
+            console.error(e);
+            if (e.responseText)
+                alert(e.responseText);
+            else
+                alert("錯誤");
+        }
+    }
+
 </script>
 <style>
     :root {
         font-size: 14px;
+    }
+
+    button{
+        height: fit-content;
     }
 
     .input-group {
@@ -226,9 +519,23 @@
     .loading-place {
         display: flex;
         position: fixed;
-        left: 25%;
         top: 50%;
+    }
+
+    .loading-left {
+        left: 25%;
         transform: translate(-25%, -50%);
+    }
+
+    .loading-right {
+        left: 75%;
+        transform: translate(-75%, -50%);
+    }
+
+    th,
+    td {
+        border: 1px solid gray;
+        padding: 5px;
     }
 </style>
 

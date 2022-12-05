@@ -29,16 +29,16 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 
 @RestController
-public class SearchDbController extends HttpServlet {
+public class SearchTableController extends HttpServlet {
     HttpSession session = null;
-    String useDB = "";
+    String useTable = "";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         session = request.getSession();
     }
 
-    @PostMapping("/api/searchdb")
+    @PostMapping("/api/searchtable")
     public ResponseEntity<?> getSearchResultViaAjax(HttpServletRequest request, HttpServletResponse response,
             @Validated @RequestBody String dbdatas, Errors errors)
             throws Exception {
@@ -49,11 +49,10 @@ public class SearchDbController extends HttpServlet {
 
         SetupDataSource setupDataSource = new SetupDataSource();
         JsonNode dataObj = setupDataSource.getSession_JsonNode(session);
-        useDB = dbObj.findValue("selectdata").asText();
-        ObjectNode objectNode = (ObjectNode)dataObj;
-        objectNode.put("databasename", useDB);
+        useTable = dbObj.findValue("selectdata").asText();
+        ObjectNode objectNode = (ObjectNode) dataObj;
+        // objectNode.put("databasetable", useTable);
         dataObj = objectNode;
-        setupDataSource.setSession(dataObj, session);
         if (dataObj.findValue("driver").asText().equals("sqlserver")) {
             SQLServerDataSource dbSource = setupDataSource.setSQL(dataObj);
             DefaultRegistry reg = new DefaultRegistry();
@@ -83,9 +82,11 @@ public class SearchDbController extends HttpServlet {
         boolean hasErrors = false;
 
         public void configure() throws Exception {
+            String sqlStr = "";
+            sqlStr += "SELECT COLUMN_NAME,DATA_TYPE,IS_NULLABLE,NUMERIC_PRECISION,NUMERIC_SCALE";
+            sqlStr += " FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '" + useTable + "';";
             from("timer://foo?repeatCount=1")
-                    .setBody(constant(
-                            "use " + useDB + ";SELECT DISTINCT TABLE_NAME AS 'name' FROM INFORMATION_SCHEMA.COLUMNS"))
+                    .setBody(constant(sqlStr))
                     .doTry()
                     .to("jdbc:dbSource")
                     // .split(body())
