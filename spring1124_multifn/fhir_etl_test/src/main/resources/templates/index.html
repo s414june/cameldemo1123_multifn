@@ -12,8 +12,10 @@
     <script type="text/javascript" th:src="@{/system/scripts/bootstrap.min.js}"></script>
     <script type="text/javascript" th:src="@{/system/scripts/jquery-3.6.0.min.js}"></script>
     <script type="text/javascript" th:src="@{/system/scripts/jq-add.js}"></script>
-    <link rel="stylesheet" th:href="@{/package/font-awesome/css/all.min.css}"></link>
-    <link rel="stylesheet" th:href="@{/styles/style.css}"></link>
+    <link rel="stylesheet" th:href="@{/package/font-awesome/css/all.min.css}">
+    </link>
+    <link rel="stylesheet" th:href="@{/styles/style.css}">
+    </link>
 </head>
 
 <body>
@@ -61,29 +63,20 @@
         column: ["無"]
     }]
 
-    function addSelector(d , listname, cssselector) {
+    function getSelector(d) {
+        let list = [];
         try {
             let data = JSON.parse(d);
-            let appendHtml = "";
-            appendHtml += `<div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0">${listname}：</p>
-                                    <select name="selectdata" id="" class="form-select" required>
-                                        <option value="" selected disabled>請選擇</option>`;
             $(data).each((i, v) => {
-                appendHtml += `<option value="${v["name"]}">${v["name"]}</option>`
+                list.push(v["name"])
             })
-            appendHtml += `</select>
-                        </div>
-                    </div>`;
-            appendHtml += `<button type="submit" class="btn btn-success my-2 mx-3">選擇</button>`;
-            $(cssselector).html(appendHtml);
             $(".loading-place").hide();
         }
         catch (e) {
             console.error(e);
             $(".loading-place").hide();
         }
+        return list;
     }
 
     function addTable(d, sourceid, isout) {
@@ -151,6 +144,24 @@
                 column: col
             })
         }
+    }
+
+    function refreshInDatas() {
+        $(".in-data").each((i, v) => {
+            let thisCssSelector_In = '#' + v.id;
+            let newInData_Vue = Vue.createApp(getInData())
+                .mount(thisCssSelector_In);
+            $(thisCssSelector_In).html("").append(newInData_Vue.$el)
+        })
+    }
+
+    function refreshOutDatas() {
+        $(".out-data").each((i, v) => {
+            let thisCssSelector_Out = '#' + v.id;
+            let newOutData_Vue = Vue.createApp(getOutData())
+                .mount(thisCssSelector_Out);
+            $(thisCssSelector_Out).html("").append(newOutData_Vue.$el)
+        })
     }
 
     function getInData() {
@@ -301,48 +312,69 @@
                         </form>
                     </div>
                 </div>
-                <div>
+                <div v-show="issearchedsource">
                     <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                         :data-bs-target="'#collapse_SearchdbForm_' + this.sourceid" aria-expanded="true"
                         :aria-controls="'collapse_SearchdbForm_' + this.sourceid" :id="'btn_SearchdbForm_' + this.sourceid"
-                        v-show="issearchedsource"
                     >
                         資料庫選擇
                     </button>
                     <span class="mx-2 text-primary">{{dbtext}}</span>
                 </div>
-                <div class="collapse" :id="'collapse_SearchdbForm_' + this.sourceid">
+                <div class="collapse" :id="'collapse_SearchdbForm_' + this.sourceid" v-show="issearchedsource">
                     <div class="card card-body">
                         <form :id="'SearchdbForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_DB">
+                            <div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0">資料庫清單：</p>
+                                    <select name="selectdata" id="" class="form-select" required :disabled="issearcheddb">
+                                        <option value="" selected disabled>請選擇</option>
+                                        <option v-for="(data,index) in dblist" :value="data" >
+                                            {{data}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success my-2 mx-3" v-show="!issearcheddb">選擇</button>
                         </form>
                     </div>
                 </div>
-                <div>
+                <div v-show="issearcheddb">
                     <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                         :data-bs-target="'#collapse_SearchtableForm_' + this.sourceid" aria-expanded="true"
                         :aria-controls="'collapse_SearchtableForm_' + this.sourceid" :id="'btn_SearchtableForm_' + this.sourceid"
-                        v-show="issearcheddb"
                         >
                         資料表選擇
                     </button>
                     <span class="mx-2 text-primary">{{tabletext}}</span>
                 </div>
-                <div class="collapse" :id="'collapse_SearchtableForm_' + this.sourceid">
+                <div class="collapse" :id="'collapse_SearchtableForm_' + this.sourceid" v-show="issearcheddb">
                     <div class="card card-body">
                         <form :id="'SearchtableForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_Table">
+                            <div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0">資料表清單：</p>
+                                    <select name="selectdata" id="" class="form-select" required :disabled="issearchedtable">
+                                        <option value="" selected disabled>請選擇</option>
+                                        <option v-for="(data,index) in tablelist" :value="data" >
+                                            {{data}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success my-2 mx-3" v-show="!issearchedtable">選擇</button>
                         </form>
                     </div>
                 </div>
-                <div>
+                <div v-show="issearchedtable">
                     <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                         :data-bs-target="'#collapse_SearchedTable_' + this.sourceid" aria-expanded="true"
                         :aria-controls="'collapse_SearchedTable_' + this.sourceid" :id="'btn_SearchedTable_' + this.sourceid"
-                        v-show="issearchedtable"
                     >
                     資料表清單
                     </button>
                 </div>
-                <div class="collapse" :id="'collapse_SearchedTable_' + this.sourceid">
+                <div class="collapse" :id="'collapse_SearchedTable_' + this.sourceid" v-show="issearchedtable">
                     <div class="card card-body">
                         <form :id="'ChooseColumnForm_' + this.sourceid" class="d-flex flex-wrap">
                             <table :id="'SearchedTable_' + this.sourceid">
@@ -376,7 +408,9 @@
                 issearchedsource: false,
                 issearcheddb: false,
                 issearchedtable: false,
-                sourceid: 'A'
+                sourceid: 'A',
+                dblist: [],
+                tablelist: []
             }
         },
         mounted() {
@@ -401,8 +435,11 @@
                     cache: false,
                     timeout: 600000,
                     success: function (d) {
-                        addSelector(d, "資料庫清單", "#SearchdbForm_" + that.sourceid);
+                        let dblist = getSelector(d);
+                        that.dblist = dblist;
                         that.issearchedsource = true;
+                        that.issearcheddb = false;
+                        that.issearchedtable = false;
                         that.sourcetext = '已連線'
                         $("#collapse_SearchdbForm_" + that.sourceid).addClass("show");
                         $("#collapse_ConnectdbForm_" + that.sourceid).removeClass("show");
@@ -430,8 +467,10 @@
                     cache: false,
                     timeout: 600000,
                     success: function (d) {
-                        addSelector(d, "資料表清單", "#SearchtableForm_" + that.sourceid);
+                        let tablelist = getSelector(d);
+                        that.tablelist = tablelist;
                         that.issearcheddb = true;
+                        that.issearchedtable = false;
                         that.dbtext = $(event.target).serializeObject()["selectdata"];
                         $("#collapse_SearchtableForm_" + that.sourceid).addClass("show");
                         $("#collapse_SearchdbForm_" + that.sourceid).removeClass("show");
@@ -465,18 +504,8 @@
                         $("#collapse_SearchedTable_" + that.sourceid).addClass("show");
                         $("#collapse_SearchtableForm_" + that.sourceid).removeClass("show");
 
-                        $(".in-data").each((i, v) => {
-                            let thisCssSelector_In = '#' + v.id;
-                                let newInData_Vue = Vue.createApp(getInData())
-                                    .mount(thisCssSelector_In);
-                                $(thisCssSelector_In).html("").append(newInData_Vue.$el)
-                        })
-                        $(".out-data").each((i, v) => {
-                            let thisCssSelector_Out = '#' + v.id;
-                            let newOutData_Vue = Vue.createApp(getOutData())
-                                .mount(thisCssSelector_Out);
-                            $(thisCssSelector_Out).html("").append(newOutData_Vue.$el)
-                        })
+                        refreshInDatas();
+                        refreshOutDatas();
 
                         $(loading).hide();
                     },
@@ -516,6 +545,8 @@
             deleteSource() {
                 if ($(".source").length > 1) {
                     $("#Sources_In").children().last().remove()
+                    sourcedatas.pop();
+                    refreshInDatas();
                 }
             }
         }
