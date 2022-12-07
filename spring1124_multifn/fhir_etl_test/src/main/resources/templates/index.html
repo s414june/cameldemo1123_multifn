@@ -125,6 +125,18 @@
         <div class="collapse" :id="'collapse_SearchdbForm_' + this.sourceid">
             <div class="card card-body">
                 <form :id="'SearchdbForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_DB">
+                    <div class="connect-group my-2 me-2">
+                        <div class="d-flex align-items-center input-group">
+                            <p class="m-0">資料庫清單：</p>
+                            <select name="selectdata" id="" class="form-select" required :disabled="issearcheddb">
+                                <option value="" selected disabled>請選擇</option>
+                                <option v-for="(data,index) in dblist" :value="data">
+                                    {{data}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success my-2 mx-3" v-show="!issearcheddb">選擇</button>
                 </form>
             </div>
         </div>
@@ -141,6 +153,18 @@
         <div class="collapse" :id="'collapse_SearchtableForm_' + this.sourceid">
             <div class="card card-body">
                 <form :id="'SearchtableForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_Table">
+                    <div class="connect-group my-2 me-2">
+                        <div class="d-flex align-items-center input-group">
+                            <p class="m-0">資料表清單：</p>
+                            <select name="selectdata" id="" class="form-select" required :disabled="issearchedtable">
+                                <option value="" selected disabled>請選擇</option>
+                                <option v-for="(data,index) in tablelist" :value="data">
+                                    {{data}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success my-2 mx-3" v-show="!issearchedtable">選擇</button>
                 </form>
             </div>
         </div>
@@ -186,33 +210,23 @@
         convert: []
     }
 
-    let sourcedatas = [];
+    let indatas = [];
+    let outdatas = [];
 
-    let convertdatas = [];
-
-    function addSelector(d, listname, cssselector) {
+    function getSelector(d) {
+        let list = [];
         try {
             let data = JSON.parse(d);
-            let appendHtml = "";
-            appendHtml += `<div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0">${listname}：</p>
-                                    <select name="selectdata" id="" class="form-select" required>
-                                        <option value="" selected disabled>請選擇</option>`;
             $(data).each((i, v) => {
-                appendHtml += `<option value="${v["name"]}">${v["name"]}</option>`
+                list.push(v["name"])
             })
-            appendHtml += `</select>
-                        </div>
-                    </div>`;
-            appendHtml += `<button type="submit" class="btn btn-success my-2 mx-3">選擇</button>`;
-            $(cssselector).html(appendHtml);
             $(".loading-place").hide();
         }
         catch (e) {
             console.error(e);
             $(".loading-place").hide();
         }
+        return list;
     }
 
     function addTable(d, sourceid, isout) {
@@ -251,7 +265,9 @@
             $(cssselector).find("tbody").html(appendHtml);
             $(".loading-place").hide();
 
-            isout ? refreshDatas(convertdatas, sourceid, col) : refreshDatas(sourcedatas, sourceid, col)
+            isout ?
+                refreshDatas(outdatas, sourceid, "column", col) :
+                refreshDatas(indatas, sourceid, "column", col)
 
         } catch (e) {
             $(".loading-place").hide();
@@ -265,21 +281,32 @@
 
     const { createApp } = Vue
 
-    function refreshDatas(datas, sourceid, col) {
+    function refreshDatas(datas, sourceid, key, val) {
         let hasName = false;
         $(datas).each((i, v) => {
             if (v["name"] == sourceid) {
-                v["column"] = col;
+                v[key] = val;
                 hasName = true;
                 return false;
             }
         })
         if (!hasName) {
             datas.push({
-                name: sourceid,
-                column: col
+                name: sourceid
             })
+            datas[datas.length - 1][key] = val;
         }
+    }
+
+    function getDatasIndex(datas, sourceid) {
+        let index = -1;
+        $(datas).each((i, v) => {
+            if (v["name"] == sourceid) {
+                index = i;
+                return false;
+            }
+        })
+        return index;
     }
 
     function getInData() {
@@ -291,16 +318,13 @@
             <option value="">
                 無
             </option>
-            <option v-for="(sourcedata,index) in sourcedatas" :value="index">
+            <option v-for="(sourcedata,index) in indatas" :value="index">
                 {{sourcedata.name}}
             </option>
         </select>
         <select name="selectdata" id="" class="form-select" required>
-            <option value="" selected disabled>請選擇</option>
-            <option value="" v-show="!isselected">
-                無
-            </option>
-            <option value="" v-for="(col,index) in sourcedatas[nowindex].column" v-show="isselected">
+            <option value="" disabled>請選擇</option>
+            <option value="" v-for="(col,index) in indatas[nowindex].column" v-if="nowindex>=0">
                 {{col}}
             </option>
         </select>
@@ -310,28 +334,25 @@
             },
             data() {
                 return {
-                    sourcedatas: [{
+                    indatas: [{
                         name: 'A',
                         column: ['1', '2', '3']
                     }]
                     ,
-                    nowindex: 0,
-                    isselected: false
+                    nowindex: -1
                 }
             },
             mounted() {
-                this.sourcedatas = sourcedatas
-                this.isselected = true
+                this.indatas = indatas
             },
             methods: {
                 searchColumn(event) {
                     let val = $(event.target).val()
-                    if (val == "") {
-                        this.isselected = false
+                    if (val != "") {
+                        this.nowindex = $(event.target).val();
                     }
                     else {
-                        this.nowindex = $(event.target).val()
-                        this.isselected = true
+                        this.nowindex = -1
                     }
                 }
             }
@@ -349,7 +370,7 @@
                 <option value="">
                     無
                 </option>
-                <option v-for="(col,index) in convertdatas[0].column" :value="index" v-if="nowindex>=0">
+                <option v-for="(col,index) in outdatas[0].column" :value="index" v-if="outdatas.length>0">
                     {{col}}
                 </option>
             </select>
@@ -359,7 +380,7 @@
             },
             data() {
                 return {
-                    convertdatas: [{
+                    outdatas: [{
                         name: 'A',
                         column: ['1', '2', '3']
                     }]
@@ -368,8 +389,8 @@
                 }
             },
             mounted() {
-                this.convertdatas = convertdatas
-                if (convertdatas.length > 0) {
+                this.outdatas = outdatas
+                if (outdatas.length > 0) {
                     this.nowindex = 0
                 }
             },
@@ -394,7 +415,9 @@
                 issearchedsource: false,
                 issearcheddb: false,
                 issearchedtable: false,
-                sourceid: 'A'
+                sourceid: 'A',
+                dblist: [],
+                tablelist: [],
             }
         },
         mounted() {
@@ -419,11 +442,15 @@
                     cache: false,
                     timeout: 600000,
                     success: function (d) {
-                        addSelector(d, "資料庫清單", "#SearchdbForm_" + that.sourceid);
+                        that.dblist = getSelector(d);
                         that.issearchedsource = true;
                         that.sourcetext = '已連線'
                         $("#collapse_SearchdbForm_" + that.sourceid).addClass("show");
                         $("#collapse_ConnectdbForm_" + that.sourceid).removeClass("show");
+
+                        that.isout ?
+                            refreshDatas(outdatas, that.sourceid, "source", $(event.target).serializeObject()) :
+                            refreshDatas(indatas, that.sourceid, "source", $(event.target).serializeObject())
                     },
                     error: function (e) {
                         $(loading).hide();
@@ -448,11 +475,15 @@
                     cache: false,
                     timeout: 600000,
                     success: function (d) {
-                        addSelector(d, "資料表清單", "#SearchtableForm_" + that.sourceid);
+                        that.tablelist = getSelector(d);
                         that.issearcheddb = true;
                         that.dbtext = $(event.target).serializeObject()["selectdata"];
                         $("#collapse_SearchtableForm_" + that.sourceid).addClass("show");
                         $("#collapse_SearchdbForm_" + that.sourceid).removeClass("show");
+
+                        let nowdatas = (that.isout ? outdatas : indatas);
+                        let index = getDatasIndex(nowdatas, that.sourceid);
+                        nowdatas[index]["source"]["databasename"] = $(event.target).serializeObject()["selectdata"];
                     },
                     error: function (e) {
                         $(loading).hide();
