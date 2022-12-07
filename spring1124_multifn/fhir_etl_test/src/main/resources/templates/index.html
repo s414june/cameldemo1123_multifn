@@ -8,16 +8,14 @@
     <title>FHIR ETL TOOL</title>
 
     <link rel="stylesheet" type="text/css" th:href="@{/system/styles/bootstrap.min.css}" />
+    <script type="text/javascript" th:src="@{/system/scripts/vue.global.js}"></script>
     <script type="text/javascript" th:src="@{/system/scripts/bootstrap.min.js}"></script>
     <script type="text/javascript" th:src="@{/system/scripts/jquery-3.6.0.min.js}"></script>
     <script type="text/javascript" th:src="@{/system/scripts/jq-add.js}"></script>
     <link rel="stylesheet" th:href="@{/package/font-awesome/css/all.min.css}">
     </link>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <link rel="stylesheet" th:href="@{/styles/style.css}">
     </link>
-    <script th:src="@{/scripts/script.js}"></script>
 </head>
 
 <body>
@@ -41,231 +39,6 @@
                 <h3 class="m-0 d-flex align-items-center">輸出資料</h3>
             </div>
             <source-data isout></source-data>
-=======
-</head>
-
-<body>
-=======
-</head>
-
-<body>
->>>>>>> parent of cbceb38 (m)
-    <div class="row w-100 p-3">
-        <div class="col-6">
-            <h3>輸入資料</h3>
-            <div>
-                <div>
-                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
-                        data-bs-target="#collapse_ConnectdbForm" aria-expanded="true"
-                        aria-controls="collapse_ConnectdbForm" id="btn_ConnectdbForm">資料庫連線</button>
-                    <span class="mx-2 text-primary"></span>
-                </div>
-                <div class="collapse show" id="collapse_ConnectdbForm">
-                    <div class="card card-body">
-                        <form id="ConnectdbForm" class="d-flex flex-wrap">
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>資料來源：</p>
-                                    <select name="driver" id="" class="form-select" required>
-                                        <option value="" selected disabled>請選擇</option>
-                                        <option value="sqlserver">SQL Server</option>
-                                        <option value="mysql">MySQL</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>伺服器名稱：</p>
-                                    <input type="text" class="form-control" name="servername" value="SQLEXPRESS"
-                                        required>
-                                </div>
-                                <small>範例：<span class="text-success">SQLEXPRESS</span></small>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>使用者名稱：</p>
-                                    <input type="text" class="form-control" name="username" required>
-                                </div>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>密碼：</p>
-                                    <input type="password" class="form-control" autocomplete="false" name="password"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>連接埠：</p>
-                                    <input type="text" class="form-control" name="portnumber" value="1433" required>
-                                </div>
-                                <small>範例：<span class="text-success">1433</span></small>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0">資料庫名稱：</p>
-                                    <input type="text" class="form-control" name="databasename">
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-success my-2 mx-3">連線</button>
-                        </form>
-                    </div>
-                </div>
-                <div>
-                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
-                        data-bs-target="#collapse_SearchdbForm" aria-expanded="true"
-                        aria-controls="collapse_SearchdbForm" id="btn_SearchdbForm"></button>
-                    <span class="mx-2 text-primary"></span>
-                </div>
-                <div class="collapse" id="collapse_SearchdbForm">
-                    <div class="card card-body">
-                        <form id="SearchdbForm" class="d-flex flex-wrap"></form>
-                    </div>
-                </div>
-                <div>
-                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
-                        data-bs-target="#collapse_SearchtableForm" aria-expanded="true"
-                        aria-controls="collapse_SearchtableForm" id="btn_SearchtableForm"></button>
-                    <span class="mx-2 text-primary"></span>
-                </div>
-                <div class="collapse" id="collapse_SearchtableForm">
-                    <div class="card card-body">
-                        <form id="SearchtableForm" class="d-flex flex-wrap"></form>
-                    </div>
-                </div>
-                <div>
-                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
-                        data-bs-target="#collapse_SearchedTable" aria-expanded="true"
-                        aria-controls="collapse_SearchedTable" id="btn_SearchedTable"></button>
-                </div>
-                <div class="collapse" id="collapse_SearchedTable">
-                    <div class="card card-body">
-                        <form id="ChooseColumnForm" class="d-flex flex-wrap">
-                            <table id="SearchedTable">
-                                <thead>
-                                    <tr>
-                                        <th>資料行名稱</th>
-                                        <th>資料類型</th>
-                                        <th>允許NULL</th>
-                                        <th class="text-primary">轉換</th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <h3>輸出資料</h3>
-            <div>
-                <div>
-                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
-                        data-bs-target="#collapse_ConnectdbForm_OUT" aria-expanded="true"
-                        aria-controls="collapse_ConnectdbForm_OUT" id="btn_ConnectdbForm_OUT">資料庫連線</button>
-                    <span class="mx-2 text-primary"></span>
-                </div>
-                <div class="collapse show" id="collapse_ConnectdbForm_OUT">
-                    <div class="card card-body">
-                        <form id="ConnectdbForm_OUT" class="d-flex flex-wrap">
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>資料來源：</p>
-                                    <select name="driver" id="" class="form-select" required>
-                                        <option value="" selected disabled>請選擇</option>
-                                        <option value="sqlserver">SQL Server</option>
-                                        <option value="mysql">MySQL</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>伺服器名稱：</p>
-                                    <input type="text" class="form-control" name="servername" value="SQLEXPRESS"
-                                        required>
-                                </div>
-                                <small>範例：<span class="text-success">SQLEXPRESS</span></small>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>使用者名稱：</p>
-                                    <input type="text" class="form-control" name="username" required>
-                                </div>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>密碼：</p>
-                                    <input type="password" class="form-control" autocomplete="false" name="password"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0"><span class="required">*</span>連接埠：</p>
-                                    <input type="text" class="form-control" name="portnumber" value="1433" required>
-                                </div>
-                                <small>範例：<span class="text-success">1433</span></small>
-                            </div>
-                            <div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0">資料庫名稱：</p>
-                                    <input type="text" class="form-control" name="databasename">
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-success my-2 mx-3">連線</button>
-                        </form>
-                    </div>
-                </div>
-                <div>
-                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
-                        data-bs-target="#collapse_SearchdbForm_OUT" aria-expanded="true"
-                        aria-controls="collapse_SearchdbForm_OUT" id="btn_SearchdbForm_OUT"></button>
-                    <span class="mx-2 text-primary"></span>
-                </div>
-                <div class="collapse" id="collapse_SearchdbForm_OUT">
-                    <div class="card card-body">
-                        <form id="SearchdbForm_OUT" class="d-flex flex-wrap"></form>
-                    </div>
-                </div>
-                <div>
-                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
-                        data-bs-target="#collapse_SearchtableForm_OUT" aria-expanded="true"
-                        aria-controls="collapse_SearchtableForm_OUT" id="btn_SearchtableForm_OUT"></button>
-                    <span class="mx-2 text-primary"></span>
-                </div>
-                <div class="collapse" id="collapse_SearchtableForm_OUT">
-                    <div class="card card-body">
-                        <form id="SearchtableForm_OUT" class="d-flex flex-wrap"></form>
-                    </div>
-                </div>
-                <div>
-                    <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
-                        data-bs-target="#collapse_SearchedTable_OUT" aria-expanded="true"
-                        aria-controls="collapse_SearchedTable_OUT" id="btn_SearchedTable_OUT"></button>
-                </div>
-                <div class="collapse" id="collapse_SearchedTable_OUT">
-                    <div class="card card-body">
-                        <form id="ChooseColumnForm_OUT" class="d-flex flex-wrap">
-                            <table id="SearchedTable_OUT">
-                                <thead>
-                                    <tr>
-                                        <th>資料行名稱</th>
-                                        <th>資料類型</th>
-                                        <th>允許NULL</th>
-                                        <th class="text-primary">轉換</th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-            </div>
-<<<<<<< HEAD
->>>>>>> parent of cbceb38 (m)
-=======
->>>>>>> parent of cbceb38 (m)
         </div>
     </div>
     <div class="loading-place flex-column align-items-center loading-left">
@@ -275,9 +48,6 @@
         <img th:src="@{/images/loading.svg}" alt="loading">
     </div>
 </body>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 <script type="text/x-template" id="db-component">
     <div class="px-3">
         <div>
@@ -287,7 +57,7 @@
             <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                 :data-bs-target="'#collapse_ConnectdbForm_' + this.sourceid" aria-expanded="true"
                 :aria-controls="'collapse_ConnectdbForm_' + this.sourceid" :id="'btn_ConnectdbForm_' + this.sourceid">
-                資料庫連線
+                    資料庫連線
             </button>
             <span class="mx-2 text-primary">{{sourcetext}}</span>
         </div>
@@ -307,7 +77,8 @@
                     <div class="connect-group my-2 me-2">
                         <div class="d-flex align-items-center input-group">
                             <p class="m-0"><span class="required">*</span>伺服器名稱：</p>
-                            <input type="text" class="form-control" name="servername" value="SQLEXPRESS" required>
+                            <input type="text" class="form-control" name="servername" value="SQLEXPRESS"
+                                required>
                         </div>
                         <small>範例：<span class="text-success">SQLEXPRESS</span></small>
                     </div>
@@ -320,7 +91,8 @@
                     <div class="connect-group my-2 me-2">
                         <div class="d-flex align-items-center input-group">
                             <p class="m-0"><span class="required">*</span>密碼：</p>
-                            <input type="password" class="form-control" autocomplete="false" name="password" required>
+                            <input type="password" class="form-control" autocomplete="false" name="password"
+                                required>
                         </div>
                     </div>
                     <div class="connect-group my-2 me-2">
@@ -340,66 +112,48 @@
                 </form>
             </div>
         </div>
-        <div v-show="issearchedsource">
+        <div>
             <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                 :data-bs-target="'#collapse_SearchdbForm_' + this.sourceid" aria-expanded="true"
-                :aria-controls="'collapse_SearchdbForm_' + this.sourceid" :id="'btn_SearchdbForm_' + this.sourceid">
+                :aria-controls="'collapse_SearchdbForm_' + this.sourceid" :id="'btn_SearchdbForm_' + this.sourceid"
+                v-show="issearchedsource"
+            >
                 資料庫選擇
             </button>
             <span class="mx-2 text-primary">{{dbtext}}</span>
         </div>
-        <div class="collapse" :id="'collapse_SearchdbForm_' + this.sourceid" v-show="issearchedsource">
+        <div class="collapse" :id="'collapse_SearchdbForm_' + this.sourceid">
             <div class="card card-body">
                 <form :id="'SearchdbForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_DB">
-                    <div class="connect-group my-2 me-2">
-                        <div class="d-flex align-items-center input-group">
-                            <p class="m-0">資料庫清單：</p>
-                            <select name="selectdata" id="" class="form-select" required :disabled="issearcheddb">
-                                <option value="" selected disabled>請選擇</option>
-                                <option v-for="(data,index) in dblist" :value="data">
-                                    {{data}}
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-success my-2 mx-3" v-show="!issearcheddb">選擇</button>
                 </form>
             </div>
         </div>
-        <div v-show="issearcheddb">
+        <div>
             <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                 :data-bs-target="'#collapse_SearchtableForm_' + this.sourceid" aria-expanded="true"
-                :aria-controls="'collapse_SearchtableForm_' + this.sourceid" :id="'btn_SearchtableForm_' + this.sourceid">
+                :aria-controls="'collapse_SearchtableForm_' + this.sourceid" :id="'btn_SearchtableForm_' + this.sourceid"
+                v-show="issearcheddb"
+                >
                 資料表選擇
             </button>
             <span class="mx-2 text-primary">{{tabletext}}</span>
         </div>
-        <div class="collapse" :id="'collapse_SearchtableForm_' + this.sourceid" v-show="issearcheddb">
+        <div class="collapse" :id="'collapse_SearchtableForm_' + this.sourceid">
             <div class="card card-body">
                 <form :id="'SearchtableForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_Table">
-                    <div class="connect-group my-2 me-2">
-                        <div class="d-flex align-items-center input-group">
-                            <p class="m-0">資料表清單：</p>
-                            <select name="selectdata" id="" class="form-select" required :disabled="issearchedtable">
-                                <option value="" selected disabled>請選擇</option>
-                                <option v-for="(data,index) in tablelist" :value="data">
-                                    {{data}}
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-success my-2 mx-3" v-show="!issearchedtable">選擇</button>
                 </form>
             </div>
         </div>
-        <div v-show="issearchedtable">
+        <div>
             <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                 :data-bs-target="'#collapse_SearchedTable_' + this.sourceid" aria-expanded="true"
-                :aria-controls="'collapse_SearchedTable_' + this.sourceid" :id="'btn_SearchedTable_' + this.sourceid">
-                資料表清單
+                :aria-controls="'collapse_SearchedTable_' + this.sourceid" :id="'btn_SearchedTable_' + this.sourceid"
+                v-show="issearchedtable"
+            >
+            資料表清單
             </button>
         </div>
-        <div class="collapse" :id="'collapse_SearchedTable_' + this.sourceid" v-show="issearchedtable">
+        <div class="collapse" :id="'collapse_SearchedTable_' + this.sourceid">
             <div class="card card-body">
                 <form :id="'ChooseColumnForm_' + this.sourceid" class="d-flex flex-wrap">
                     <table :id="'SearchedTable_' + this.sourceid">
@@ -413,50 +167,7 @@
                                 <th class="text-primary" v-show="!isout">對應輸出欄位</th>
                             </tr>
                         </thead>
-                        <tbody v-for="(v,i) in tabledatas">
-                            <tr :data-column='v["COLUMN_NAME"]'>
-                                <td>{{v["COLUMN_NAME"]}}</td>
-                                <td>{{v["DATA_TYPE"]}}
-                                    <span v-if='v["NUMERIC_PRECISION"]!=null'>
-                                        ({{v["NUMERIC_PRECISION"]}}
-                                        <span v-if='v["NUMERIC_SCALE"] == null || v["NUMERIC_SCALE"] == 0'>
-                                            ,{{v["NUMERIC_SCALE"]}}
-                                        </span>
-                                        )
-                                    </span>
-                                </td>
-                                <td>{{v["IS_NULLABLE"]}}</td>
-                                <td v-if="!isout">
-                                    <input type="text" class="form-control" style="width:80px;" />
-                                </td>
-                                <td v-if="!isout" class="in-data" :id="sourceid+'_InData_'+i">
-                                    <div class="d-flex">
-                                        <select name="selectdata" id="" class="form-select" @change="searchColumn_in">
-                                            <option v-for="(sourcedata,index) in indatas" :value="sourcedata.name" >
-                                                {{sourcedata.name}}
-                                            </option>
-                                        </select>
-                                        <select name="selectdata" id="" class="form-select">
-                                            <option value="" selected disabled>請選擇</option>
-                                            <option :value="col" v-for="(col,index) in indatas[nowindex_in].column">
-                                                {{col}}
-                                            </option>
-                                        </select>
-                                    </div>
-                                </td>
-                                <td v-if="!isout" class="out-data">
-                                    <div>
-                                        <select name="selectdata" id="" class="form-select">
-                                            <option v-for="(col,index) in outdatas[0].column" value="" >
-                                                {{col}}
-                                            </option>
-                                            <option v-for="(col,index) in outdatas[nowindex_out].column" :value="col">
-                                                {{col}}
-                                            </option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
+                        <tbody>
                         </tbody>
                     </table>
                 </form>
@@ -464,33 +175,213 @@
         </div>
     </div>
 </script>
-
 <script>
-    let thisJson = {
-        indatas: [{
-            name: "無",
-            column: ["無"],
-            source: {}
-        }]
-        ,
-        outdatas: [{
-            name: "無",
-            column: ["無"],
-            source: {}
-        }],
-        converts: [
-
-        ]
-    }
-
     $(function () {
         $(".loading-place").hide();
     })
 
+    let thisJson = {
+        indatas: [],
+        outdatas: [],
+        convert: []
+    }
+
+    let sourcedatas = [];
+
+    let convertdatas = [];
+
+    function addSelector(d, listname, cssselector) {
+        try {
+            let data = JSON.parse(d);
+            let appendHtml = "";
+            appendHtml += `<div class="connect-group my-2 me-2">
+                                <div class="d-flex align-items-center input-group">
+                                    <p class="m-0">${listname}：</p>
+                                    <select name="selectdata" id="" class="form-select" required>
+                                        <option value="" selected disabled>請選擇</option>`;
+            $(data).each((i, v) => {
+                appendHtml += `<option value="${v["name"]}">${v["name"]}</option>`
+            })
+            appendHtml += `</select>
+                        </div>
+                    </div>`;
+            appendHtml += `<button type="submit" class="btn btn-success my-2 mx-3">選擇</button>`;
+            $(cssselector).html(appendHtml);
+            $(".loading-place").hide();
+        }
+        catch (e) {
+            console.error(e);
+            $(".loading-place").hide();
+        }
+    }
+
+    function addTable(d, sourceid, isout) {
+        let col = [];
+        try {
+            let data = JSON.parse(d);
+            let appendHtml = "";
+            $(data).each((i, v) => {
+                appendHtml += `<tr>
+                    <td>${v["COLUMN_NAME"]}</td>
+                    <td>${v["DATA_TYPE"]}`;
+                if (v["NUMERIC_PRECISION"] != null) {
+                    if (v["NUMERIC_SCALE"] == null || v["NUMERIC_SCALE"] == 0) {
+                        appendHtml += "(" + v["NUMERIC_PRECISION"] + ")";
+                    }
+                    else {
+                        appendHtml += "(" + v["NUMERIC_PRECISION"] + "," + v["NUMERIC_SCALE"] + ")";
+                    }
+                }
+                appendHtml += `</td>
+                    <td>${v["IS_NULLABLE"]}</td>`;
+                if (!isout) {
+                    appendHtml += `<td>
+                        <input type="text" class="form-control" style="width:80px;"></input>
+                    </td>
+                    <td class="d-flex in-data ${sourceid}-in-data" id="${sourceid}_InData_${i}" >
+                    </td>
+                    <td class="out-data" id="${sourceid}_OutData_${i}" >
+                    </td>`
+                }
+
+                appendHtml += `</tr>`;
+                col.push(v["COLUMN_NAME"]);
+            })
+            let cssselector = "#SearchedTable_" + sourceid;
+            $(cssselector).find("tbody").html(appendHtml);
+            $(".loading-place").hide();
+
+            isout ? refreshDatas(convertdatas, sourceid, col) : refreshDatas(sourcedatas, sourceid, col)
+
+        } catch (e) {
+            $(".loading-place").hide();
+            console.error(e);
+            if (e.responseText)
+                alert(e.responseText);
+            else
+                alert("錯誤");
+        }
+    }
+
     const { createApp } = Vue
 
+    function refreshDatas(datas, sourceid, col) {
+        let hasName = false;
+        $(datas).each((i, v) => {
+            if (v["name"] == sourceid) {
+                v["column"] = col;
+                hasName = true;
+                return false;
+            }
+        })
+        if (!hasName) {
+            datas.push({
+                name: sourceid,
+                column: col
+            })
+        }
+    }
+
+    function getInData() {
+        let inData = {
+            template:
+                `
+                <div class="d-flex">
+        <select name="selectdata" id="" class="form-select" required @change="searchColumn">
+            <option value="">
+                無
+            </option>
+            <option v-for="(sourcedata,index) in sourcedatas" :value="index">
+                {{sourcedata.name}}
+            </option>
+        </select>
+        <select name="selectdata" id="" class="form-select" required>
+            <option value="" selected disabled>請選擇</option>
+            <option value="" v-show="!isselected">
+                無
+            </option>
+            <option value="" v-for="(col,index) in sourcedatas[nowindex].column" v-show="isselected">
+                {{col}}
+            </option>
+        </select>
+        </div>
+        `,
+            props: {
+            },
+            data() {
+                return {
+                    sourcedatas: [{
+                        name: 'A',
+                        column: ['1', '2', '3']
+                    }]
+                    ,
+                    nowindex: 0,
+                    isselected: false
+                }
+            },
+            mounted() {
+                this.sourcedatas = sourcedatas
+                this.isselected = true
+            },
+            methods: {
+                searchColumn(event) {
+                    let val = $(event.target).val()
+                    if (val == "") {
+                        this.isselected = false
+                    }
+                    else {
+                        this.nowindex = $(event.target).val()
+                        this.isselected = true
+                    }
+                }
+            }
+        }
+
+        return inData;
+    }
+
+    function getOutData() {
+        let outData = {
+            template:
+                `
+        <div>
+            <select name="selectdata" id="" class="form-select" required>
+                <option value="">
+                    無
+                </option>
+                <option v-for="(col,index) in convertdatas[0].column" :value="index" v-if="nowindex>=0">
+                    {{col}}
+                </option>
+            </select>
+        </div>
+        `,
+            props: {
+            },
+            data() {
+                return {
+                    convertdatas: [{
+                        name: 'A',
+                        column: ['1', '2', '3']
+                    }]
+                    ,
+                    nowindex: 0
+                }
+            },
+            mounted() {
+                this.convertdatas = convertdatas
+                if (convertdatas.length > 0) {
+                    this.nowindex = 0
+                }
+            },
+            methods: {
+            }
+        }
+
+        return outData;
+    }
+
     let sourceData = {
-        template: '#db-component'
+        template: "#db-component"
         , props: {
             // sourceid: String,
             isout: Boolean,
@@ -503,30 +394,7 @@
                 issearchedsource: false,
                 issearcheddb: false,
                 issearchedtable: false,
-                sourceid: 'A',
-                dblist: [],
-                tablelist: [],
-                tabledatas: [{
-                    COLUMN_NAME: "CUSTOMER_ID",
-                    DATA_TYPE: "bigint",
-                    IS_NULLABLE: "NO",
-                    NUMERIC_PRECISION: 19,
-                    NUMERIC_SCALE: 0
-                }],
-                dbcomponent: "",
-                nowindex_in: 0,
-                nowindex_out: 0,
-                indatas: [{
-                    name: "無",
-                    column: ["無"],
-                    source: {}
-                }]
-                ,
-                outdatas: [{
-                    name: "無",
-                    column: ["無"],
-                    source: {}
-                }]
+                sourceid: 'A'
             }
         },
         mounted() {
@@ -551,20 +419,11 @@
                     cache: false,
                     timeout: 600000,
                     success: function (d) {
-                        let dblist = getSelector(d);
-                        that.dblist = dblist;
+                        addSelector(d, "資料庫清單", "#SearchdbForm_" + that.sourceid);
                         that.issearchedsource = true;
-                        that.issearcheddb = false;
-                        that.issearchedtable = false;
                         that.sourcetext = '已連線'
                         $("#collapse_SearchdbForm_" + that.sourceid).addClass("show");
                         $("#collapse_ConnectdbForm_" + that.sourceid).removeClass("show");
-
-                        let source = $(event.target).serializeObject();
-                        // let nowdatas = (!that.isout ? that.indatas : that.outdatas);
-                        let nowdatas = (!that.isout ? thisJson.indatas : thisJson.outdatas);
-                        let selectordatas = getDatas(nowdatas, that.sourceid, "source", source);
-                        !that.isout ? (that.indatas = thisJson.indatas) : (that.indatas = thisJson.outdatas);
                     },
                     error: function (e) {
                         $(loading).hide();
@@ -589,19 +448,11 @@
                     cache: false,
                     timeout: 600000,
                     success: function (d) {
-                        let tablelist = getSelector(d);
-                        that.tablelist = tablelist;
+                        addSelector(d, "資料表清單", "#SearchtableForm_" + that.sourceid);
                         that.issearcheddb = true;
-                        that.issearchedtable = false;
                         that.dbtext = $(event.target).serializeObject()["selectdata"];
                         $("#collapse_SearchtableForm_" + that.sourceid).addClass("show");
                         $("#collapse_SearchdbForm_" + that.sourceid).removeClass("show");
-
-                        let db = $(event.target).serializeObject();
-                        let nowdatas = (!that.isout ? thisJson.indatas : thisJson.outdatas);
-                        let thisIndex = getDatasSourceIndex(nowdatas, that.sourceid);
-                        nowdatas[thisIndex]["source"]["databasename"] = db.selectdata;
-                        !that.isout ? (that.indatas = thisJson.indatas) : (that.indatas = thisJson.outdatas);
                     },
                     error: function (e) {
                         $(loading).hide();
@@ -626,33 +477,24 @@
                     cache: false,
                     timeout: 600000,
                     success: function (d) {
-                        try {
-                            let data = JSON.parse(d);
-                            that.tabledatas = data;
-                            $(".loading-place").hide();
+                        addTable(d, that.sourceid, that.isout);
+                        that.issearchedtable = true;
+                        that.tabletext = $(event.target).serializeObject()["selectdata"];
+                        $("#collapse_SearchedTable_" + that.sourceid).addClass("show");
+                        $("#collapse_SearchtableForm_" + that.sourceid).removeClass("show");
 
-                            let col = data.map(d => d["COLUMN_NAME"]);
-
-                            that.issearchedtable = true;
-                            that.tabletext = $(event.target).serializeObject()["selectdata"];
-                            $("#collapse_SearchedTable_" + that.sourceid).addClass("show");
-                            $("#collapse_SearchtableForm_" + that.sourceid).removeClass("show");
-
-                            let nowdatas = (!that.isout ? thisJson.indatas : thisJson.outdatas);
-                            let selectordatas = getDatas(nowdatas, that.sourceid, "column", col);
-                            if (that.outdatas.length > 1) {
-                                that.nowindex_out = 1;
-                            }
-                            !that.isout ? (that.indatas = thisJson.indatas) : (that.indatas = thisJson.outdatas);
-                        }
-                        catch (e) {
-                            $(".loading-place").hide();
-                            console.error(e);
-                            if (e.responseText)
-                                alert(e.responseText);
-                            else
-                                alert("錯誤");
-                        }
+                        $(".in-data").each((i, v) => {
+                            let thisCssSelector_In = '#' + v.id;
+                            let newInData_Vue = Vue.createApp(getInData())
+                                .mount(thisCssSelector_In);
+                            $(thisCssSelector_In).html("").append(newInData_Vue.$el)
+                        })
+                        $(".out-data").each((i, v) => {
+                            let thisCssSelector_Out = '#' + v.id;
+                            let newOutData_Vue = Vue.createApp(getOutData())
+                                .mount(thisCssSelector_Out);
+                            $(thisCssSelector_Out).html("").append(newOutData_Vue.$el)
+                        })
 
                         $(loading).hide();
                     },
@@ -665,354 +507,38 @@
                             alert("錯誤");
                     }
                 });
-            },
-            searchColumn_in(event) {
-                this.nowindex_in = $(event.target).val()
             }
-=======
-<script>
-    $(function () {
-        $(".loading-place").hide();
-        // $("hr").hide();
-        $("#btn_SearchdbForm").hide();
-        $("#btn_SearchtableForm").hide();
-        $("#btn_SearchedTable").hide();
-        $("#btn_SearchdbForm_OUT").hide();
-        $("#btn_SearchtableForm_OUT").hide();
-        $("#btn_SearchedTable_OUT").hide();
-    })
-
-    $("#ConnectdbForm").submit(function (event) {
-        event.preventDefault();
-        $(".loading-left").fadeIn();
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: "api/connectdb",
-            data: JSON.stringify($(event.target).serializeObject()),
-            cache: false,
-            timeout: 600000,
-            success: function (d) {
-                addSelector(d, "資料庫選擇", "資料庫清單", "#SearchdbForm");
-                $("#btn_SearchdbForm").show();
-                $("#collapse_SearchdbForm").addClass("show");
-                $("#btn_ConnectdbForm").next().text("已連線");
-                $("#collapse_ConnectdbForm").removeClass("show");
-            },
-            error: function (e) {
-                $(".loading-left").hide();
-                console.error(e);
-                if (e.responseText)
-                    alert(e.responseText);
-                else
-                    alert("錯誤");
-            }
-=======
-<script>
-    $(function () {
-        $(".loading-place").hide();
-        // $("hr").hide();
-        $("#btn_SearchdbForm").hide();
-        $("#btn_SearchtableForm").hide();
-        $("#btn_SearchedTable").hide();
-        $("#btn_SearchdbForm_OUT").hide();
-        $("#btn_SearchtableForm_OUT").hide();
-        $("#btn_SearchedTable_OUT").hide();
-    })
-
-    $("#ConnectdbForm").submit(function (event) {
-        event.preventDefault();
-        $(".loading-left").fadeIn();
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: "api/connectdb",
-            data: JSON.stringify($(event.target).serializeObject()),
-            cache: false,
-            timeout: 600000,
-            success: function (d) {
-                addSelector(d, "資料庫選擇", "資料庫清單", "#SearchdbForm");
-                $("#btn_SearchdbForm").show();
-                $("#collapse_SearchdbForm").addClass("show");
-                $("#btn_ConnectdbForm").next().text("已連線");
-                $("#collapse_ConnectdbForm").removeClass("show");
-            },
-            error: function (e) {
-                $(".loading-left").hide();
-                console.error(e);
-                if (e.responseText)
-                    alert(e.responseText);
-                else
-                    alert("錯誤");
-            }
->>>>>>> parent of cbceb38 (m)
-        });
-    });
-
-    $("#SearchdbForm").submit(function (event) {
-        event.preventDefault();
-        $(".loading-left").fadeIn();
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: "api/searchdb",
-            data: JSON.stringify($(event.target).serializeObject()),
-            cache: false,
-            timeout: 600000,
-            success: function (d) {
-                addSelector(d, "資料表選擇", "資料表清單", "#SearchtableForm");
-                $("#btn_SearchtableForm").show();
-                $("#collapse_SearchtableForm").addClass("show");
-                $("#btn_SearchdbForm").next().text($(event.target).serializeObject()["selectdata"]);
-                $("#collapse_SearchdbForm").removeClass("show");
-            },
-            error: function (e) {
-                $(".loading-left").hide();
-                console.error(e);
-                if (e.responseText)
-                    alert(e.responseText);
-                else
-                    alert("錯誤");
-            }
-        });
-    });
-
-
-    $("#SearchtableForm").submit(function (event) {
-        event.preventDefault();
-        $(".loading-left").fadeIn();
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: "api/searchtable",
-            data: JSON.stringify($(event.target).serializeObject()),
-            cache: false,
-            timeout: 600000,
-            success: function (d) {
-                addTable(d, "資料表清單", "#SearchedTable");
-                $("#btn_SearchedTable").show();
-                $("#collapse_SearchedTable").addClass("show");
-                $("#btn_SearchtableForm").next().text($(event.target).serializeObject()["selectdata"]);
-                $("#collapse_SearchtableForm").removeClass("show");
-                $(".loading-left").hide();
-            },
-            error: function (e) {
-                $(".loading-left").hide();
-                console.error(e);
-                if (e.responseText)
-                    alert(e.responseText);
-                else
-                    alert("錯誤");
-            }
-        });
-    });
-
-    $("#ConnectdbForm_OUT").submit(function (event) {
-        event.preventDefault();
-        $(".loading-right").fadeIn();
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: "api/connectdb",
-            data: JSON.stringify($(event.target).serializeObject()),
-            cache: false,
-            timeout: 600000,
-            success: function (d) {
-                addSelector(d, "資料庫選擇", "資料庫清單", "#SearchdbForm_OUT");
-                $("#btn_SearchdbForm_OUT").show();
-                $("#collapse_SearchdbForm_OUT").addClass("show");
-                $("#btn_ConnectdbForm_OUT").next().text("已連線");
-                $("#collapse_ConnectdbForm_OUT").removeClass("show");
-            },
-            error: function (e) {
-                $(".loading-right").hide();
-                console.error(e);
-                if (e.responseText)
-                    alert(e.responseText);
-                else
-                    alert("錯誤");
-            }
-        });
-    });
-
-    $("#SearchdbForm_OUT").submit(function (event) {
-        event.preventDefault();
-        $(".loading-right").fadeIn();
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: "api/searchdb",
-            data: JSON.stringify($(event.target).serializeObject()),
-            cache: false,
-            timeout: 600000,
-            success: function (d) {
-                addSelector(d, "資料表選擇", "資料表清單", "#SearchtableForm_OUT");
-                $("#btn_SearchtableForm_OUT").show();
-                $("#collapse_SearchtableForm_OUT").addClass("show");
-                $("#btn_SearchdbForm_OUT").next().text($(event.target).serializeObject()["selectdata"]);
-                $("#collapse_SearchdbForm_OUT").removeClass("show");
-            },
-            error: function (e) {
-                $(".loading-right").hide();
-                console.error(e);
-                if (e.responseText)
-                    alert(e.responseText);
-                else
-                    alert("錯誤");
-            }
-        });
-    });
-
-
-    $("#SearchtableForm_OUT").submit(function (event) {
-        event.preventDefault();
-        $(".loading-right").fadeIn();
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: "api/searchtable",
-            data: JSON.stringify($(event.target).serializeObject()),
-            cache: false,
-            timeout: 600000,
-            success: function (d) {
-                addTable(d, "資料表清單", "#SearchedTable_OUT");
-                $("#btn_SearchedTable_OUT").show();
-                $("#collapse_SearchedTable_OUT").addClass("show");
-                $("#btn_SearchtableForm_OUT").next().text($(event.target).serializeObject()["selectdata"]);
-                $("#collapse_SearchtableForm_OUT").removeClass("show");
-                $(".loading-right").hide();
-            },
-            error: function (e) {
-                $(".loading-right").hide();
-                console.error(e);
-                if (e.responseText)
-                    alert(e.responseText);
-                else
-                    alert("錯誤");
-            }
-        });
-    });
-
-    function addSelector(d, title, listname, cssselector) {
-        try {
-            let data = JSON.parse(d);
-            let appendHtml = "";
-            appendHtml += `<div class="connect-group my-2 me-2">
-                                <div class="d-flex align-items-center input-group">
-                                    <p class="m-0">${listname}：</p>
-                                    <select name="selectdata" id="" class="form-select" required>`;
-            $(data).each((i, v) => {
-                appendHtml += `<option value="${v["name"]}">${v["name"]}</option>`
-            })
-            appendHtml += `</select>
-                        </div>
-                    </div>`;
-            appendHtml += `<button type="submit" class="btn btn-success my-2 mx-3">選擇</button>`;
-            $(cssselector).html(appendHtml);
-            $(cssselector).parent().parent().prev().children().first().text(`${title}`);
-            $(".loading-place").hide();
-        }
-        catch (e) {
-            console.error(e);
-            $(".loading-place").hide();
-<<<<<<< HEAD
->>>>>>> parent of cbceb38 (m)
-=======
->>>>>>> parent of cbceb38 (m)
+        },
+        components: {
+            'in-data': getInData()
         }
     }
 
-    function addTable(d, title, cssselector) {
-        try {
-            let data = JSON.parse(d);
-            let appendHtml = "";
-            $(data).each((i, v) => {
-                appendHtml += `<tr>
-                    <td>${v["COLUMN_NAME"]}</td>
-                    <td>${v["DATA_TYPE"]}`;
-                if (v["NUMERIC_PRECISION"] != null) {
-                    if (v["NUMERIC_SCALE"] == null || v["NUMERIC_SCALE"] == 0) {
-                        appendHtml += "(" + v["NUMERIC_PRECISION"] + ")";
-                    }
-                    else {
-                        appendHtml += "(" + v["NUMERIC_PRECISION"] + "," + v["NUMERIC_SCALE"] + ")";
-                    }
+    createApp({
+        components: {
+            'source-data': sourceData,
+        },
+        methods: {
+            addSource() {
+                if ($(".source").length <= 26) {
+                    let newsourceid = String.fromCharCode($(".source").length + 65);
+                    $("#Sources_In").append(`
+                    <div id="Source_${newsourceid}" class="source">
+                    </div>`)
+                    let newSelector = "#Source_" + newsourceid;
+                    let newInData_Vue = Vue.createApp(sourceData)
+                        .mount(newSelector);
+                    $(newSelector).html("").append(newInData_Vue.$el)
                 }
-                appendHtml += `</td>
-                    <td>${v["IS_NULLABLE"]}</td>
-                    <td>
-                        <input type="text" class="form-control"></input>
-                    </td>
-                </tr>
-                `
-            })
-            $(cssselector).find("tbody").html(appendHtml);
-            $(cssselector).parent().parent().parent().prev().children().first().text(`${title}`);
-            $(cssselector).prev().text(`${title}`);
-            $(".loading-place").hide();
-
-        } catch (e) {
-            $(".loading-place").hide();
-            console.error(e);
-            if (e.responseText)
-                alert(e.responseText);
-            else
-                alert("錯誤");
+            },
+            deleteSource() {
+                if ($(".source").length > 1) {
+                    $("#Sources_In").children().last().remove()
+                }
+            }
         }
-    }
+    }).mount('#app')
 
 </script>
-<style>
-    :root {
-        font-size: 14px;
-    }
-
-    button{
-        height: fit-content;
-    }
-
-    .input-group {
-        width: fit-content;
-    }
-
-    .input-group p {
-        width: 100px !important;
-    }
-
-    .input-group .form-control,
-    .input-group .form-select {
-        width: 250px;
-    }
-
-    span.required {
-        color: red;
-    }
-
-    .connect-group small {
-        margin-left: 100px;
-    }
-
-    .loading-place {
-        display: flex;
-        position: fixed;
-        top: 50%;
-    }
-
-    .loading-left {
-        left: 25%;
-        transform: translate(-25%, -50%);
-    }
-
-    .loading-right {
-        left: 75%;
-        transform: translate(-75%, -50%);
-    }
-
-    th,
-    td {
-        border: 1px solid gray;
-        padding: 5px;
-    }
-</style>
 
 </html>
