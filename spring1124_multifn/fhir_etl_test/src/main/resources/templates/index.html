@@ -14,6 +14,7 @@
     <link rel="stylesheet" th:href="@{/package/font-awesome/css/all.min.css}">
     </link>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <link rel="stylesheet" th:href="@{/styles/style.css}">
     </link>
     <script th:src="@{/scripts/script.js}"></script>
@@ -44,6 +45,11 @@
 </head>
 
 <body>
+=======
+</head>
+
+<body>
+>>>>>>> parent of cbceb38 (m)
     <div class="row w-100 p-3">
         <div class="col-6">
             <h3>輸入資料</h3>
@@ -256,6 +262,9 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
+>>>>>>> parent of cbceb38 (m)
+=======
 >>>>>>> parent of cbceb38 (m)
         </div>
     </div>
@@ -266,6 +275,7 @@
         <img th:src="@{/images/loading.svg}" alt="loading">
     </div>
 </body>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <script type="text/x-template" id="db-component">
@@ -697,6 +707,45 @@
                 else
                     alert("錯誤");
             }
+=======
+<script>
+    $(function () {
+        $(".loading-place").hide();
+        // $("hr").hide();
+        $("#btn_SearchdbForm").hide();
+        $("#btn_SearchtableForm").hide();
+        $("#btn_SearchedTable").hide();
+        $("#btn_SearchdbForm_OUT").hide();
+        $("#btn_SearchtableForm_OUT").hide();
+        $("#btn_SearchedTable_OUT").hide();
+    })
+
+    $("#ConnectdbForm").submit(function (event) {
+        event.preventDefault();
+        $(".loading-left").fadeIn();
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "api/connectdb",
+            data: JSON.stringify($(event.target).serializeObject()),
+            cache: false,
+            timeout: 600000,
+            success: function (d) {
+                addSelector(d, "資料庫選擇", "資料庫清單", "#SearchdbForm");
+                $("#btn_SearchdbForm").show();
+                $("#collapse_SearchdbForm").addClass("show");
+                $("#btn_ConnectdbForm").next().text("已連線");
+                $("#collapse_ConnectdbForm").removeClass("show");
+            },
+            error: function (e) {
+                $(".loading-left").hide();
+                console.error(e);
+                if (e.responseText)
+                    alert(e.responseText);
+                else
+                    alert("錯誤");
+            }
+>>>>>>> parent of cbceb38 (m)
         });
     });
 
@@ -866,6 +915,9 @@
         catch (e) {
             console.error(e);
             $(".loading-place").hide();
+<<<<<<< HEAD
+>>>>>>> parent of cbceb38 (m)
+=======
 >>>>>>> parent of cbceb38 (m)
         }
     }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2022-12-07 09:29:34,761 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 30348 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
 2022-12-07 09:29:34,769 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
 2022-12-07 09:29:34,841 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
@@ -1389,6 +1390,8 @@
 2022-12-07 14:54:34,160 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route69 (timer://foo)
 2022-12-07 14:54:34,161 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-71) shutdown in 1ms (uptime:5s)
 =======
+=======
+>>>>>>> parent of cbceb38 (m)
 2022-12-05 09:43:08,386 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.4.1 on June4693-450G7 with PID 26520 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
 2022-12-05 09:43:08,392 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
 2022-12-05 09:43:08,488 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
@@ -2964,4 +2967,7 @@ java.lang.IllegalStateException: Illegal access: this web application instance h
 2022-12-05 11:42:14,352 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
 2022-12-05 11:42:14,353 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route18 (timer://foo)
 2022-12-05 11:42:14,353 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-20) shutdown in 2ms (uptime:5s)
+<<<<<<< HEAD
+>>>>>>> parent of cbceb38 (m)
+=======
 >>>>>>> parent of cbceb38 (m)
