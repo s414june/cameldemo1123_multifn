@@ -1,0 +1,161 @@
+<div class="px-3">
+    <div>
+        <button class="btn btn-outline-primary me-2" v-show="!isout">
+            {{sourceid}}
+        </button>
+        <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+            :data-bs-target="'#collapse_ConnectdbForm_' + this.sourceid" aria-expanded="true"
+            :aria-controls="'collapse_ConnectdbForm_' + this.sourceid" :id="'btn_ConnectdbForm_' + this.sourceid">
+            資料庫連線
+        </button>
+        <span class="mx-2 text-primary">{{sourcetext}}</span>
+    </div>
+    <div class="collapse show" :id="'collapse_ConnectdbForm_' + this.sourceid">
+        <div class="card card-body">
+            <form :id="'ConnectdbForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_Source">
+                <div class="connect-group my-2 me-2">
+                    <div class="d-flex align-items-center input-group">
+                        <p class="m-0"><span class="required">*</span>資料來源：</p>
+                        <select name="driver" class="form-select" required>
+                            <option value="" selected disabled>請選擇</option>
+                            <option value="sqlserver">SQL Server</option>
+                            <option value="mysql">MySQL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="connect-group my-2 me-2">
+                    <div class="d-flex align-items-center input-group">
+                        <p class="m-0"><span class="required">*</span>伺服器名稱：</p>
+                        <input type="text" class="form-control" name="servername" value="SQLEXPRESS" required>
+                    </div>
+                    <small>範例：<span class="text-success">SQLEXPRESS</span></small>
+                </div>
+                <div class="connect-group my-2 me-2">
+                    <div class="d-flex align-items-center input-group">
+                        <p class="m-0"><span class="required">*</span>使用者名稱：</p>
+                        <input type="text" class="form-control" name="username" required>
+                    </div>
+                </div>
+                <div class="connect-group my-2 me-2">
+                    <div class="d-flex align-items-center input-group">
+                        <p class="m-0"><span class="required">*</span>密碼：</p>
+                        <input type="password" class="form-control" autocomplete="false" name="password" required>
+                    </div>
+                </div>
+                <div class="connect-group my-2 me-2">
+                    <div class="d-flex align-items-center input-group">
+                        <p class="m-0"><span class="required">*</span>連接埠：</p>
+                        <input type="text" class="form-control" name="portnumber" value="1433" required>
+                    </div>
+                    <small>範例：<span class="text-success">1433</span></small>
+                </div>
+                <div class="connect-group my-2 me-2">
+                    <div class="d-flex align-items-center input-group">
+                        <p class="m-0">資料庫名稱：</p>
+                        <input type="text" class="form-control" name="databasename">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success my-2 mx-3">連線</button>
+            </form>
+        </div>
+    </div>
+    <div v-show="issearchedsource">
+        <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+            :data-bs-target="'#collapse_SearchdbForm_' + this.sourceid" aria-expanded="true"
+            :aria-controls="'collapse_SearchdbForm_' + this.sourceid" :id="'btn_SearchdbForm_' + this.sourceid">
+            資料庫選擇
+        </button>
+        <span class="mx-2 text-primary">{{dbtext}}</span>
+    </div>
+    <div class="collapse" :id="'collapse_SearchdbForm_' + this.sourceid" v-show="issearchedsource">
+        <div class="card card-body">
+            <form :id="'SearchdbForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_DB">
+                <div class="connect-group my-2 me-2">
+                    <div class="d-flex align-items-center input-group">
+                        <p class="m-0">資料庫清單：</p>
+                        <select name="selectdata" id="" class="form-select" required :disabled="issearcheddb">
+                            <option value="" selected disabled>請選擇</option>
+                            <option v-for="(data,index) in dblist" :value="data">
+                                {{data}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success my-2 mx-3" v-show="!issearcheddb">選擇</button>
+            </form>
+        </div>
+    </div>
+    <div v-show="issearcheddb">
+        <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+            :data-bs-target="'#collapse_SearchtableForm_' + this.sourceid" aria-expanded="true"
+            :aria-controls="'collapse_SearchtableForm_' + this.sourceid" :id="'btn_SearchtableForm_' + this.sourceid">
+            資料表選擇
+        </button>
+        <span class="mx-2 text-primary">{{tabletext}}</span>
+    </div>
+    <div class="collapse" :id="'collapse_SearchtableForm_' + this.sourceid" v-show="issearcheddb">
+        <div class="card card-body">
+            <form :id="'SearchtableForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_Table">
+                <div class="connect-group my-2 me-2">
+                    <div class="d-flex align-items-center input-group">
+                        <p class="m-0">資料表清單：</p>
+                        <select name="selectdata" id="" class="form-select" required :disabled="issearchedtable">
+                            <option value="" selected disabled>請選擇</option>
+                            <option v-for="(data,index) in tablelist" :value="data">
+                                {{data}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success my-2 mx-3" v-show="!issearchedtable">選擇</button>
+            </form>
+        </div>
+    </div>
+    <div v-show="issearchedtable">
+        <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
+            :data-bs-target="'#collapse_SearchedTable_' + this.sourceid" aria-expanded="true"
+            :aria-controls="'collapse_SearchedTable_' + this.sourceid" :id="'btn_SearchedTable_' + this.sourceid">
+            資料表清單
+        </button>
+    </div>
+    <div class="collapse" :id="'collapse_SearchedTable_' + this.sourceid" v-show="issearchedtable">
+        <div class="card card-body">
+            <form :id="'ChooseColumnForm_' + this.sourceid" class="d-flex flex-wrap">
+                <table :id="'SearchedTable_' + this.sourceid">
+                    <thead>
+                        <tr>
+                            <th>資料行名稱</th>
+                            <th>資料類型</th>
+                            <th>允許NULL</th>
+                            <th class="text-primary" v-show="!isout">轉換參數</th>
+                            <th class="text-primary" v-show="!isout">對應輸入欄位</th>
+                            <th class="text-primary" v-show="!isout">對應輸出欄位</th>
+                        </tr>
+                    </thead>
+                    <tbody v-for="(v,i) in tabledatas">
+                        <tr :data-column='v["COLUMN_NAME"]'>
+                            <td>{{v["COLUMN_NAME"]}}</td>
+                            <td>{{v["DATA_TYPE"]}}
+                                <span v-if='v["NUMERIC_PRECISION"]!=null'>
+                                    ({{v["NUMERIC_PRECISION"]}}
+                                    <span v-if='v["NUMERIC_SCALE"] == null || v["NUMERIC_SCALE"] == 0'>
+                                        ,{{v["NUMERIC_SCALE"]}}
+                                    </span>
+                                    )
+                                </span>
+                            </td>
+                            <td>{{v["IS_NULLABLE"]}}</td>
+                            <td v-if="!isout">
+                                <input type="text" class="form-control" style="width:80px;"></input>
+                            </td>
+                            <td v-if="!isout" class="in-data" :id="sourceid+'_InData_'+i">
+                            </td>
+                            <td v-if="!isout" class="out-data">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>

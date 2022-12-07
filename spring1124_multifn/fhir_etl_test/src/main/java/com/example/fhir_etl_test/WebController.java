@@ -24,4 +24,8 @@ public class WebController {
     public String a() {
         return "a"; // 要導入的html
     } 
+    @GetMapping("/dbcomponent")
+    public String dbcomponent() {
+        return "dbcomponent"; // 要導入的html
+    } 
 }
