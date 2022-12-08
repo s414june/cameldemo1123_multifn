@@ -23,7 +23,10 @@
         <div class="col-8 px-0">
             <div class="bg-dark text-white px-3 d-flex justify-content-between align-items-center sources-title">
                 <h3 class="m-0 d-flex align-items-center">輸入資料</h3>
-                <div class="me-2 d-flex">
+                <div class="me-2 d-flex align-items-center">
+                    <button class="source-data-changer px-2" @click="creatJson">
+                        <small>產出設定檔</small>
+                    </button>
                     <button class="source-data-changer" @click="addSource">+</button>
                     <button class="source-data-changer" @click="deleteSource">-</button>
                 </div>
@@ -49,7 +52,7 @@
     </div>
 </body>
 <script type="text/x-template" id="db-component">
-    <div class="px-3">
+    <div class="px-3 pb-3">
         <div>
             <button class="btn btn-outline-primary me-2" v-show="!isout">
                 {{sourceid}}
@@ -112,17 +115,17 @@
                 </form>
             </div>
         </div>
-        <div>
+        <div  v-show="issearchedsource">
             <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                 :data-bs-target="'#collapse_SearchdbForm_' + this.sourceid" aria-expanded="true"
                 :aria-controls="'collapse_SearchdbForm_' + this.sourceid" :id="'btn_SearchdbForm_' + this.sourceid"
-                v-show="issearchedsource"
+               
             >
                 資料庫選擇
             </button>
             <span class="mx-2 text-primary">{{dbtext}}</span>
         </div>
-        <div class="collapse" :id="'collapse_SearchdbForm_' + this.sourceid">
+        <div class="collapse" :id="'collapse_SearchdbForm_' + this.sourceid" v-show="issearchedsource">
             <div class="card card-body">
                 <form :id="'SearchdbForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_DB">
                     <div class="connect-group my-2 me-2">
@@ -140,17 +143,17 @@
                 </form>
             </div>
         </div>
-        <div>
+        <div v-show="issearcheddb">
             <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                 :data-bs-target="'#collapse_SearchtableForm_' + this.sourceid" aria-expanded="true"
                 :aria-controls="'collapse_SearchtableForm_' + this.sourceid" :id="'btn_SearchtableForm_' + this.sourceid"
-                v-show="issearcheddb"
+                
                 >
                 資料表選擇
             </button>
             <span class="mx-2 text-primary">{{tabletext}}</span>
         </div>
-        <div class="collapse" :id="'collapse_SearchtableForm_' + this.sourceid">
+        <div class="collapse" :id="'collapse_SearchtableForm_' + this.sourceid" v-show="issearcheddb">
             <div class="card card-body">
                 <form :id="'SearchtableForm_' + this.sourceid" class="d-flex flex-wrap" @submit="onSubmit_Table">
                     <div class="connect-group my-2 me-2">
@@ -168,18 +171,17 @@
                 </form>
             </div>
         </div>
-        <div>
+        <div v-show="issearchedtable">
             <button class="my-2 btn-primary btn" data-bs-toggle="collapse"
                 :data-bs-target="'#collapse_SearchedTable_' + this.sourceid" aria-expanded="true"
                 :aria-controls="'collapse_SearchedTable_' + this.sourceid" :id="'btn_SearchedTable_' + this.sourceid"
-                v-show="issearchedtable"
             >
             資料表清單
             </button>
         </div>
-        <div class="collapse" :id="'collapse_SearchedTable_' + this.sourceid">
+        <div class="collapse" :id="'collapse_SearchedTable_' + this.sourceid" v-show="issearchedtable">
             <div class="card card-body">
-                <form :id="'ChooseColumnForm_' + this.sourceid" class="d-flex flex-wrap">
+                <form :id="'ChooseColumnForm_' + this.sourceid" class="d-flex flex-wrap" :class="infromclass">
                     <table :id="'SearchedTable_' + this.sourceid">
                         <thead>
                             <tr>
@@ -236,7 +238,7 @@
             let appendHtml = "";
             $(data).each((i, v) => {
                 appendHtml += `<tr>
-                    <td>${v["COLUMN_NAME"]}</td>
+                    <td data-column-index="${i}">${v["COLUMN_NAME"]}</td>
                     <td>${v["DATA_TYPE"]}`;
                 if (v["NUMERIC_PRECISION"] != null) {
                     if (v["NUMERIC_SCALE"] == null || v["NUMERIC_SCALE"] == 0) {
@@ -250,13 +252,19 @@
                     <td>${v["IS_NULLABLE"]}</td>`;
                 if (!isout) {
                     appendHtml += `<td>
-                        <input type="text" class="form-control" style="width:80px;"></input>
+                        <input type="text" class="form-control" style="width:80px;" name="parm-${v["COLUMN_NAME"]}"></input>
                     </td>
                     <td class="d-flex in-data ${sourceid}-in-data" id="${sourceid}_InData_${i}" >
                     </td>
                     <td class="out-data" id="${sourceid}_OutData_${i}" >
                     </td>`
                 }
+
+                // appendHtml += `
+                // <td class="d-none">
+                //     <input type="text" value="${sourceid}" name="${sourceid}_${i}_name">
+                //     <input type="text" value="${v["COLUMN_NAME"]}" name="${sourceid}_${i}_column">
+                // </td>`;
 
                 appendHtml += `</tr>`;
                 col.push(v["COLUMN_NAME"]);
@@ -309,12 +317,18 @@
         return index;
     }
 
-    function getInData() {
+    function getInData(index, colName) {
+        let selectsourceName = "insource";
+        let selectcolumnName = "incolumn";
+        if (index != undefined) {
+            selectsourceName += "_" + index;
+            selectcolumnName += "_" + index;
+        }
         let inData = {
             template:
                 `
-                <div class="d-flex">
-        <select name="selectdata" id="" class="form-select" required @change="searchColumn">
+    <div class="d-flex">
+        <select name="${selectsourceName}" id="${selectsourceName}" class="form-select" required @change="searchColumn">
             <option value="">
                 無
             </option>
@@ -322,13 +336,13 @@
                 {{sourcedata.name}}
             </option>
         </select>
-        <select name="selectdata" id="" class="form-select" required>
+        <select name="${selectcolumnName}-${colName}" id="${selectcolumnName}" class="form-select" required>
             <option value="" disabled>請選擇</option>
-            <option value="" v-for="(col,index) in indatas[nowindex].column" v-if="nowindex>=0">
+            <option :value="indatas[nowindex].name + '-' + col" v-for="(col,index) in indatas[nowindex].column" v-if="nowindex>=0">
                 {{col}}
             </option>
         </select>
-        </div>
+    </div>
         `,
             props: {
             },
@@ -347,9 +361,9 @@
             },
             methods: {
                 searchColumn(event) {
-                    let val = $(event.target).val()
-                    if (val != "") {
-                        this.nowindex = $(event.target).val();
+                    let index = $(event.target).val();
+                    if (index !== "") {
+                        this.nowindex = index;
                     }
                     else {
                         this.nowindex = -1
@@ -361,16 +375,20 @@
         return inData;
     }
 
-    function getOutData() {
+    function getOutData(index, colName) {
+        let selectcolumnName = "outcolumn";
+        if (index != undefined) {
+            selectcolumnName += "_" + index;
+        }
         let outData = {
             template:
                 `
         <div>
-            <select name="selectdata" id="" class="form-select" required>
+            <select name="${selectcolumnName}-${colName}" id="${selectcolumnName}" class="form-select" required>
                 <option value="">
                     無
                 </option>
-                <option v-for="(col,index) in outdatas[0].column" :value="index" v-if="outdatas.length>0">
+                <option v-for="(col,index) in outdatas[0].column" :value="col" v-if="outdatas.length>0">
                     {{col}}
                 </option>
             </select>
@@ -418,11 +436,13 @@
                 sourceid: 'A',
                 dblist: [],
                 tablelist: [],
+                infromclass: "in-form"
             }
         },
         mounted() {
             if (this.isout) {
-                this.sourceid = "OUT"
+                this.sourceid = "OUT",
+                    this.infromclass = ""
             }
             else if ($(".source").length <= 26) {
                 this.sourceid = String.fromCharCode($(".source").length + 64);
@@ -444,6 +464,10 @@
                     success: function (d) {
                         that.dblist = getSelector(d);
                         that.issearchedsource = true;
+                        that.issearcheddb = false;
+                        that.issearchedtable = false;
+                        that.dbtext = '';
+                        that.tabletext = '';
                         that.sourcetext = '已連線'
                         $("#collapse_SearchdbForm_" + that.sourceid).addClass("show");
                         $("#collapse_ConnectdbForm_" + that.sourceid).removeClass("show");
@@ -516,13 +540,15 @@
 
                         $(".in-data").each((i, v) => {
                             let thisCssSelector_In = '#' + v.id;
-                            let newInData_Vue = Vue.createApp(getInData())
+                            let colName = $(v).parent().children("[data-column-index]").text();
+                            let newInData_Vue = Vue.createApp(getInData(i, colName))
                                 .mount(thisCssSelector_In);
                             $(thisCssSelector_In).html("").append(newInData_Vue.$el)
                         })
                         $(".out-data").each((i, v) => {
                             let thisCssSelector_Out = '#' + v.id;
-                            let newOutData_Vue = Vue.createApp(getOutData())
+                            let colName = $(v).parent().children("[data-column-index]").text();
+                            let newOutData_Vue = Vue.createApp(getOutData(i, colName))
                                 .mount(thisCssSelector_Out);
                             $(thisCssSelector_Out).html("").append(newOutData_Vue.$el)
                         })
@@ -566,10 +592,36 @@
                 if ($(".source").length > 1) {
                     $("#Sources_In").children().last().remove()
                 }
+            },
+            creatJson() {
+                doJson();
             }
         }
     }).mount('#app')
 
+    function doJson() {
+        let convert = [];
+        $(".in-form").each((i, form) => {
+            let data = $(form).serializeObject();
+            let name = form.id.replace("ChooseColumnForm_", "");
+            Object.keys(data).forEach((key) => {
+                let converter = key.split("_")[0].split("-")[0];
+                if (data[key] != "" && converter != "insource") {
+                    let column = key.split("-").pop();
+                    convert.push({
+                        name: name,
+                        column: column,
+                        converter: converter,
+                        value: data[key]
+                    });
+                }
+            });
+        });
+        thisJson.indatas = indatas;
+        thisJson.outdatas = outdatas;
+        thisJson.convert = convert;
+        console.log(thisJson);
+    }
 </script>
 
 </html>
