@@ -24,9 +24,9 @@
             <div class="bg-dark text-white px-3 d-flex justify-content-between align-items-center sources-title">
                 <h3 class="m-0 d-flex align-items-center">輸入資料</h3>
                 <div class="me-2 d-flex align-items-center">
-                    <button class="source-data-changer px-2" @click="creatJson">
+                    <a class="source-data-changer px-2 btn bg-primary text-white" onclick="doJson(this)" href="#">
                         <small>產出設定檔</small>
-                    </button>
+                    </a>
                     <button class="source-data-changer" @click="addSource">+</button>
                     <button class="source-data-changer" @click="deleteSource">-</button>
                 </div>
@@ -592,14 +592,11 @@
                 if ($(".source").length > 1) {
                     $("#Sources_In").children().last().remove()
                 }
-            },
-            creatJson() {
-                doJson();
             }
         }
     }).mount('#app')
 
-    function doJson() {
+    function doJson(that) {
         let convert = [];
         $(".in-form").each((i, form) => {
             let data = $(form).serializeObject();
@@ -620,7 +617,12 @@
         thisJson.indatas = indatas;
         thisJson.outdatas = outdatas;
         thisJson.convert = convert;
-        console.log(thisJson);
+        let jsonData = JSON.stringify(thisJson);
+        var blob = new Blob([jsonData], {
+            type: "application/json"
+        }),
+            url = window.URL.createObjectURL(blob);
+        $(that).attr('href', url).attr('download', "fhirconfig.json");
     }
 </script>
 
