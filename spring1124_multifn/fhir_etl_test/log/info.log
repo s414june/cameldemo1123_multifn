@@ -1,24 +1,134 @@
-2022-12-09 09:22:40,437 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 39904 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
-2022-12-09 09:22:40,442 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
-2022-12-09 09:22:40,484 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
-2022-12-09 09:22:40,484 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-12-09 09:22:40,485 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-12-09 09:22:41,608 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
-2022-12-09 09:22:41,617 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
-2022-12-09 09:22:41,617 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2022-12-09 09:22:41,617 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-09 09:22:41,708 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2022-12-09 09:22:41,708 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1223 ms
-2022-12-09 09:22:41,982 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 57 - Adding welcome page template: index
-2022-12-09 09:22:42,332 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
-2022-12-09 09:22:42,373 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
-2022-12-09 09:22:42,397 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
-2022-12-09 09:22:42,446 [http-nio-8080-exec-1] INFO  o.a.tomcat.util.http.parser.Cookie 173 - A cookie header was received [fhirconfigdata={"indatas":[],"outdatas":[],"convert":[]}] that contained an invalid cookie. That cookie will be ignored.
- Note: further occurrences of this error will be logged at DEBUG level.
-2022-12-09 09:22:42,448 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
-2022-12-09 09:22:42,453 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-12-09 09:22:42,454 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
-2022-12-09 09:22:42,454 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
-2022-12-09 09:22:42,454 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 49ms (build:8ms init:37ms start:4ms)
-2022-12-09 09:22:42,455 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 1 ms
-2022-12-09 09:22:42,458 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 2.417 seconds (JVM running for 2.84)
+2022-12-14 10:16:57,925 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 55 - Starting FhirEtlApplication using Java 17.0.5 on June4693-450G7 with PID 38328 (C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test\target\classes started by June.Wu in C:\Users\june.wu\Documents\GitHub\cameldemo1123_multifn\spring1124_multifn\fhir_etl_test)
+2022-12-14 10:16:57,930 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 631 - No active profile set, falling back to 1 default profile: "default"
+2022-12-14 10:16:57,977 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls 255 - The Class-Path manifest attribute in C:\Users\june.wu\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/june.wu/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2022-12-14 10:16:57,977 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-14 10:16:57,977 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-14 10:16:59,177 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8080 (http)
+2022-12-14 10:16:59,187 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14 10:16:59,187 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-12-14 10:16:59,187 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-14 10:16:59,280 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-12-14 10:16:59,281 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 292 - Root WebApplicationContext: initialization completed in 1304 ms
+2022-12-14 10:16:59,563 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 57 - Adding welcome page template: index
+2022-12-14 10:16:59,897 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer 59 - LiveReload server is running on port 35729
+2022-12-14 10:16:59,933 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14 10:16:59,961 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14 10:16:59,996 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-2) is starting
+2022-12-14 10:16:59,996 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:0)
+2022-12-14 10:16:59,996 [restartedMain] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-2) started in 40ms (build:9ms init:29ms start:2ms)
+2022-12-14 10:16:59,996 [restartedMain] INFO  c.e.fhir_etl_test.FhirEtlApplication 61 - Started FhirEtlApplication in 2.495 seconds (JVM running for 2.97)
+2022-12-14 10:30:49,557 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14 10:30:49,558 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-12-14 10:30:49,559 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 0 ms
+2022-12-14 10:33:18,836 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-3) is starting
+2022-12-14 10:33:18,846 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 10:33:18,847 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route1 (timer://foo)
+2022-12-14 10:33:18,847 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-3) started in 96ms (build:3ms init:82ms start:11ms)
+2022-12-14 10:33:23,854 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-3) is shutting down (timeout:45s)
+2022-12-14 10:33:23,859 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 10:33:23,859 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route1 (timer://foo)
+2022-12-14 10:33:23,872 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-3) shutdown in 18ms (uptime:5s)
+2022-12-14 10:33:26,870 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-4) is starting
+2022-12-14 10:33:26,871 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 10:33:26,871 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route2 (timer://foo)
+2022-12-14 10:33:26,871 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-4) started in 11ms (build:2ms init:9ms start:0ms)
+2022-12-14 10:33:31,872 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-4) is shutting down (timeout:45s)
+2022-12-14 10:33:31,873 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 10:33:31,873 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route2 (timer://foo)
+2022-12-14 10:33:31,874 [http-nio-8080-exec-8] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-4) shutdown in 1ms (uptime:5s)
+2022-12-14 10:57:18,196 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-5) is starting
+2022-12-14 10:57:18,197 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 10:57:18,197 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route3 (timer://foo)
+2022-12-14 10:57:18,197 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-5) started in 10ms (build:2ms init:7ms start:1ms)
+2022-12-14 10:57:23,201 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-5) is shutting down (timeout:45s)
+2022-12-14 10:57:23,202 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 10:57:23,202 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route3 (timer://foo)
+2022-12-14 10:57:23,202 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-5) shutdown in 1ms (uptime:5s)
+2022-12-14 10:57:28,036 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-6) is starting
+2022-12-14 10:57:28,037 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 10:57:28,037 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route4 (timer://foo)
+2022-12-14 10:57:28,037 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-6) started in 10ms (build:2ms init:8ms start:0ms)
+2022-12-14 10:57:33,038 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-6) is shutting down (timeout:45s)
+2022-12-14 10:57:33,039 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 10:57:33,039 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route4 (timer://foo)
+2022-12-14 10:57:33,039 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-6) shutdown in 1ms (uptime:5s)
+2022-12-14 11:25:05,248 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-7) is starting
+2022-12-14 11:25:05,249 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:25:05,249 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route5 (timer://foo)
+2022-12-14 11:25:05,249 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-7) started in 9ms (build:2ms init:7ms start:0ms)
+2022-12-14 11:25:10,253 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-7) is shutting down (timeout:45s)
+2022-12-14 11:25:10,253 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:25:10,253 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route5 (timer://foo)
+2022-12-14 11:25:10,253 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-7) shutdown in 1ms (uptime:5s)
+2022-12-14 11:25:35,700 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-8) is starting
+2022-12-14 11:25:35,701 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:25:35,701 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route6 (timer://foo)
+2022-12-14 11:25:35,701 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-8) started in 8ms (build:2ms init:6ms start:0ms)
+2022-12-14 11:25:40,703 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-8) is shutting down (timeout:45s)
+2022-12-14 11:25:40,703 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:25:40,703 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route6 (timer://foo)
+2022-12-14 11:25:40,703 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-8) shutdown in 1ms (uptime:5s)
+2022-12-14 11:25:47,841 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-9) is starting
+2022-12-14 11:25:47,843 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:25:47,843 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route7 (timer://foo)
+2022-12-14 11:25:47,843 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-9) started in 10ms (build:2ms init:8ms start:0ms)
+2022-12-14 11:25:52,854 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-9) is shutting down (timeout:45s)
+2022-12-14 11:25:52,855 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:25:52,855 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route7 (timer://foo)
+2022-12-14 11:25:52,855 [http-nio-8080-exec-3] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-9) shutdown in 1ms (uptime:5s)
+2022-12-14 11:29:42,376 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-10) is starting
+2022-12-14 11:29:42,377 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:29:42,377 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route8 (timer://foo)
+2022-12-14 11:29:42,377 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-10) started in 9ms (build:2ms init:7ms start:0ms)
+2022-12-14 11:29:47,378 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-10) is shutting down (timeout:45s)
+2022-12-14 11:29:47,379 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:29:47,379 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route8 (timer://foo)
+2022-12-14 11:29:47,379 [http-nio-8080-exec-1] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-10) shutdown in 1ms (uptime:5s)
+2022-12-14 11:29:50,101 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-11) is starting
+2022-12-14 11:29:50,101 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:29:50,101 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route9 (timer://foo)
+2022-12-14 11:29:50,102 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-11) started in 9ms (build:2ms init:7ms start:0ms)
+2022-12-14 11:29:55,109 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-11) is shutting down (timeout:45s)
+2022-12-14 11:29:55,110 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:29:55,110 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route9 (timer://foo)
+2022-12-14 11:29:55,110 [http-nio-8080-exec-4] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-11) shutdown in 1ms (uptime:5s)
+2022-12-14 11:30:13,759 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-12) is starting
+2022-12-14 11:30:13,760 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:30:13,760 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route10 (timer://foo)
+2022-12-14 11:30:13,761 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-12) started in 8ms (build:2ms init:6ms start:0ms)
+2022-12-14 11:30:18,776 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-12) is shutting down (timeout:45s)
+2022-12-14 11:30:18,777 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:30:18,777 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route10 (timer://foo)
+2022-12-14 11:30:18,777 [http-nio-8080-exec-2] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-12) shutdown in 1ms (uptime:5s)
+2022-12-14 11:32:01,608 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-13) is starting
+2022-12-14 11:32:01,609 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:32:01,609 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route11 (timer://foo)
+2022-12-14 11:32:01,609 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-13) started in 9ms (build:2ms init:7ms start:0ms)
+2022-12-14 11:32:06,610 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-13) is shutting down (timeout:45s)
+2022-12-14 11:32:06,611 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:32:06,611 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route11 (timer://foo)
+2022-12-14 11:32:06,611 [http-nio-8080-exec-6] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-13) shutdown in 1ms (uptime:5s)
+2022-12-14 11:32:08,812 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-14) is starting
+2022-12-14 11:32:08,813 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:32:08,813 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route12 (timer://foo)
+2022-12-14 11:32:08,813 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-14) started in 8ms (build:2ms init:6ms start:0ms)
+2022-12-14 11:32:13,821 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-14) is shutting down (timeout:45s)
+2022-12-14 11:32:13,823 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:32:13,823 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route12 (timer://foo)
+2022-12-14 11:32:13,823 [http-nio-8080-exec-5] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-14) shutdown in 2ms (uptime:5s)
+2022-12-14 11:32:15,582 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-15) is starting
+2022-12-14 11:32:15,584 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:32:15,584 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route13 (timer://foo)
+2022-12-14 11:32:15,584 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-15) started in 8ms (build:2ms init:6ms start:0ms)
+2022-12-14 11:32:20,587 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-15) is shutting down (timeout:45s)
+2022-12-14 11:32:20,587 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:32:20,587 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route13 (timer://foo)
+2022-12-14 11:32:20,587 [http-nio-8080-exec-10] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-15) shutdown in 1ms (uptime:5s)
+2022-12-14 11:32:25,950 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3058 - Apache Camel 3.19.0 (camel-16) is starting
+2022-12-14 11:32:25,950 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3220 - Routes startup (started:1)
+2022-12-14 11:32:25,951 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3225 -     Started route14 (timer://foo)
+2022-12-14 11:32:25,951 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3249 - Apache Camel 3.19.0 (camel-16) started in 8ms (build:2ms init:6ms start:0ms)
+2022-12-14 11:32:30,967 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3454 - Apache Camel 3.19.0 (camel-16) is shutting down (timeout:45s)
+2022-12-14 11:32:30,968 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 166 - Routes stopped (stopped:1)
+2022-12-14 11:32:30,968 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 166 -     Stopped route14 (timer://foo)
+2022-12-14 11:32:30,968 [http-nio-8080-exec-7] INFO  o.a.c.i.engine.AbstractCamelContext 3593 - Apache Camel 3.19.0 (camel-16) shutdown in 1ms (uptime:5s)

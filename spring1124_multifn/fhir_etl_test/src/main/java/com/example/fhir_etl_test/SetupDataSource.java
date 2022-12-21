@@ -25,18 +25,19 @@ public class SetupDataSource {
         return ds;
     }
 
-    public boolean setSession(JsonNode dataObj,HttpSession session) {
-        try{
-            session.setAttribute("dataObj", dataObj.toString());
+    public boolean setSession(JsonNode dataObj, HttpSession session) {
+        try {
+            String sourceName = dataObj.findValue("source").asText();
+            session.setAttribute("dataObj_" + sourceName, dataObj.toString());
             return true;
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             return false;
         }
     }
 
-    public JsonNode getSession_JsonNode(HttpSession session) throws JsonMappingException, JsonProcessingException{
-        String dataObj_Str =  session.getAttribute("dataObj").toString();
+    public JsonNode getSession_JsonNode(HttpSession session, String sourceName)
+            throws JsonMappingException, JsonProcessingException {
+        String dataObj_Str = session.getAttribute("dataObj_" + sourceName).toString();
         ObjectMapper mapper = new ObjectMapper();
         JsonNode dataObj = mapper.readTree(dataObj_Str);
         return dataObj;

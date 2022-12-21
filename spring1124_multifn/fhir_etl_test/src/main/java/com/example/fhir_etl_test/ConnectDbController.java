@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.fhir_etl_test.RouteBuilderTool.thisRouteBuilder;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
@@ -53,15 +54,17 @@ public class ConnectDbController extends HttpServlet {
             DefaultRegistry reg = new DefaultRegistry();
             reg.bind("dbSource", dbSource);
             CamelContext context = new DefaultCamelContext(reg);
-            MyRouteBuilder build = new MyRouteBuilder();
+            RouteBuilderTool buildtool = new RouteBuilderTool();
+            buildtool.getSelectdataFloor("source");
+            thisRouteBuilder build = buildtool.thisRouteBuilder();
             context.addRoutes(build);
             context.start();
             Thread.sleep(5000);
             context.stop();
             context.close();
-            data = build.getDatabases();
+            data = buildtool.getDatabases();
             // data = new ObjectMapper().readTree(database);
-            if (build.hasErrors()) {
+            if (buildtool.hasErrors()) {
                 return ResponseEntity.badRequest().body("連線錯誤");
             }
             // 若連線成功，將連線資訊存進session

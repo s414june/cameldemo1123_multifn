@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.fhir_etl_test.RouteBuilderTool.thisRouteBuilder;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -46,9 +47,10 @@ public class SearchDbController extends HttpServlet {
         JsonNode data = new ObjectMapper().readTree("{}");
         ObjectMapper mapper = new ObjectMapper();
         JsonNode dbObj = mapper.readTree(dbdatas);
+        String sourceName = dbObj.findValue("source").asText();
 
         SetupDataSource setupDataSource = new SetupDataSource();
-        JsonNode dataObj = setupDataSource.getSession_JsonNode(session);
+        JsonNode dataObj = setupDataSource.getSession_JsonNode(session,sourceName);
         useDB = dbObj.findValue("selectdata").asText();
         ObjectNode objectNode = (ObjectNode)dataObj;
         objectNode.put("databasename", useDB);
@@ -59,13 +61,16 @@ public class SearchDbController extends HttpServlet {
             DefaultRegistry reg = new DefaultRegistry();
             reg.bind("dbSource", dbSource);
             CamelContext context = new DefaultCamelContext(reg);
-            MyRouteBuilder build = new MyRouteBuilder();
+            RouteBuilderTool buildtool = new RouteBuilderTool();
+            buildtool.getSelectdataFloor("db");
+            buildtool.getUseDB(useDB);
+            thisRouteBuilder build = buildtool.thisRouteBuilder();
             context.addRoutes(build);
             context.start();
             Thread.sleep(5000);
             context.stop();
             context.close();
-            data = build.getDatabases();
+            data = buildtool.getDatabases();
         }
 
         if (errors.hasErrors()) {
